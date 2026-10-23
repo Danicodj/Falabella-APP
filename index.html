@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Maestro de Ventas | Samsung Falabella</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <style>
+    .bg-retail {
+      background-image: linear-gradient(to bottom, rgba(3, 7, 18, 0.88), rgba(3, 7, 18, 0.96)), 
+                        url('https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans bg-retail">
+
+  <!-- NAVBAR -->
+  <header class="bg-slate-900/90 backdrop-blur border-b border-slate-800 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="flex items-center gap-1.5 bg-white/5 border border-white/10 px-3 py-1.5 rounded-xl">
+          <span class="font-black text-xs tracking-wider text-emerald-400">FALABELLA</span>
+          <span class="text-slate-500 font-light text-xs">✕</span>
+          <span class="font-black text-xs tracking-wider text-blue-400">SAMSUNG</span>
+        </div>
+        <div>
+          <h1 class="text-sm md:text-base font-bold text-white tracking-tight">Portal Maestro de Ventas & Sensing</h1>
+          <p id="corteInfo" class="text-[11px] text-slate-400">Cargando fecha de corte...</p>
+        </div>
+      </div>
+      <div id="btnCerrarSesion" class="hidden">
+        <button onclick="cerrarSesion()" class="flex items-center gap-2 text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-1.5 rounded-lg border border-slate-700 transition">
+          <i data-lucide="log-out" class="w-4 h-4"></i> Salir
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="flex-1 max-w-6xl w-full mx-auto px-4 py-6">
+
+    <!-- LOGIN -->
+    <div id="vistaLogin" class="max-w-md mx-auto mt-8 md:mt-16 bg-slate-900/95 border border-slate-800 p-8 rounded-3xl shadow-2xl text-center backdrop-blur-md">
+      
+      <!-- LOGOS HEADER -->
+      <div class="flex items-center justify-center gap-4 mb-6">
+        <div class="bg-emerald-500/10 border border-emerald-500/20 px-3.5 py-1.5 rounded-xl">
+          <span class="text-xs font-black tracking-widest text-emerald-400">FALABELLA</span>
+        </div>
+        <span class="text-slate-600 font-bold">•</span>
+        <div class="bg-blue-500/10 border border-blue-500/20 px-3.5 py-1.5 rounded-xl">
+          <span class="text-xs font-black tracking-widest text-blue-400">SAMSUNG</span>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-black text-white tracking-tight">Consulta de Ventas</h2>
+      <p class="text-slate-400 text-xs md:text-sm mt-2 mb-6">Ingresa tu identificación para consultar cumplimiento, metas por segmento, tiendas a cargo e IHS.</p>
+
+      <form onsubmit="autenticar(event)" class="space-y-4">
+        <div class="text-left">
+          <label class="block text-xs font-semibold text-slate-300 mb-1.5 ml-1">Número de Cédula</label>
+          <div class="relative">
+            <i data-lucide="id-card" class="w-5 h-5 absolute left-3.5 top-3 text-slate-500"></i>
+            <input type="text" id="inputCedula" required placeholder="Ejemplo: ID / Cédula"
+              class="w-full bg-slate-950/80 border border-slate-700 rounded-xl pl-11 pr-4 py-3 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition">
+          </div>
+        </div>
+        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-blue-600/30 transition flex items-center justify-center gap-2 text-sm">
+          <span>Consultar Resultados</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+      </form>
+      <div id="loginError" class="mt-4 hidden p-3 bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs rounded-xl"></div>
+    </div>
+
+    <!-- VISTA CONSULTOR -->
+    <div id="vistaConsultor" class="hidden space-y-6">
+
+      <!-- BANNER BIENVENIDA -->
+      <div class="bg-blue-600/10 border border-blue-500/20 px-4 py-3 rounded-2xl flex items-center gap-3">
+        <i data-lucide="sparkles" class="w-5 h-5 text-blue-400 flex-shrink-0"></i>
+        <p class="text-xs md:text-sm text-blue-200">
+          <span class="font-bold text-white">¡Bienvenido(a)!</span> Aquí está tu reporte de ventas consolidado y la disponibilidad en tienda.
+        </p>
+      </div>
+
+      <!-- TARJETA PERFIL -->
+      <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs bg-blue-500/20 text-blue-300 border border-blue-500/30 px-2.5 py-0.5 rounded-full font-semibold">Consultor de Ventas</span>
+            <span id="badgeCompartida" class="hidden text-xs bg-purple-500/20 text-purple-300 border border-purple-500/30 px-2.5 py-0.5 rounded-full font-semibold">Tienda Compartida (50/50)</span>
+          </div>
+          <h2 id="cNombre" class="text-2xl font-black text-white mt-2">--</h2>
+          <p class="text-xs md:text-sm text-slate-300 mt-1 flex items-center gap-1.5">
+            <i data-lucide="store" class="w-4 h-4 text-slate-400"></i> <span id="cTienda" class="font-semibold text-white">--</span>
+          </p>
+          <p class="text-xs text-slate-400 mt-0.5">Supervisor: <span id="cSupervisor" class="text-slate-200 font-medium">--</span></p>
+        </div>
+
+        <div class="bg-slate-950/80 border border-slate-800 px-5 py-3 rounded-xl flex items-center justify-between md:flex-col md:items-end gap-2">
+          <div class="text-left md:text-right">
+            <p class="text-xs text-slate-400">Puntos Acumulados</p>
+            <div class="flex items-center gap-1.5 md:justify-end">
+              <i data-lucide="award" class="w-6 h-6 text-amber-400 fill-amber-400"></i>
+              <span id="cPuntos" class="text-3xl font-black text-amber-400">0</span>
+            </div>
+          </div>
+          <button onclick="abrirModalPuntos()" class="text-xs text-blue-400 hover:text-blue-300 underline flex items-center gap-1">
+            <i data-lucide="help-circle" class="w-3.5 h-3.5"></i> Desglose de puntos
+          </button>
+        </div>
+      </div>
+
+      <!-- SELECTOR TEMPORALIDAD -->
+      <div class="flex items-center gap-2 border-b border-slate-800/80 pb-2 overflow-x-auto">
+        <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mr-1">Periodo:</span>
+        <button onclick="cambiarPeriodo('MTD')" id="btnMTD" class="px-3.5 py-2 rounded-xl text-xs font-bold transition bg-blue-600 text-white shadow-lg shadow-blue-500/20 whitespace-nowrap">
+          Mes Octubre (MTD)
+        </button>
+        <button onclick="cambiarPeriodo('W42')" id="btnW42" class="px-3.5 py-2 rounded-xl text-xs font-bold transition bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800 whitespace-nowrap">
+          Semana Anterior (W42)
+        </button>
+        <button onclick="cambiarPeriodo('W43')" id="btnW43" class="px-3.5 py-2 rounded-xl text-xs font-bold transition bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800 whitespace-nowrap">
+          Semana en Curso (W43)
+        </button>
+      </div>
+
+      <!-- TARJETA SEMÁFORO -->
+      <div id="cCardSemaforo" class="p-6 rounded-2xl border transition-all duration-300 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex-1">
+          <div class="flex items-center gap-2">
+            <span id="cBadgeSemaforo" class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">--</span>
+            <span id="cPeriodoLabel" class="text-xs text-slate-400 font-medium">--</span>
+          </div>
+          <h3 id="cMensajeSemaforo" class="text-xl font-bold text-white mt-2">--</h3>
+          <p id="cMensajeBrecha" class="text-sm font-semibold text-amber-400 mt-1">--</p>
+
+          <div class="w-full bg-slate-950 rounded-full h-3.5 mt-4 overflow-hidden border border-slate-800 p-0.5">
+            <div id="cProgressBar" class="h-full rounded-full transition-all duration-700" style="width: 0%;"></div>
+          </div>
+        </div>
+        <div class="text-center md:text-right min-w-[130px]">
+          <p class="text-xs text-slate-400 font-medium">Cumplimiento</p>
+          <p id="cCumplimiento" class="text-4xl font-black text-white">0%</p>
+        </div>
+      </div>
+
+      <!-- MÉTRICAS -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+        <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl">
+          <p class="text-xs text-slate-400">Unidades Vendidas</p>
+          <p id="cVentaUds" class="text-2xl font-black text-white mt-1">0</p>
+          <p class="text-[11px] text-slate-500 mt-0.5">Target: <span id="cTargetUds" class="text-slate-300 font-semibold">0</span></p>
+        </div>
+        <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl">
+          <p class="text-xs text-slate-400">Venta Neta COP</p>
+          <p id="cVentaPesos" class="text-xl font-bold text-emerald-400 mt-1">$0</p>
+          <p class="text-[11px] text-slate-500 mt-0.5">Sin IVA</p>
+        </div>
+        <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl">
+          <p class="text-xs text-slate-400">Faltante</p>
+          <p id="cDebeUds" class="text-2xl font-black text-rose-400 mt-1">0</p>
+          <p class="text-[11px] text-slate-500 mt-0.5">Para la meta</p>
+        </div>
+        <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl">
+          <p class="text-xs text-slate-400">IHS Samsung (W42)</p>
+          <p id="cIHS" class="text-2xl font-black text-blue-400 mt-1">0%</p>
+          <p id="cIHSTrend" class="text-[11px] font-semibold mt-0.5">--</p>
+        </div>
+      </div>
+
+      <!-- TABLA DE SEGMENTOS -->
+      <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5 md:p-6 shadow-xl">
+        <h3 class="text-sm md:text-base font-bold text-white flex items-center gap-2 mb-3">
+          <i data-lucide="layers" class="w-4 h-4 text-blue-400"></i> Desempeño por Segmentos
+        </h3>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs md:text-sm">
+            <thead class="bg-slate-950 text-slate-400 uppercase tracking-wider text-[11px]">
+              <tr>
+                <th class="px-3 py-2.5">Segmento</th>
+                <th class="px-3 py-2.5 text-center">Meta</th>
+                <th class="px-3 py-2.5 text-center">Venta</th>
+                <th class="px-3 py-2.5 text-center">% Cumpl.</th>
+                <th class="px-3 py-2.5 text-center">Faltante</th>
+              </tr>
+            </thead>
+            <tbody id="cTablaSegmentos" class="divide-y divide-slate-800"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- STOCK DISPONIBLE EN TIENDA -->
+      <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5 md:p-6 shadow-xl">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+          <div>
+            <h3 class="text-sm md:text-base font-bold text-white flex items-center gap-2">
+              <i data-lucide="package" class="w-4 h-4 text-cyan-400"></i> Stock Disponible en Tienda
+            </h3>
+            <p class="text-xs text-slate-400 mt-0.5">
+              Total disponible en bodega: <span id="cTotalStock" class="font-black text-cyan-300 text-sm">0</span> unidades
+            </p>
+          </div>
+          <button onclick="abrirModalStock()" class="text-xs bg-slate-800 hover:bg-slate-700 text-cyan-300 px-3 py-1.5 rounded-lg border border-slate-700 transition flex items-center gap-1.5 self-start md:self-auto">
+            <i data-lucide="list" class="w-3.5 h-3.5"></i> Ver todos los modelos en stock
+          </button>
+        </div>
+        
+        <!-- Top Modelos -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5" id="cGridStock"></div>
+      </div>
+
+    </div>
+
+    <!-- VISTA SUPERVISOR -->
+    <div id="vistaSupervisor" class="hidden space-y-6">
+
+      <!-- BANNER SUPERVISOR -->
+      <div class="bg-gradient-to-r from-blue-900/60 to-indigo-950/80 border border-blue-600/40 p-6 rounded-3xl shadow-2xl">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <span class="text-xs bg-blue-500/20 text-blue-300 border border-blue-500/40 px-3 py-1 rounded-full font-bold uppercase tracking-wider">Territorio a Cargo</span>
+            <h2 id="sNombre" class="text-2xl md:text-3xl font-black text-white mt-2">--</h2>
+            <p class="text-xs md:text-sm text-slate-300 mt-1 flex items-center gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-blue-400"></i> Base: <span id="sCiudadBase" class="font-bold text-white">--</span> | 
+              <span id="sTotalTiendas" class="text-cyan-300 font-semibold">0</span> tiendas asignadas
+            </p>
+          </div>
+
+          <div class="bg-slate-900/80 border border-slate-700/80 p-4 rounded-2xl text-right min-w-[160px]">
+            <p class="text-xs text-slate-400">Cumplimiento Territorial</p>
+            <p id="sCumplGlobal" class="text-3xl font-black text-white mt-1">0%</p>
+            <span id="sBadgeSemaforoGlobal" class="inline-block mt-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase border">--</span>
+          </div>
+        </div>
+
+        <!-- 4 TARJETAS KPI SUPERVISOR -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6 pt-6 border-t border-slate-800">
+          <div class="bg-slate-950/50 p-3 rounded-xl border border-slate-800">
+            <p class="text-xs text-slate-400">Ventas Equipo (Uds)</p>
+            <p id="sVentaMTD" class="text-2xl font-black text-white mt-1">0</p>
+            <p class="text-[11px] text-slate-500">Target: <span id="sTargetMTD" class="text-slate-300 font-semibold">0</span></p>
+          </div>
+          <div class="bg-slate-950/50 p-3 rounded-xl border border-slate-800">
+            <p class="text-xs text-slate-400">Faltante Territorio</p>
+            <p id="sDebeMTD" class="text-2xl font-black text-rose-400 mt-1">0</p>
+            <p class="text-[11px] text-slate-500">Unidades para meta MTD</p>
+          </div>
+          <div class="bg-slate-950/50 p-3 rounded-xl border border-slate-800">
+            <p class="text-xs text-slate-400">IHS Promedio W42</p>
+            <p id="sPromIHS" class="text-2xl font-black text-blue-400 mt-1">0%</p>
+            <p class="text-[11px] text-slate-500">Cuota Samsung en su zona</p>
+          </div>
+          <div class="bg-slate-950/50 p-3 rounded-xl border border-slate-800">
+            <p class="text-xs text-slate-400">Consultores Reales</p>
+            <p id="sTotalAsesores" class="text-2xl font-black text-amber-400 mt-1">0</p>
+            <p class="text-[11px] text-slate-500">En puntos de venta</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- INFORME DETALLADO TIENDA POR TIENDA (ASISTIDAS VS NO ASISTIDAS) -->
+      <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 shadow-2xl">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+          <div>
+            <h3 class="text-base font-bold text-white flex items-center gap-2">
+              <i data-lucide="store" class="w-5 h-5 text-blue-400"></i> Desempeño Detallado por Tienda
+            </h3>
+            <p class="text-xs text-slate-400 mt-0.5">Ventas, stock disponible e IHS clasificado por tipo de atención</p>
+          </div>
+          <span class="text-xs text-slate-400 bg-slate-950 px-3 py-1.5 rounded-xl border border-slate-800 self-start md:self-auto">
+            Mes Acumulado Octubre (MTD)
+          </span>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs md:text-sm">
+            <thead class="bg-slate-950 text-slate-400 uppercase tracking-wider text-[11px]">
+              <tr>
+                <th class="px-4 py-3">Tienda</th>
+                <th class="px-3 py-3 text-center">Tipo</th>
+                <th class="px-3 py-3 text-center">Meta MTD</th>
+                <th class="px-3 py-3 text-center">Venta MTD</th>
+                <th class="px-3 py-3 text-center">% Cumpl.</th>
+                <th class="px-3 py-3 text-center">Faltante</th>
+                <th class="px-3 py-3 text-center">Stock Piso</th>
+                <th class="px-3 py-3 text-center">IHS W42</th>
+              </tr>
+            </thead>
+            <tbody id="sTablaTiendas" class="divide-y divide-slate-800"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- RANKING DEL EQUIPO DE CONSULTORES REALES -->
+      <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 shadow-2xl">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-base font-bold text-white flex items-center gap-2">
+            <i data-lucide="users" class="w-5 h-5 text-indigo-400"></i> Consultores a Cargo (Ranking Individual)
+          </h3>
+          <span class="text-xs text-slate-400">Solo asesores de piso (sin supervisores)</span>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs md:text-sm">
+            <thead class="bg-slate-950 text-slate-400 uppercase tracking-wider text-[11px]">
+              <tr>
+                <th class="px-4 py-3">Consultor</th>
+                <th class="px-3 py-3">Tienda Asignada</th>
+                <th class="px-3 py-3 text-center">Meta MTD</th>
+                <th class="px-3 py-3 text-center">Venta MTD</th>
+                <th class="px-3 py-3 text-center">% Cumpl.</th>
+                <th class="px-3 py-3 text-center">Faltante</th>
+                <th class="px-3 py-3 text-center">Puntos</th>
+              </tr>
+            </thead>
+            <tbody id="sTablaConsultores" class="divide-y divide-slate-800"></tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- MODAL PUNTOS -->
+  <div id="modalPuntos" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-md w-full p-6 space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <h3 class="text-base font-bold text-white flex items-center gap-2">
+          <i data-lucide="award" class="w-5 h-5 text-amber-400"></i> Desglose de Puntos
+        </h3>
+        <button onclick="cerrarModalPuntos()" class="text-slate-400 hover:text-white">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div class="space-y-3 text-sm text-slate-300">
+        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800">
+          <p class="font-bold text-white text-xs">1. Puntos por Unidades Físicas</p>
+          <p id="mPuntosVenta" class="text-xs text-slate-400 mt-1">10 puntos por cada unidad vendida en el mes.</p>
+        </div>
+        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800">
+          <p class="font-bold text-white text-xs">2. Bono de Cumplimiento MTD</p>
+          <p id="mPuntosBono" class="text-xs text-slate-400 mt-1">+500 pts (+100%), +200 pts (80-99%), +50 pts (&lt;80%).</p>
+        </div>
+        <div class="p-4 bg-amber-500/10 border border-amber-500/30 rounded-xl text-center">
+          <p class="text-xs text-amber-300 font-semibold uppercase">Total Ganado</p>
+          <p id="mPuntosTotal" class="text-3xl font-black text-amber-400 mt-1">0</p>
+        </div>
+      </div>
+      <button onclick="cerrarModalPuntos()" class="w-full bg-slate-800 hover:bg-slate-700 text-white font-semibold py-2 rounded-xl transition text-xs">
+        Cerrar
+      </button>
+    </div>
+  </div>
+
+  <!-- MODAL CATÁLOGO COMPLETO STOCK -->
+  <div id="modalStock" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-2xl w-full p-6 space-y-4 max-h-[85vh] flex flex-col">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3 flex-shrink-0">
+        <div>
+          <h3 class="text-base font-bold text-white flex items-center gap-2">
+            <i data-lucide="package" class="w-5 h-5 text-cyan-400"></i> Catálogo Completo de Stock en Tienda
+          </h3>
+          <p class="text-xs text-slate-400 mt-0.5">Todas las referencias con unidades en bodega</p>
+        </div>
+        <button onclick="cerrarModalStock()" class="text-slate-400 hover:text-white">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div class="overflow-y-auto flex-1 pr-1 space-y-2" id="mListaCompletaStock"></div>
+      <div class="border-t border-slate-800 pt-3 flex items-center justify-between flex-shrink-0 text-xs">
+        <span class="text-slate-400">Total general en piso: <strong id="mTotalUdsStock" class="text-cyan-300">0</strong> unidades</span>
+        <button onclick="cerrarModalStock()" class="bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded-xl transition font-semibold">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let DATOS_APP = null;
+    let CONSULTOR_ACTUAL = null;
+    let PERIODO_SELECCIONADO = 'MTD';
+
+    async function inicializarApp() {
+      try {
+        const res = await fetch('data_app.json?t=' + new Date().getTime());
+        if (!res.ok) throw new Error("No se pudo cargar data_app.json");
+        DATOS_APP = await res.json();
+        document.getElementById('corteInfo').innerText = `Corte: ${DATOS_APP.fecha_corte}`;
+      } catch (err) {
+        document.getElementById('corteInfo').innerText = "Ejecuta 'actualizar_app.bat' para generar la data.";
+      }
+      lucide.createIcons();
+    }
+
+    function autenticar(e) {
+      e.preventDefault();
+      const ced = document.getElementById('inputCedula').value.trim();
+      const err = document.getElementById('loginError');
+      err.classList.add('hidden');
+
+      if (!DATOS_APP) {
+        err.innerText = "Cargando datos... intenta en un momento.";
+        err.classList.remove('hidden');
+        return;
+      }
+
+      const sup = DATOS_APP.supervisores.find(s => s.cedula === ced);
+      if (sup) { mostrarSupervisor(sup); return; }
+
+      const con = DATOS_APP.consultores.find(c => c.cedula === ced);
+      if (con) {
+        CONSULTOR_ACTUAL = con;
+        mostrarConsultor();
+        return;
+      }
+
+      err.innerText = "Cédula no encontrada en el sistema de Falabella activo.";
+      err.classList.remove('hidden');
+    }
+
+    function mostrarConsultor() {
+      const c = CONSULTOR_ACTUAL;
+      document.getElementById('vistaLogin').classList.add('hidden');
+      document.getElementById('vistaConsultor').classList.remove('hidden');
+      document.getElementById('vistaSupervisor').classList.add('hidden');
+      document.getElementById('btnCerrarSesion').classList.remove('hidden');
+
+      document.getElementById('cNombre').innerText = c.nombre;
+      document.getElementById('cTienda').innerText = c.tienda;
+      document.getElementById('cSupervisor').innerText = c.supervisor;
+      document.getElementById('cPuntos').innerText = c.puntos.total.toLocaleString();
+      document.getElementById('cTotalStock').innerText = c.total_stock.toLocaleString();
+
+      if (c.es_compartida) {
+        document.getElementById('badgeCompartida').classList.remove('hidden');
+      } else {
+        document.getElementById('badgeCompartida').classList.add('hidden');
+      }
+
+      document.getElementById('cIHS').innerText = c.ihs.w42 + '%';
+      const trendEl = document.getElementById('cIHSTrend');
+      trendEl.innerText = c.ihs.mensaje;
+      trendEl.className = c.ihs.tendencia === 'CRECIENDO' ? 'text-[11px] font-bold text-emerald-400 mt-0.5' : 'text-[11px] font-bold text-rose-400 mt-0.5';
+
+      const tSeg = document.getElementById('cTablaSegmentos');
+      tSeg.innerHTML = '';
+      c.segmentos.forEach(s => {
+        const badgeClass = s.debe_unidades === 0 ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30' : 'bg-rose-500/20 text-rose-300 border-rose-500/30';
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td class="px-3 py-2.5 font-bold text-white">${s.segmento}</td>
+          <td class="px-3 py-2.5 text-center text-slate-400">${s.target}</td>
+          <td class="px-3 py-2.5 text-center font-bold text-white">${s.venta}</td>
+          <td class="px-3 py-2.5 text-center">${s.cumplimiento_pct}%</td>
+          <td class="px-3 py-2.5 text-center">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border ${badgeClass}">${s.estado}</span>
+          </td>
+        `;
+        tSeg.appendChild(tr);
+      });
+
+      const gStock = document.getElementById('cGridStock');
+      gStock.innerHTML = '';
+      const topSkus = c.stock_skus.slice(0, 6);
+      topSkus.forEach(item => {
+        const card = document.createElement('div');
+        card.className = "bg-slate-950 p-2.5 rounded-xl border border-slate-800 flex items-center justify-between";
+        card.innerHTML = `
+          <div class="pr-2">
+            <p class="font-bold text-white text-xs">${item['ID Modelo']}</p>
+            <p class="text-[11px] text-slate-400 truncate max-w-[200px] md:max-w-[240px]">${item['Producto']}</p>
+          </div>
+          <span class="bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 text-xs font-black px-2.5 py-1 rounded-lg whitespace-nowrap">
+            ${item['Stock Disponible']} uds
+          </span>
+        `;
+        gStock.appendChild(card);
+      });
+
+      actualizarVistaPeriodo();
+      lucide.createIcons();
+    }
+
+    function cambiarPeriodo(periodo) {
+      PERIODO_SELECCIONADO = periodo;
+      ['MTD', 'W42', 'W43'].forEach(p => {
+        const btn = document.getElementById('btn' + p);
+        if (p === periodo) {
+          btn.className = "px-3.5 py-2 rounded-xl text-xs font-bold transition bg-blue-600 text-white shadow-lg shadow-blue-500/20 whitespace-nowrap";
+        } else {
+          btn.className = "px-3.5 py-2 rounded-xl text-xs font-bold transition bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800 whitespace-nowrap";
+        }
+      });
+      actualizarVistaPeriodo();
+    }
+
+    function actualizarVistaPeriodo() {
+      const pData = CONSULTOR_ACTUAL.periodos[PERIODO_SELECCIONADO];
+      document.getElementById('cPeriodoLabel').innerText = pData.label;
+      document.getElementById('cVentaUds').innerText = pData.venta_uds;
+      document.getElementById('cTargetUds').innerText = pData.target;
+      document.getElementById('cVentaPesos').innerText = '$' + Number(pData.venta_pesos).toLocaleString();
+      document.getElementById('cDebeUds').innerText = pData.debe;
+      document.getElementById('cCumplimiento').innerText = pData.cumplimiento + '%';
+
+      const card = document.getElementById('cCardSemaforo');
+      const badge = document.getElementById('cBadgeSemaforo');
+      const msj = document.getElementById('cMensajeSemaforo');
+      const brecha = document.getElementById('cMensajeBrecha');
+      const bar = document.getElementById('cProgressBar');
+
+      bar.style.width = Math.min(pData.cumplimiento, 100) + '%';
+
+      if (pData.semaforo === "VERDE") {
+        card.className = "p-6 rounded-2xl border transition-all duration-300 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 bg-emerald-950/40 border-emerald-500/50";
+        badge.className = "px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-500/40";
+        badge.innerText = "Meta Superada";
+        msj.innerText = "¡Excelente ritmo! Has superado el objetivo asignado.";
+        brecha.innerText = "¡Estás al día con la cuota de este periodo!";
+        bar.className = "h-full rounded-full transition-all duration-700 bg-emerald-500";
+        confetti({ particleCount: 50, spread: 60, origin: { y: 0.6 } });
+      } else if (pData.semaforo === "AMARILLO") {
+        card.className = "p-6 rounded-2xl border transition-all duration-300 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 bg-amber-950/40 border-amber-500/50";
+        badge.className = "px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/40";
+        badge.innerText = "En Carrera";
+        msj.innerText = "¡Estás muy cerca de la meta!";
+        brecha.innerText = `Faltan solo ${pData.debe} ${pData.debe === 1 ? 'unidad' : 'unidades'} para el 100%.`;
+        bar.className = "h-full rounded-full transition-all duration-700 bg-amber-500";
+      } else {
+        card.className = "p-6 rounded-2xl border transition-all duration-300 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 bg-rose-950/40 border-rose-500/50";
+        badge.className = "px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-500/20 text-rose-300 border border-rose-500/40";
+        badge.innerText = "Acelerar";
+        msj.innerText = "El ritmo está por debajo del target.";
+        brecha.innerText = `Faltante: ${pData.debe} ${pData.debe === 1 ? 'unidad' : 'unidades'} para cerrar la brecha.`;
+        bar.className = "h-full rounded-full transition-all duration-700 bg-rose-500";
+      }
+    }
+
+    function abrirModalPuntos() {
+      const c = CONSULTOR_ACTUAL;
+      document.getElementById('mPuntosVenta').innerText = `${c.puntos.por_venta} pts obtenidos por las unidades vendidas en el mes.`;
+      document.getElementById('mPuntosBono').innerText = `+${c.puntos.bono} pts por bono de cumplimiento acumulado MTD.`;
+      document.getElementById('mPuntosTotal').innerText = c.puntos.total.toLocaleString();
+      document.getElementById('modalPuntos').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function cerrarModalPuntos() {
+      document.getElementById('modalPuntos').classList.add('hidden');
+    }
+
+    function abrirModalStock() {
+      const c = CONSULTOR_ACTUAL;
+      const contenedor = document.getElementById('mListaCompletaStock');
+      contenedor.innerHTML = '';
+      document.getElementById('mTotalUdsStock').innerText = c.total_stock.toLocaleString();
+
+      c.stock_skus.forEach(item => {
+        const fila = document.createElement('div');
+        fila.className = "bg-slate-950 p-3 rounded-xl border border-slate-800 flex items-center justify-between";
+        fila.innerHTML = `
+          <div class="pr-2">
+            <p class="font-bold text-white text-xs">${item['ID Modelo']}</p>
+            <p class="text-[11px] text-slate-400 line-clamp-1">${item['Producto']}</p>
+          </div>
+          <span class="bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 text-xs font-black px-2.5 py-1 rounded-lg whitespace-nowrap">
+            ${item['Stock Disponible']} uds
+          </span>
+        `;
+        contenedor.appendChild(fila);
+      });
+
+      document.getElementById('modalStock').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function cerrarModalStock() {
+      document.getElementById('modalStock').classList.add('hidden');
+    }
+
+    // MOSTRAR PANEL SUPERVISOR DETALLADO
+    function mostrarSupervisor(s) {
+      document.getElementById('vistaLogin').classList.add('hidden');
+      document.getElementById('vistaConsultor').classList.add('hidden');
+      document.getElementById('vistaSupervisor').classList.remove('hidden');
+      document.getElementById('btnCerrarSesion').classList.remove('hidden');
+
+      document.getElementById('sNombre').innerText = s.nombre;
+      document.getElementById('sCiudadBase').innerText = s.ciudad_base;
+      document.getElementById('sTotalTiendas').innerText = s.total_tiendas;
+
+      document.getElementById('sVentaMTD').innerText = s.venta_mtd;
+      document.getElementById('sTargetMTD').innerText = s.target_mtd;
+      document.getElementById('sDebeMTD').innerText = s.debe_mtd;
+      document.getElementById('sPromIHS').innerText = s.promedio_ihs_w42 + '%';
+      document.getElementById('sTotalAsesores').innerText = s.total_asesores;
+
+      document.getElementById('sCumplGlobal').innerText = s.cumplimiento_mtd + '%';
+      const badgeGlobal = document.getElementById('sBadgeSemaforoGlobal');
+      if (s.semaforo === 'VERDE') {
+        badgeGlobal.className = "inline-block mt-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase border bg-emerald-500/20 text-emerald-300 border-emerald-500/40";
+        badgeGlobal.innerText = "Meta Superada";
+      } else if (s.semaforo === 'AMARILLO') {
+        badgeGlobal.className = "inline-block mt-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase border bg-amber-500/20 text-amber-300 border-amber-500/40";
+        badgeGlobal.innerText = "En Carrera";
+      } else {
+        badgeGlobal.className = "inline-block mt-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase border bg-rose-500/20 text-rose-300 border-rose-500/40";
+        badgeGlobal.innerText = "Acelerar";
+      }
+
+      // 1. TABLA TIENDAS DETALLE
+      const tTiendas = document.getElementById('sTablaTiendas');
+      tTiendas.innerHTML = '';
+      s.tiendas_detalle.forEach(t => {
+        const badgeAsist = t.asistencia === 'Asistida' 
+          ? '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-500/20 text-blue-300 border border-blue-500/30">Asistida</span>'
+          : '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-800 text-slate-400 border border-slate-700">No Asistida</span>';
+        
+        const badgeCumpl = t.cumplimiento_mtd >= 100 
+          ? 'text-emerald-400 font-black' 
+          : (t.cumplimiento_mtd >= 80 ? 'text-amber-400 font-black' : 'text-rose-400 font-black');
+
+        const badgeDebe = t.debe_mtd === 0 
+          ? '<span class="text-emerald-400 font-bold">Al día</span>' 
+          : `<span class="text-rose-400 font-bold">${t.debe_mtd} uds</span>`;
+
+        const tr = document.createElement('tr');
+        tr.className = "hover:bg-slate-800/40 transition";
+        tr.innerHTML = `
+          <td class="px-4 py-3 font-bold text-white">${t.tienda}</td>
+          <td class="px-3 py-3 text-center">${badgeAsist}</td>
+          <td class="px-3 py-3 text-center text-slate-400 font-semibold">${t.target_mtd}</td>
+          <td class="px-3 py-3 text-center font-bold text-white">${t.venta_mtd}</td>
+          <td class="px-3 py-3 text-center ${badgeCumpl}">${t.cumplimiento_mtd}%</td>
+          <td class="px-3 py-3 text-center">${badgeDebe}</td>
+          <td class="px-3 py-3 text-center text-cyan-400 font-semibold">${t.stock}</td>
+          <td class="px-3 py-3 text-center text-blue-400 font-semibold">${t.ihs_w42}%</td>
+        `;
+        tTiendas.appendChild(tr);
+      });
+
+      // 2. TABLA RANKING CONSULTORES REALES
+      const tCons = document.getElementById('sTablaConsultores');
+      tCons.innerHTML = '';
+      const asesoresOrdenados = [...s.asesores].sort((a, b) => b.periodos.MTD.cumplimiento - a.periodos.MTD.cumplimiento);
+
+      asesoresOrdenados.forEach(a => {
+        const m = a.periodos.MTD;
+        const colorCumpl = m.cumplimiento >= 100 ? 'text-emerald-400 font-black' : (m.cumplimiento >= 80 ? 'text-amber-400 font-black' : 'text-rose-400 font-black');
+        const badgeDebe = m.debe === 0 ? '<span class="text-emerald-400 font-bold">Al día</span>' : `<span class="text-rose-400 font-bold">${m.debe} uds</span>`;
+
+        const tr = document.createElement('tr');
+        tr.className = "hover:bg-slate-800/40 transition";
+        tr.innerHTML = `
+          <td class="px-4 py-3 font-bold text-white">${a.nombre}</td>
+          <td class="px-3 py-3 text-slate-300">${a.tienda}</td>
+          <td class="px-3 py-3 text-center text-slate-400">${m.target}</td>
+          <td class="px-3 py-3 text-center font-bold text-white">${m.venta_uds}</td>
+          <td class="px-3 py-3 text-center ${colorCumpl}">${m.cumplimiento}%</td>
+          <td class="px-3 py-3 text-center">${badgeDebe}</td>
+          <td class="px-3 py-3 text-center text-amber-400 font-bold">${a.puntos.total.toLocaleString()}</td>
+        `;
+        tCons.appendChild(tr);
+      });
+
+      lucide.createIcons();
+    }
+
+    function cerrarSesion() {
+      document.getElementById('vistaLogin').classList.remove('hidden');
+      document.getElementById('vistaConsultor').classList.add('hidden');
+      document.getElementById('vistaSupervisor').classList.add('hidden');
+      document.getElementById('btnCerrarSesion').classList.add('hidden');
+      document.getElementById('inputCedula').value = '';
+    }
+
+    window.onload = inicializarApp;
+  </script>
+</body>
+</html>
