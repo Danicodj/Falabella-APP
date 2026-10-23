@@ -1,5 +1,5 @@
 {
-  "fecha_corte": "23/10/2026 08:52",
+  "fecha_corte": "23/10/2026 09:02",
   "consultores": [
     {
       "cedula": "75075710",
@@ -4785,19 +4785,6 @@
       "semaforo": "ROJO",
       "tiendas_detalle": [
         {
-          "tienda": "FALABELLA El Castillo",
-          "asistencia": "Asistida",
-          "target_mtd": 175,
-          "venta_mtd": 85,
-          "cumplimiento_mtd": 48.7,
-          "debe_mtd": 90,
-          "venta_pesos": 150621778,
-          "stock": 106,
-          "ihs_w42": 0.0,
-          "ihs_w41": 0.0,
-          "ihs_mensaje": "Sin datos"
-        },
-        {
           "tienda": "FALABELLA Buenavista",
           "asistencia": "Asistida",
           "target_mtd": 179,
@@ -4809,6 +4796,19 @@
           "ihs_w42": 49.2,
           "ihs_w41": 44.2,
           "ihs_mensaje": "▲ +5.0% vs W41"
+        },
+        {
+          "tienda": "FALABELLA El Castillo",
+          "asistencia": "Asistida",
+          "target_mtd": 175,
+          "venta_mtd": 85,
+          "cumplimiento_mtd": 48.7,
+          "debe_mtd": 90,
+          "venta_pesos": 150621778,
+          "stock": 106,
+          "ihs_w42": 0.0,
+          "ihs_w41": 0.0,
+          "ihs_mensaje": "Sin datos"
         }
       ],
       "asesores": [
@@ -5348,30 +5348,17 @@
       "semaforo": "ROJO",
       "tiendas_detalle": [
         {
-          "tienda": "FALABELLA FONTANAR",
+          "tienda": "FALABELLA SANTAFE",
           "asistencia": "Asistida",
-          "target_mtd": 137,
-          "venta_mtd": 66,
-          "cumplimiento_mtd": 48.3,
-          "debe_mtd": 71,
-          "venta_pesos": 113473252,
-          "stock": 106,
-          "ihs_w42": 21.8,
-          "ihs_w41": 32.6,
-          "ihs_mensaje": "▼ -10.8% vs W41"
-        },
-        {
-          "tienda": "FALABELLA TITAN",
-          "asistencia": "Asistida",
-          "target_mtd": 122,
-          "venta_mtd": 76,
-          "cumplimiento_mtd": 62.6,
-          "debe_mtd": 46,
-          "venta_pesos": 141447244,
-          "stock": 137,
-          "ihs_w42": 34.1,
-          "ihs_w41": 38.8,
-          "ihs_mensaje": "▼ -4.7% vs W41"
+          "target_mtd": 66,
+          "venta_mtd": 23,
+          "cumplimiento_mtd": 35.0,
+          "debe_mtd": 43,
+          "venta_pesos": 29828658,
+          "stock": 109,
+          "ihs_w42": 3.4,
+          "ihs_w41": 14.7,
+          "ihs_mensaje": "▼ -11.3% vs W41"
         },
         {
           "tienda": "FALABELLA GALERIAS",
@@ -5387,17 +5374,30 @@
           "ihs_mensaje": "▲ +8.4% vs W41"
         },
         {
-          "tienda": "FALABELLA CENTRO MAYOR",
+          "tienda": "FALABELLA UNICENTRO",
           "asistencia": "Asistida",
-          "target_mtd": 112,
-          "venta_mtd": 49,
-          "cumplimiento_mtd": 43.8,
-          "debe_mtd": 63,
-          "venta_pesos": 76366502,
-          "stock": 71,
-          "ihs_w42": 14.7,
-          "ihs_w41": 21.7,
-          "ihs_mensaje": "▼ -7.0% vs W41"
+          "target_mtd": 124,
+          "venta_mtd": 70,
+          "cumplimiento_mtd": 56.6,
+          "debe_mtd": 54,
+          "venta_pesos": 142745112,
+          "stock": 52,
+          "ihs_w42": 43.0,
+          "ihs_w41": 51.9,
+          "ihs_mensaje": "▼ -8.9% vs W41"
+        },
+        {
+          "tienda": "FALABELLA TITAN",
+          "asistencia": "Asistida",
+          "target_mtd": 122,
+          "venta_mtd": 76,
+          "cumplimiento_mtd": 62.6,
+          "debe_mtd": 46,
+          "venta_pesos": 141447244,
+          "stock": 137,
+          "ihs_w42": 34.1,
+          "ihs_w41": 38.8,
+          "ihs_mensaje": "▼ -4.7% vs W41"
         },
         {
           "tienda": "FALABELLA COLINA",
@@ -5413,30 +5413,30 @@
           "ihs_mensaje": "▼ -12.6% vs W41"
         },
         {
-          "tienda": "FALABELLA SANTAFE",
+          "tienda": "FALABELLA CENTRO MAYOR",
           "asistencia": "Asistida",
-          "target_mtd": 66,
-          "venta_mtd": 23,
-          "cumplimiento_mtd": 35.0,
-          "debe_mtd": 43,
-          "venta_pesos": 29828658,
-          "stock": 109,
-          "ihs_w42": 3.4,
-          "ihs_w41": 14.7,
-          "ihs_mensaje": "▼ -11.3% vs W41"
+          "target_mtd": 112,
+          "venta_mtd": 49,
+          "cumplimiento_mtd": 43.8,
+          "debe_mtd": 63,
+          "venta_pesos": 76366502,
+          "stock": 71,
+          "ihs_w42": 14.7,
+          "ihs_w41": 21.7,
+          "ihs_mensaje": "▼ -7.0% vs W41"
         },
         {
-          "tienda": "FALABELLA UNICENTRO",
+          "tienda": "FALABELLA FONTANAR",
           "asistencia": "Asistida",
-          "target_mtd": 124,
-          "venta_mtd": 70,
-          "cumplimiento_mtd": 56.6,
-          "debe_mtd": 54,
-          "venta_pesos": 142745112,
-          "stock": 52,
-          "ihs_w42": 43.0,
-          "ihs_w41": 51.9,
-          "ihs_mensaje": "▼ -8.9% vs W41"
+          "target_mtd": 137,
+          "venta_mtd": 66,
+          "cumplimiento_mtd": 48.3,
+          "debe_mtd": 71,
+          "venta_pesos": 113473252,
+          "stock": 106,
+          "ihs_w42": 21.8,
+          "ihs_w41": 32.6,
+          "ihs_mensaje": "▼ -10.8% vs W41"
         }
       ],
       "asesores": [
