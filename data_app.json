@@ -1,5 +1,5 @@
 {
-  "fecha_corte": "24/10/2026 08:33",
+  "fecha_corte": "24/10/2026 08:37",
   "consultores": [
     {
       "cedula": "75075710",
@@ -4451,11 +4451,11 @@
       "supervisor": "MORENO GONZALEZ MILENA BEATRIZ",
       "es_compartida": false,
       "ihs": {
-        "w41": 0.0,
-        "w42": 0.0,
-        "diff": 0.0,
-        "tendencia": "ESTABLE",
-        "mensaje": "Sin datos"
+        "w41": 26.9,
+        "w42": 30.7,
+        "diff": 3.8,
+        "tendencia": "CRECIENDO",
+        "mensaje": "▲ +3.8% vs W41"
       },
       "puntos": {
         "total": 930,
@@ -5705,7 +5705,7 @@
       "venta_mtd": 166,
       "debe_mtd": 188,
       "cumplimiento_mtd": 46.9,
-      "promedio_ihs_w42": 49.2,
+      "promedio_ihs_w42": 40.0,
       "semaforo": "ROJO",
       "tiendas_detalle": [
         {
@@ -5730,9 +5730,9 @@
           "debe_mtd": 87,
           "venta_pesos": 153997493,
           "stock": 159,
-          "ihs_w42": 0.0,
-          "ihs_w41": 0.0,
-          "ihs_mensaje": "Sin datos"
+          "ihs_w42": 30.7,
+          "ihs_w41": 26.9,
+          "ihs_mensaje": "▲ +3.8% vs W41"
         }
       ],
       "asesores": [
@@ -6073,11 +6073,11 @@
           "supervisor": "MORENO GONZALEZ MILENA BEATRIZ",
           "es_compartida": false,
           "ihs": {
-            "w41": 0.0,
-            "w42": 0.0,
-            "diff": 0.0,
-            "tendencia": "ESTABLE",
-            "mensaje": "Sin datos"
+            "w41": 26.9,
+            "w42": 30.7,
+            "diff": 3.8,
+            "tendencia": "CRECIENDO",
+            "mensaje": "▲ +3.8% vs W41"
           },
           "puntos": {
             "total": 930,
@@ -6387,6 +6387,19 @@
           "ihs_mensaje": "▼ -11.3% vs W41"
         },
         {
+          "tienda": "FALABELLA GALERIAS",
+          "asistencia": "Asistida",
+          "target_mtd": 68,
+          "venta_mtd": 35,
+          "cumplimiento_mtd": 52.1,
+          "debe_mtd": 33,
+          "venta_pesos": 48308464,
+          "stock": 128,
+          "ihs_w42": 30.8,
+          "ihs_w41": 22.4,
+          "ihs_mensaje": "▲ +8.4% vs W41"
+        },
+        {
           "tienda": "FALABELLA CENTRO MAYOR",
           "asistencia": "Asistida",
           "target_mtd": 112,
@@ -6398,6 +6411,19 @@
           "ihs_w42": 14.7,
           "ihs_w41": 21.7,
           "ihs_mensaje": "▼ -7.0% vs W41"
+        },
+        {
+          "tienda": "FALABELLA UNICENTRO",
+          "asistencia": "Asistida",
+          "target_mtd": 124,
+          "venta_mtd": 78,
+          "cumplimiento_mtd": 63.0,
+          "debe_mtd": 46,
+          "venta_pesos": 151107467,
+          "stock": 135,
+          "ihs_w42": 43.0,
+          "ihs_w41": 51.9,
+          "ihs_mensaje": "▼ -8.9% vs W41"
         },
         {
           "tienda": "FALABELLA COLINA",
@@ -6437,32 +6463,6 @@
           "ihs_w42": 21.8,
           "ihs_w41": 32.6,
           "ihs_mensaje": "▼ -10.8% vs W41"
-        },
-        {
-          "tienda": "FALABELLA GALERIAS",
-          "asistencia": "Asistida",
-          "target_mtd": 68,
-          "venta_mtd": 35,
-          "cumplimiento_mtd": 52.1,
-          "debe_mtd": 33,
-          "venta_pesos": 48308464,
-          "stock": 128,
-          "ihs_w42": 30.8,
-          "ihs_w41": 22.4,
-          "ihs_mensaje": "▲ +8.4% vs W41"
-        },
-        {
-          "tienda": "FALABELLA UNICENTRO",
-          "asistencia": "Asistida",
-          "target_mtd": 124,
-          "venta_mtd": 78,
-          "cumplimiento_mtd": 63.0,
-          "debe_mtd": 46,
-          "venta_pesos": 151107467,
-          "stock": 135,
-          "ihs_w42": 43.0,
-          "ihs_w41": 51.9,
-          "ihs_mensaje": "▼ -8.9% vs W41"
         }
       ],
       "asesores": [
@@ -9694,19 +9694,6 @@
       "semaforo": "ROJO",
       "tiendas_detalle": [
         {
-          "tienda": "FALABELLA SAN DIEGO",
-          "asistencia": "Asistida",
-          "target_mtd": 194,
-          "venta_mtd": 91,
-          "cumplimiento_mtd": 47.1,
-          "debe_mtd": 103,
-          "venta_pesos": 155532630,
-          "stock": 261,
-          "ihs_w42": 34.2,
-          "ihs_w41": 37.6,
-          "ihs_mensaje": "▼ -3.4% vs W41"
-        },
-        {
           "tienda": "FALABELLA SANTAFE MEDELLIN",
           "asistencia": "Asistida",
           "target_mtd": 186,
@@ -9731,6 +9718,19 @@
           "ihs_w42": 48.8,
           "ihs_w41": 28.8,
           "ihs_mensaje": "▲ +20.0% vs W41"
+        },
+        {
+          "tienda": "FALABELLA SAN DIEGO",
+          "asistencia": "Asistida",
+          "target_mtd": 194,
+          "venta_mtd": 91,
+          "cumplimiento_mtd": 47.1,
+          "debe_mtd": 103,
+          "venta_pesos": 155532630,
+          "stock": 261,
+          "ihs_w42": 34.2,
+          "ihs_w41": 37.6,
+          "ihs_mensaje": "▼ -3.4% vs W41"
         }
       ],
       "asesores": [
