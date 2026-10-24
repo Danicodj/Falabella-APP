@@ -1,5 +1,5 @@
 {
-  "fecha_corte": "24/10/2026 08:27",
+  "fecha_corte": "24/10/2026 08:33",
   "consultores": [
     {
       "cedula": "75075710",
@@ -9,11 +9,11 @@
       "supervisor": "VEGA HERREÑO DIANA PATRICIA",
       "es_compartida": false,
       "ihs": {
-        "w41": 0.0,
-        "w42": 0.0,
-        "diff": 0.0,
-        "tendencia": "ESTABLE",
-        "mensaje": "Sin datos"
+        "w41": 40.4,
+        "w42": 12.8,
+        "diff": -27.6,
+        "tendencia": "DECRECIENDO",
+        "mensaje": "▼ -27.6% vs W41"
       },
       "puntos": {
         "total": 620,
@@ -3184,11 +3184,11 @@
       "supervisor": "GOMEZ OSCAR",
       "es_compartida": false,
       "ihs": {
-        "w41": 0.0,
-        "w42": 0.0,
-        "diff": 0.0,
-        "tendencia": "ESTABLE",
-        "mensaje": "Sin datos"
+        "w41": 29.1,
+        "w42": 27.2,
+        "diff": -1.9,
+        "tendencia": "DECRECIENDO",
+        "mensaje": "▼ -1.9% vs W41"
       },
       "puntos": {
         "total": 610,
@@ -3913,11 +3913,11 @@
       "supervisor": "ORDOÑEZ VERGARA LEIDY ANDREA",
       "es_compartida": false,
       "ihs": {
-        "w41": 0.0,
-        "w42": 0.0,
-        "diff": 0.0,
-        "tendencia": "ESTABLE",
-        "mensaje": "Sin datos"
+        "w41": 26.5,
+        "w42": 23.8,
+        "diff": -2.7,
+        "tendencia": "DECRECIENDO",
+        "mensaje": "▼ -2.7% vs W41"
       },
       "puntos": {
         "total": 570,
@@ -4122,11 +4122,11 @@
       "supervisor": "MORENO GONZALEZ MILENA BEATRIZ",
       "es_compartida": false,
       "ihs": {
-        "w41": 0.0,
-        "w42": 0.0,
-        "diff": 0.0,
-        "tendencia": "ESTABLE",
-        "mensaje": "Sin datos"
+        "w41": 44.2,
+        "w42": 49.2,
+        "diff": 5.0,
+        "tendencia": "CRECIENDO",
+        "mensaje": "▲ +5.0% vs W41"
       },
       "puntos": {
         "total": 830,
@@ -5709,19 +5709,6 @@
       "semaforo": "ROJO",
       "tiendas_detalle": [
         {
-          "tienda": "FALABELLA El Castillo",
-          "asistencia": "Asistida",
-          "target_mtd": 175,
-          "venta_mtd": 88,
-          "cumplimiento_mtd": 50.4,
-          "debe_mtd": 87,
-          "venta_pesos": 153997493,
-          "stock": 159,
-          "ihs_w42": 0.0,
-          "ihs_w41": 0.0,
-          "ihs_mensaje": "Sin datos"
-        },
-        {
           "tienda": "FALABELLA Buenavista",
           "asistencia": "Asistida",
           "target_mtd": 179,
@@ -5733,6 +5720,19 @@
           "ihs_w42": 49.2,
           "ihs_w41": 44.2,
           "ihs_mensaje": "▲ +5.0% vs W41"
+        },
+        {
+          "tienda": "FALABELLA El Castillo",
+          "asistencia": "Asistida",
+          "target_mtd": 175,
+          "venta_mtd": 88,
+          "cumplimiento_mtd": 50.4,
+          "debe_mtd": 87,
+          "venta_pesos": 153997493,
+          "stock": 159,
+          "ihs_w42": 0.0,
+          "ihs_w41": 0.0,
+          "ihs_mensaje": "Sin datos"
         }
       ],
       "asesores": [
@@ -5744,11 +5744,11 @@
           "supervisor": "MORENO GONZALEZ MILENA BEATRIZ",
           "es_compartida": false,
           "ihs": {
-            "w41": 0.0,
-            "w42": 0.0,
-            "diff": 0.0,
-            "tendencia": "ESTABLE",
-            "mensaje": "Sin datos"
+            "w41": 44.2,
+            "w42": 49.2,
+            "diff": 5.0,
+            "tendencia": "CRECIENDO",
+            "mensaje": "▲ +5.0% vs W41"
           },
           "puntos": {
             "total": 830,
@@ -6374,6 +6374,32 @@
       "semaforo": "ROJO",
       "tiendas_detalle": [
         {
+          "tienda": "FALABELLA SANTAFE",
+          "asistencia": "Asistida",
+          "target_mtd": 66,
+          "venta_mtd": 23,
+          "cumplimiento_mtd": 35.0,
+          "debe_mtd": 43,
+          "venta_pesos": 29828658,
+          "stock": 684,
+          "ihs_w42": 3.4,
+          "ihs_w41": 14.7,
+          "ihs_mensaje": "▼ -11.3% vs W41"
+        },
+        {
+          "tienda": "FALABELLA CENTRO MAYOR",
+          "asistencia": "Asistida",
+          "target_mtd": 112,
+          "venta_mtd": 51,
+          "cumplimiento_mtd": 45.6,
+          "debe_mtd": 61,
+          "venta_pesos": 79519058,
+          "stock": 151,
+          "ihs_w42": 14.7,
+          "ihs_w41": 21.7,
+          "ihs_mensaje": "▼ -7.0% vs W41"
+        },
+        {
           "tienda": "FALABELLA COLINA",
           "asistencia": "Asistida",
           "target_mtd": 157,
@@ -6413,32 +6439,6 @@
           "ihs_mensaje": "▼ -10.8% vs W41"
         },
         {
-          "tienda": "FALABELLA CENTRO MAYOR",
-          "asistencia": "Asistida",
-          "target_mtd": 112,
-          "venta_mtd": 51,
-          "cumplimiento_mtd": 45.6,
-          "debe_mtd": 61,
-          "venta_pesos": 79519058,
-          "stock": 151,
-          "ihs_w42": 14.7,
-          "ihs_w41": 21.7,
-          "ihs_mensaje": "▼ -7.0% vs W41"
-        },
-        {
-          "tienda": "FALABELLA UNICENTRO",
-          "asistencia": "Asistida",
-          "target_mtd": 124,
-          "venta_mtd": 78,
-          "cumplimiento_mtd": 63.0,
-          "debe_mtd": 46,
-          "venta_pesos": 151107467,
-          "stock": 135,
-          "ihs_w42": 43.0,
-          "ihs_w41": 51.9,
-          "ihs_mensaje": "▼ -8.9% vs W41"
-        },
-        {
           "tienda": "FALABELLA GALERIAS",
           "asistencia": "Asistida",
           "target_mtd": 68,
@@ -6452,17 +6452,17 @@
           "ihs_mensaje": "▲ +8.4% vs W41"
         },
         {
-          "tienda": "FALABELLA SANTAFE",
+          "tienda": "FALABELLA UNICENTRO",
           "asistencia": "Asistida",
-          "target_mtd": 66,
-          "venta_mtd": 23,
-          "cumplimiento_mtd": 35.0,
-          "debe_mtd": 43,
-          "venta_pesos": 29828658,
-          "stock": 684,
-          "ihs_w42": 3.4,
-          "ihs_w41": 14.7,
-          "ihs_mensaje": "▼ -11.3% vs W41"
+          "target_mtd": 124,
+          "venta_mtd": 78,
+          "cumplimiento_mtd": 63.0,
+          "debe_mtd": 46,
+          "venta_pesos": 151107467,
+          "stock": 135,
+          "ihs_w42": 43.0,
+          "ihs_w41": 51.9,
+          "ihs_mensaje": "▼ -8.9% vs W41"
         }
       ],
       "asesores": [
@@ -8745,7 +8745,7 @@
       "venta_mtd": 56,
       "debe_mtd": 36,
       "cumplimiento_mtd": 60.9,
-      "promedio_ihs_w42": 0.0,
+      "promedio_ihs_w42": 27.2,
       "semaforo": "ROJO",
       "tiendas_detalle": [
         {
@@ -8757,9 +8757,9 @@
           "debe_mtd": 36,
           "venta_pesos": 82870516,
           "stock": 113,
-          "ihs_w42": 0.0,
-          "ihs_w41": 0.0,
-          "ihs_mensaje": "Sin datos"
+          "ihs_w42": 27.2,
+          "ihs_w41": 29.1,
+          "ihs_mensaje": "▼ -1.9% vs W41"
         }
       ],
       "asesores": [
@@ -8771,11 +8771,11 @@
           "supervisor": "GOMEZ OSCAR",
           "es_compartida": false,
           "ihs": {
-            "w41": 0.0,
-            "w42": 0.0,
-            "diff": 0.0,
-            "tendencia": "ESTABLE",
-            "mensaje": "Sin datos"
+            "w41": 29.1,
+            "w42": 27.2,
+            "diff": -1.9,
+            "tendencia": "DECRECIENDO",
+            "mensaje": "▼ -1.9% vs W41"
           },
           "puntos": {
             "total": 610,
@@ -8984,21 +8984,21 @@
       "venta_mtd": 57,
       "debe_mtd": 73,
       "cumplimiento_mtd": 43.8,
-      "promedio_ihs_w42": 0.0,
+      "promedio_ihs_w42": 12.8,
       "semaforo": "ROJO",
       "tiendas_detalle": [
         {
           "tienda": "FALABELLA  LA CAROLA",
-          "asistencia": "No Asistida",
+          "asistencia": "Asistida",
           "target_mtd": 130,
           "venta_mtd": 57,
           "cumplimiento_mtd": 44.0,
           "debe_mtd": 73,
           "venta_pesos": 77977417,
           "stock": 57,
-          "ihs_w42": 0.0,
-          "ihs_w41": 0.0,
-          "ihs_mensaje": "Sin datos"
+          "ihs_w42": 12.8,
+          "ihs_w41": 40.4,
+          "ihs_mensaje": "▼ -27.6% vs W41"
         }
       ],
       "asesores": [
@@ -9010,11 +9010,11 @@
           "supervisor": "VEGA HERREÑO DIANA PATRICIA",
           "es_compartida": false,
           "ihs": {
-            "w41": 0.0,
-            "w42": 0.0,
-            "diff": 0.0,
-            "tendencia": "ESTABLE",
-            "mensaje": "Sin datos"
+            "w41": 40.4,
+            "w42": 12.8,
+            "diff": -27.6,
+            "tendencia": "DECRECIENDO",
+            "mensaje": "▼ -27.6% vs W41"
           },
           "puntos": {
             "total": 620,
@@ -9197,19 +9197,6 @@
       "semaforo": "ROJO",
       "tiendas_detalle": [
         {
-          "tienda": "FALABELLA JARDIN PLAZA",
-          "asistencia": "Asistida",
-          "target_mtd": 150,
-          "venta_mtd": 53,
-          "cumplimiento_mtd": 35.5,
-          "debe_mtd": 97,
-          "venta_pesos": 76234253,
-          "stock": 135,
-          "ihs_w42": 27.2,
-          "ihs_w41": 28.3,
-          "ihs_mensaje": "▼ -1.1% vs W41"
-        },
-        {
           "tienda": "FALABELLA WTC Cali",
           "asistencia": "Asistida",
           "target_mtd": 79,
@@ -9221,6 +9208,19 @@
           "ihs_w42": 23.8,
           "ihs_w41": 26.5,
           "ihs_mensaje": "▼ -2.7% vs W41"
+        },
+        {
+          "tienda": "FALABELLA JARDIN PLAZA",
+          "asistencia": "Asistida",
+          "target_mtd": 150,
+          "venta_mtd": 53,
+          "cumplimiento_mtd": 35.5,
+          "debe_mtd": 97,
+          "venta_pesos": 76234253,
+          "stock": 135,
+          "ihs_w42": 27.2,
+          "ihs_w41": 28.3,
+          "ihs_mensaje": "▼ -1.1% vs W41"
         }
       ],
       "asesores": [
@@ -9477,11 +9477,11 @@
           "supervisor": "ORDOÑEZ VERGARA LEIDY ANDREA",
           "es_compartida": false,
           "ihs": {
-            "w41": 0.0,
-            "w42": 0.0,
-            "diff": 0.0,
-            "tendencia": "ESTABLE",
-            "mensaje": "Sin datos"
+            "w41": 26.5,
+            "w42": 23.8,
+            "diff": -2.7,
+            "tendencia": "DECRECIENDO",
+            "mensaje": "▼ -2.7% vs W41"
           },
           "puntos": {
             "total": 570,
