@@ -1,5 +1,5 @@
 {
-  "fecha_corte": "25/10/2026 07:44",
+  "fecha_corte": "25/10/2026 07:54",
   "consultores": [
     {
       "cedula": "75075710",
@@ -16,20 +16,20 @@
         "mensaje": "▼ -27.6% vs W41"
       },
       "puntos": {
-        "total": 620,
-        "por_venta": 570,
+        "total": 640,
+        "por_venta": 590,
         "bono": 50,
-        "explicacion": "57 unidades vendidas en el mes (x10 pts = 570 pts) + bono de 50 pts por cumplimiento MTD (43.8%)."
+        "explicacion": "59 unidades vendidas en el mes (x10 pts = 590 pts) + bono de 50 pts por cumplimiento MTD (45.4%)."
       },
       "periodos": {
         "W43": {
           "label": "Semana en Curso (W43)",
           "target": 30,
-          "venta_uds": 12,
-          "venta_pesos": 9788363,
-          "cumplimiento": 40.0,
+          "venta_uds": 14,
+          "venta_pesos": 12964932,
+          "cumplimiento": 46.7,
           "semaforo": "ROJO",
-          "debe": 18
+          "debe": 16
         },
         "W42": {
           "label": "Semana Anterior (W42)",
@@ -43,11 +43,11 @@
         "MTD": {
           "label": "Mes Acumulado Octubre (MTD)",
           "target": 130,
-          "venta_uds": 57,
-          "venta_pesos": 77977417,
-          "cumplimiento": 43.8,
+          "venta_uds": 59,
+          "venta_pesos": 81153986,
+          "cumplimiento": 45.4,
           "semaforo": "ROJO",
-          "debe": 73
+          "debe": 71
         }
       },
       "segmentos": [
@@ -78,9 +78,9 @@
         {
           "segmento": "UHD",
           "target": 33,
-          "venta": 37,
+          "venta": 39,
           "debe_unidades": 0,
-          "cumplimiento_pct": 112.1,
+          "cumplimiento_pct": 118.2,
           "estado": "Al día"
         },
         {
@@ -195,20 +195,20 @@
         "mensaje": "▼ -3.4% vs W41"
       },
       "puntos": {
-        "total": 960,
-        "por_venta": 910,
+        "total": 1070,
+        "por_venta": 1020,
         "bono": 50,
-        "explicacion": "91 unidades vendidas en el mes (x10 pts = 910 pts) + bono de 50 pts por cumplimiento MTD (46.9%)."
+        "explicacion": "102 unidades vendidas en el mes (x10 pts = 1020 pts) + bono de 50 pts por cumplimiento MTD (52.6%)."
       },
       "periodos": {
         "W43": {
           "label": "Semana en Curso (W43)",
           "target": 44,
-          "venta_uds": 16,
-          "venta_pesos": 25761292,
-          "cumplimiento": 36.4,
+          "venta_uds": 27,
+          "venta_pesos": 42835266,
+          "cumplimiento": 61.4,
           "semaforo": "ROJO",
-          "debe": 28
+          "debe": 17
         },
         "W42": {
           "label": "Semana Anterior (W42)",
@@ -222,53 +222,53 @@
         "MTD": {
           "label": "Mes Acumulado Octubre (MTD)",
           "target": 194,
-          "venta_uds": 91,
-          "venta_pesos": 155532630,
-          "cumplimiento": 46.9,
+          "venta_uds": 102,
+          "venta_pesos": 172606604,
+          "cumplimiento": 52.6,
           "semaforo": "ROJO",
-          "debe": 103
+          "debe": 92
         }
       },
       "segmentos": [
         {
           "segmento": "75↑",
           "target": 18,
-          "venta": 5,
-          "debe_unidades": 13,
-          "cumplimiento_pct": 27.8,
-          "estado": "13 uds"
+          "venta": 6,
+          "debe_unidades": 12,
+          "cumplimiento_pct": 33.3,
+          "estado": "12 uds"
         },
         {
           "segmento": "PREMIUM",
           "target": 13,
-          "venta": 7,
-          "debe_unidades": 6,
-          "cumplimiento_pct": 53.8,
-          "estado": "6 uds"
+          "venta": 8,
+          "debe_unidades": 5,
+          "cumplimiento_pct": 61.5,
+          "estado": "5 uds"
         },
         {
           "segmento": "QLED / MINILED",
           "target": 77,
-          "venta": 13,
-          "debe_unidades": 64,
-          "cumplimiento_pct": 16.9,
-          "estado": "64 uds"
+          "venta": 15,
+          "debe_unidades": 62,
+          "cumplimiento_pct": 19.5,
+          "estado": "62 uds"
         },
         {
           "segmento": "UHD",
           "target": 41,
-          "venta": 28,
-          "debe_unidades": 13,
-          "cumplimiento_pct": 68.3,
-          "estado": "13 uds"
+          "venta": 33,
+          "debe_unidades": 8,
+          "cumplimiento_pct": 80.5,
+          "estado": "8 uds"
         },
         {
           "segmento": "AUDIO",
           "target": 47,
-          "venta": 38,
-          "debe_unidades": 9,
-          "cumplimiento_pct": 80.9,
-          "estado": "9 uds"
+          "venta": 40,
+          "debe_unidades": 7,
+          "cumplimiento_pct": 85.1,
+          "estado": "7 uds"
         }
       ],
       "total_stock": 261,
@@ -524,20 +524,20 @@
         "mensaje": "▲ +20.0% vs W41"
       },
       "puntos": {
-        "total": 500,
-        "por_venta": 450,
+        "total": 530,
+        "por_venta": 480,
         "bono": 50,
-        "explicacion": "45 unidades vendidas en el mes (x10 pts = 450 pts) + bono de 50 pts por cumplimiento MTD (41.3%)."
+        "explicacion": "48 unidades vendidas en el mes (x10 pts = 480 pts) + bono de 50 pts por cumplimiento MTD (44.0%)."
       },
       "periodos": {
         "W43": {
           "label": "Semana en Curso (W43)",
           "target": 25,
-          "venta_uds": 4,
-          "venta_pesos": 11089556,
-          "cumplimiento": 16.0,
+          "venta_uds": 7,
+          "venta_pesos": 14648251,
+          "cumplimiento": 28.0,
           "semaforo": "ROJO",
-          "debe": 21
+          "debe": 18
         },
         "W42": {
           "label": "Semana Anterior (W42)",
@@ -551,11 +551,11 @@
         "MTD": {
           "label": "Mes Acumulado Octubre (MTD)",
           "target": 109,
-          "venta_uds": 45,
-          "venta_pesos": 82742345,
-          "cumplimiento": 41.3,
+          "venta_uds": 48,
+          "venta_pesos": 86301040,
+          "cumplimiento": 44.0,
           "semaforo": "ROJO",
-          "debe": 64
+          "debe": 61
         }
       },
       "segmentos": [
@@ -586,18 +586,18 @@
         {
           "segmento": "UHD",
           "target": 29,
-          "venta": 12,
-          "debe_unidades": 17,
-          "cumplimiento_pct": 41.4,
-          "estado": "17 uds"
+          "venta": 14,
+          "debe_unidades": 15,
+          "cumplimiento_pct": 48.3,
+          "estado": "15 uds"
         },
         {
           "segmento": "AUDIO",
           "target": 25,
-          "venta": 10,
-          "debe_unidades": 15,
-          "cumplimiento_pct": 40.0,
-          "estado": "15 uds"
+          "venta": 11,
+          "debe_unidades": 14,
+          "cumplimiento_pct": 44.0,
+          "estado": "14 uds"
         }
       ],
       "total_stock": 84,
@@ -757,20 +757,20 @@
         "mensaje": "▼ -8.9% vs W41"
       },
       "puntos": {
-        "total": 830,
-        "por_venta": 780,
+        "total": 910,
+        "por_venta": 860,
         "bono": 50,
-        "explicacion": "78 unidades vendidas en el mes (x10 pts = 780 pts) + bono de 50 pts por cumplimiento MTD (62.9%)."
+        "explicacion": "86 unidades vendidas en el mes (x10 pts = 860 pts) + bono de 50 pts por cumplimiento MTD (69.4%)."
       },
       "periodos": {
         "W43": {
           "label": "Semana en Curso (W43)",
           "target": 29,
-          "venta_uds": 19,
-          "venta_pesos": 19546988,
-          "cumplimiento": 65.5,
-          "semaforo": "ROJO",
-          "debe": 10
+          "venta_uds": 27,
+          "venta_pesos": 26021855,
+          "cumplimiento": 93.1,
+          "semaforo": "AMARILLO",
+          "debe": 2
         },
         "W42": {
           "label": "Semana Anterior (W42)",
@@ -784,11 +784,11 @@
         "MTD": {
           "label": "Mes Acumulado Octubre (MTD)",
           "target": 124,
-          "venta_uds": 78,
-          "venta_pesos": 151107467,
-          "cumplimiento": 62.9,
+          "venta_uds": 86,
+          "venta_pesos": 157582334,
+          "cumplimiento": 69.4,
           "semaforo": "ROJO",
-          "debe": 46
+          "debe": 38
         }
       },
       "segmentos": [
@@ -803,34 +803,34 @@
         {
           "segmento": "PREMIUM",
           "target": 15,
-          "venta": 18,
+          "venta": 19,
           "debe_unidades": 0,
-          "cumplimiento_pct": 120.0,
+          "cumplimiento_pct": 126.7,
           "estado": "Al día"
         },
         {
           "segmento": "QLED / MINILED",
           "target": 50,
-          "venta": 8,
-          "debe_unidades": 42,
-          "cumplimiento_pct": 16.0,
-          "estado": "42 uds"
+          "venta": 9,
+          "debe_unidades": 41,
+          "cumplimiento_pct": 18.0,
+          "estado": "41 uds"
         },
         {
           "segmento": "UHD",
           "target": 18,
-          "venta": 22,
+          "venta": 27,
           "debe_unidades": 0,
-          "cumplimiento_pct": 122.2,
+          "cumplimiento_pct": 150.0,
           "estado": "Al día"
         },
         {
           "segmento": "AUDIO",
           "target": 34,
-          "venta": 24,
-          "debe_unidades": 10,
-          "cumplimiento_pct": 70.6,
-          "estado": "10 uds"
+          "venta": 25,
+          "debe_unidades": 9,
+          "cumplimiento_pct": 73.5,
+          "estado": "9 uds"
         }
       ],
       "total_stock": 135,
@@ -1020,20 +1020,20 @@
         "mensaje": "▼ -7.0% vs W41"
       },
       "puntos": {
-        "total": 560,
-        "por_venta": 510,
+        "total": 610,
+        "por_venta": 560,
         "bono": 50,
-        "explicacion": "51 unidades vendidas en el mes (x10 pts = 510 pts) + bono de 50 pts por cumplimiento MTD (45.5%)."
+        "explicacion": "56 unidades vendidas en el mes (x10 pts = 560 pts) + bono de 50 pts por cumplimiento MTD (50.0%)."
       },
       "periodos": {
         "W43": {
           "label": "Semana en Curso (W43)",
           "target": 26,
-          "venta_uds": 11,
-          "venta_pesos": 7681778,
-          "cumplimiento": 42.3,
+          "venta_uds": 16,
+          "venta_pesos": 11464639,
+          "cumplimiento": 61.5,
           "semaforo": "ROJO",
-          "debe": 15
+          "debe": 10
         },
         "W42": {
           "label": "Semana Anterior (W42)",
@@ -1047,11 +1047,11 @@
         "MTD": {
           "label": "Mes Acumulado Octubre (MTD)",
           "target": 112,
-          "venta_uds": 51,
-          "venta_pesos": 79519058,
-          "cumplimiento": 45.5,
+          "venta_uds": 56,
+          "venta_pesos": 83301919,
+          "cumplimiento": 50.0,
           "semaforo": "ROJO",
-          "debe": 61
+          "debe": 56
         }
       },
       "segmentos": [
@@ -1066,9 +1066,9 @@
         {
           "segmento": "PREMIUM",
           "target": 1,
-          "venta": 3,
+          "venta": 4,
           "debe_unidades": 0,
-          "cumplimiento_pct": 300.0,
+          "cumplimiento_pct": 400.0,
           "estado": "Al día"
         },
         {
@@ -1082,18 +1082,18 @@
         {
           "segmento": "UHD",
           "target": 29,
-          "venta": 20,
-          "debe_unidades": 9,
-          "cumplimiento_pct": 69.0,
-          "estado": "9 uds"
+          "venta": 23,
+          "debe_unidades": 6,
+          "cumplimiento_pct": 79.3,
+          "estado": "6 uds"
         },
         {
           "segmento": "AUDIO",
           "target": 23,
-          "venta": 15,
-          "debe_unidades": 8,
-          "cumplimiento_pct": 65.2,
-          "estado": "8 uds"
+          "venta": 16,
+          "debe_unidades": 7,
+          "cumplimiento_pct": 69.6,
+          "estado": "7 uds"
         }
       ],
       "total_stock": 151,
@@ -1217,20 +1217,20 @@
         "mensaje": "▼ -4.7% vs W41"
       },
       "puntos": {
-        "total": 830,
-        "por_venta": 780,
-        "bono": 50,
-        "explicacion": "78 unidades vendidas en el mes (x10 pts = 780 pts) + bono de 50 pts por cumplimiento MTD (63.9%)."
+        "total": 1180,
+        "por_venta": 980,
+        "bono": 200,
+        "explicacion": "98 unidades vendidas en el mes (x10 pts = 980 pts) + bono de 200 pts por cumplimiento MTD (80.3%)."
       },
       "periodos": {
         "W43": {
           "label": "Semana en Curso (W43)",
           "target": 28,
-          "venta_uds": 17,
-          "venta_pesos": 18919078,
-          "cumplimiento": 60.7,
-          "semaforo": "ROJO",
-          "debe": 11
+          "venta_uds": 37,
+          "venta_pesos": 35805237,
+          "cumplimiento": 132.1,
+          "semaforo": "VERDE",
+          "debe": 0
         },
         "W42": {
           "label": "Semana Anterior (W42)",
@@ -1244,11 +1244,11 @@
         "MTD": {
           "label": "Mes Acumulado Octubre (MTD)",
           "target": 122,
-          "venta_uds": 78,
-          "venta_pesos": 141613012,
-          "cumplimiento": 63.9,
-          "semaforo": "ROJO",
-          "debe": 44
+          "venta_uds": 98,
+          "venta_pesos": 158499171,
+          "cumplimiento": 80.3,
+          "semaforo": "AMARILLO",
+          "debe": 24
         }
       },
       "segmentos": [
@@ -1263,10 +1263,10 @@
         {
           "segmento": "PREMIUM",
           "target": 9,
-          "venta": 5,
-          "debe_unidades": 4,
-          "cumplimiento_pct": 55.6,
-          "estado": "4 uds"
+          "venta": 7,
+          "debe_unidades": 2,
+          "cumplimiento_pct": 77.8,
+          "estado": "2 uds"
         },
         {
           "segmento": "QLED / MINILED",
@@ -1279,18 +1279,18 @@
         {
           "segmento": "UHD",
           "target": 18,
-          "venta": 19,
+          "venta": 34,
           "debe_unidades": 0,
-          "cumplimiento_pct": 105.6,
+          "cumplimiento_pct": 188.9,
           "estado": "Al día"
         },
         {
           "segmento": "AUDIO",
           "target": 30,
-          "venta": 23,
-          "debe_unidades": 7,
-          "cumplimiento_pct": 76.7,
-          "estado": "7 uds"
+          "venta": 26,
+          "debe_unidades": 4,
+          "cumplimiento_pct": 86.7,
+          "estado": "4 uds"
         }
       ],
       "total_stock": 273,
@@ -1540,20 +1540,20 @@
         "mensaje": "▼ -3.4% vs W41"
       },
       "puntos": {
-        "total": 960,
-        "por_venta": 910,
+        "total": 1070,
+        "por_venta": 1020,
         "bono": 50,
-        "explicacion": "91 unidades vendidas en el mes (x10 pts = 910 pts) + bono de 50 pts por cumplimiento MTD (46.9%)."
+        "explicacion": "102 unidades vendidas en el mes (x10 pts = 1020 pts) + bono de 50 pts por cumplimiento MTD (52.6%)."
       },
       "periodos": {
         "W43": {
           "label": "Semana en Curso (W43)",
           "target": 44,
-          "venta_uds": 16,
-          "venta_pesos": 25761292,
-          "cumplimiento": 36.4,
+          "venta_uds": 27,
+          "venta_pesos": 42835266,
+          "cumplimiento": 61.4,
           "semaforo": "ROJO",
-          "debe": 28
+          "debe": 17
         },
         "W42": {
           "label": "Semana Anterior (W42)",
@@ -1567,53 +1567,53 @@
         "MTD": {
           "label": "Mes Acumulado Octubre (MTD)",
           "target": 194,
-          "venta_uds": 91,
-          "venta_pesos": 155532630,
-          "cumplimiento": 46.9,
+          "venta_uds": 102,
+          "venta_pesos": 172606604,
+          "cumplimiento": 52.6,
           "semaforo": "ROJO",
-          "debe": 103
+          "debe": 92
         }
       },
       "segmentos": [
         {
           "segmento": "75↑",
           "target": 18,
-          "venta": 5,
-          "debe_unidades": 13,
-          "cumplimiento_pct": 27.8,
-          "estado": "13 uds"
+          "venta": 6,
+          "debe_unidades": 12,
+          "cumplimiento_pct": 33.3,
+          "estado": "12 uds"
         },
         {
           "segmento": "PREMIUM",
           "target": 13,
-          "venta": 7,
-          "debe_unidades": 6,
-          "cumplimiento_pct": 53.8,
-          "estado": "6 uds"
+          "venta": 8,
+          "debe_unidades": 5,
+          "cumplimiento_pct": 61.5,
+          "estado": "5 uds"
         },
         {
           "segmento": "QLED / MINILED",
           "target": 77,
-          "venta": 13,
-          "debe_unidades": 64,
-          "cumplimiento_pct": 16.9,
-          "estado": "64 uds"
+          "venta": 15,
+          "debe_unidades": 62,
+          "cumplimiento_pct": 19.5,
+          "estado": "62 uds"
         },
         {
           "segmento": "UHD",
           "target": 41,
-          "venta": 28,
-          "debe_unidades": 13,
-          "cumplimiento_pct": 68.3,
-          "estado": "13 uds"
+          "venta": 33,
+          "debe_unidades": 8,
+          "cumplimiento_pct": 80.5,
+          "estado": "8 uds"
         },
         {
           "segmento": "AUDIO",
           "target": 47,
-          "venta": 38,
-          "debe_unidades": 9,
-          "cumplimiento_pct": 80.9,
-          "estado": "9 uds"
+          "venta": 40,
+          "debe_unidades": 7,
+          "cumplimiento_pct": 85.1,
+          "estado": "7 uds"
         }
       ],
       "total_stock": 261,
@@ -1869,20 +1869,20 @@
         "mensaje": "▼ -10.8% vs W41"
       },
       "puntos": {
-        "total": 740,
-        "por_venta": 690,
+        "total": 850,
+        "por_venta": 800,
         "bono": 50,
-        "explicacion": "69 unidades vendidas en el mes (x10 pts = 690 pts) + bono de 50 pts por cumplimiento MTD (50.4%)."
+        "explicacion": "80 unidades vendidas en el mes (x10 pts = 800 pts) + bono de 50 pts por cumplimiento MTD (58.4%)."
       },
       "periodos": {
         "W43": {
           "label": "Semana en Curso (W43)",
           "target": 32,
-          "venta_uds": 12,
-          "venta_pesos": 15983264,
-          "cumplimiento": 37.5,
+          "venta_uds": 23,
+          "venta_pesos": 19209109,
+          "cumplimiento": 71.9,
           "semaforo": "ROJO",
-          "debe": 20
+          "debe": 9
         },
         "W42": {
           "label": "Semana Anterior (W42)",
@@ -1896,11 +1896,11 @@
         "MTD": {
           "label": "Mes Acumulado Octubre (MTD)",
           "target": 137,
-          "venta_uds": 69,
-          "venta_pesos": 114570932,
-          "cumplimiento": 50.4,
+          "venta_uds": 80,
+          "venta_pesos": 117796777,
+          "cumplimiento": 58.4,
           "semaforo": "ROJO",
-          "debe": 68
+          "debe": 57
         }
       },
       "segmentos": [
@@ -1931,10 +1931,10 @@
         {
           "segmento": "UHD",
           "target": 26,
-          "venta": 20,
-          "debe_unidades": 6,
-          "cumplimiento_pct": 76.9,
-          "estado": "6 uds"
+          "venta": 31,
+          "debe_unidades": 0,
+          "cumplimiento_pct": 119.2,
+          "estado": "Al día"
         },
         {
           "segmento": "AUDIO",
@@ -2252,20 +2252,20 @@
         "mensaje": "▼ -10.8% vs W41"
       },
       "puntos": {
-        "total": 740,
-        "por_venta": 690,
+        "total": 850,
+        "por_venta": 800,
         "bono": 50,
-        "explicacion": "69 unidades vendidas en el mes (x10 pts = 690 pts) + bono de 50 pts por cumplimiento MTD (50.4%)."
+        "explicacion": "80 unidades vendidas en el mes (x10 pts = 800 pts) + bono de 50 pts por cumplimiento MTD (58.4%)."
       },
       "periodos": {
         "W43": {
           "label": "Semana en Curso (W43)",
           "target": 32,
-          "venta_uds": 12,
-          "venta_pesos": 15983264,
-          "cumplimiento": 37.5,
+          "venta_uds": 23,
+          "venta_pesos": 19209109,
+          "cumplimiento": 71.9,
           "semaforo": "ROJO",
-          "debe": 20
+          "debe": 9
         },
         "W42": {
           "label": "Semana Anterior (W42)",
@@ -2279,11 +2279,11 @@
         "MTD": {
           "label": "Mes Acumulado Octubre (MTD)",
           "target": 137,
-          "venta_uds": 69,
-          "venta_pesos": 114570932,
-          "cumplimiento": 50.4,
+          "venta_uds": 80,
+          "venta_pesos": 117796777,
+          "cumplimiento": 58.4,
           "semaforo": "ROJO",
-          "debe": 68
+          "debe": 57
         }
       },
       "segmentos": [
@@ -2314,10 +2314,10 @@
         {
           "segmento": "UHD",
           "target": 26,
-          "venta": 20,
-          "debe_unidades": 6,
-          "cumplimiento_pct": 76.9,
-          "estado": "6 uds"
+          "venta": 31,
+          "debe_unidades": 0,
+          "cumplimiento_pct": 119.2,
+          "estado": "Al día"
         },
         {
           "segmento": "AUDIO",
@@ -2635,20 +2635,20 @@
         "mensaje": "▼ -1.1% vs W41"
       },
       "puntos": {
-        "total": 580,
-        "por_venta": 530,
+        "total": 670,
+        "por_venta": 620,
         "bono": 50,
-        "explicacion": "53 unidades vendidas en el mes (x10 pts = 530 pts) + bono de 50 pts por cumplimiento MTD (35.3%)."
+        "explicacion": "62 unidades vendidas en el mes (x10 pts = 620 pts) + bono de 50 pts por cumplimiento MTD (41.3%)."
       },
       "periodos": {
         "W43": {
           "label": "Semana en Curso (W43)",
           "target": 34,
-          "venta_uds": 23,
-          "venta_pesos": 22115501,
-          "cumplimiento": 67.6,
-          "semaforo": "ROJO",
-          "debe": 11
+          "venta_uds": 32,
+          "venta_pesos": 25529606,
+          "cumplimiento": 94.1,
+          "semaforo": "AMARILLO",
+          "debe": 2
         },
         "W42": {
           "label": "Semana Anterior (W42)",
@@ -2662,11 +2662,11 @@
         "MTD": {
           "label": "Mes Acumulado Octubre (MTD)",
           "target": 150,
-          "venta_uds": 53,
-          "venta_pesos": 76234253,
-          "cumplimiento": 35.3,
+          "venta_uds": 62,
+          "venta_pesos": 79648358,
+          "cumplimiento": 41.3,
           "semaforo": "ROJO",
-          "debe": 97
+          "debe": 88
         }
       },
       "segmentos": [
@@ -2697,18 +2697,18 @@
         {
           "segmento": "UHD",
           "target": 39,
-          "venta": 27,
-          "debe_unidades": 12,
-          "cumplimiento_pct": 69.2,
-          "estado": "12 uds"
+          "venta": 35,
+          "debe_unidades": 4,
+          "cumplimiento_pct": 89.7,
+          "estado": "4 uds"
         },
         {
           "segmento": "AUDIO",
           "target": 43,
-          "venta": 22,
-          "debe_unidades": 21,
-          "cumplimiento_pct": 51.2,
-          "estado": "21 uds"
+          "venta": 23,
+          "debe_unidades": 20,
+          "cumplimiento_pct": 53.5,
+          "estado": "20 uds"
         }
       ],
       "total_stock": 135,
@@ -2880,20 +2880,20 @@
         "mensaje": "▼ -12.6% vs W41"
       },
       "puntos": {
-        "total": 610,
-        "por_venta": 560,
+        "total": 650,
+        "por_venta": 600,
         "bono": 50,
-        "explicacion": "56 unidades vendidas en el mes (x10 pts = 560 pts) + bono de 50 pts por cumplimiento MTD (35.7%)."
+        "explicacion": "60 unidades vendidas en el mes (x10 pts = 600 pts) + bono de 50 pts por cumplimiento MTD (38.2%)."
       },
       "periodos": {
         "W43": {
           "label": "Semana en Curso (W43)",
           "target": 36,
-          "venta_uds": 10,
-          "venta_pesos": 8760422,
-          "cumplimiento": 27.8,
+          "venta_uds": 14,
+          "venta_pesos": 20333901,
+          "cumplimiento": 38.9,
           "semaforo": "ROJO",
-          "debe": 26
+          "debe": 22
         },
         "W42": {
           "label": "Semana Anterior (W42)",
@@ -2907,29 +2907,29 @@
         "MTD": {
           "label": "Mes Acumulado Octubre (MTD)",
           "target": 157,
-          "venta_uds": 56,
-          "venta_pesos": 111483949,
-          "cumplimiento": 35.7,
+          "venta_uds": 60,
+          "venta_pesos": 123057428,
+          "cumplimiento": 38.2,
           "semaforo": "ROJO",
-          "debe": 101
+          "debe": 97
         }
       },
       "segmentos": [
         {
           "segmento": "75↑",
           "target": 10,
-          "venta": 5,
-          "debe_unidades": 5,
-          "cumplimiento_pct": 50.0,
-          "estado": "5 uds"
+          "venta": 6,
+          "debe_unidades": 4,
+          "cumplimiento_pct": 60.0,
+          "estado": "4 uds"
         },
         {
           "segmento": "PREMIUM",
           "target": 14,
-          "venta": 12,
-          "debe_unidades": 2,
-          "cumplimiento_pct": 85.7,
-          "estado": "2 uds"
+          "venta": 15,
+          "debe_unidades": 0,
+          "cumplimiento_pct": 107.1,
+          "estado": "Al día"
         },
         {
           "segmento": "QLED / MINILED",
@@ -3191,20 +3191,20 @@
         "mensaje": "▼ -1.9% vs W41"
       },
       "puntos": {
-        "total": 610,
-        "por_venta": 560,
+        "total": 670,
+        "por_venta": 620,
         "bono": 50,
-        "explicacion": "56 unidades vendidas en el mes (x10 pts = 560 pts) + bono de 50 pts por cumplimiento MTD (60.9%)."
+        "explicacion": "62 unidades vendidas en el mes (x10 pts = 620 pts) + bono de 50 pts por cumplimiento MTD (67.4%)."
       },
       "periodos": {
         "W43": {
           "label": "Semana en Curso (W43)",
           "target": 21,
-          "venta_uds": 9,
-          "venta_pesos": 9872211,
-          "cumplimiento": 42.9,
+          "venta_uds": 15,
+          "venta_pesos": 11376481,
+          "cumplimiento": 71.4,
           "semaforo": "ROJO",
-          "debe": 12
+          "debe": 6
         },
         "W42": {
           "label": "Semana Anterior (W42)",
@@ -3218,11 +3218,11 @@
         "MTD": {
           "label": "Mes Acumulado Octubre (MTD)",
           "target": 92,
-          "venta_uds": 56,
-          "venta_pesos": 82870516,
-          "cumplimiento": 60.9,
+          "venta_uds": 62,
+          "venta_pesos": 84374786,
+          "cumplimiento": 67.4,
           "semaforo": "ROJO",
-          "debe": 36
+          "debe": 30
         }
       },
       "segmentos": [
@@ -3245,17 +3245,17 @@
         {
           "segmento": "QLED / MINILED",
           "target": 43,
-          "venta": 12,
-          "debe_unidades": 31,
-          "cumplimiento_pct": 27.9,
-          "estado": "31 uds"
+          "venta": 13,
+          "debe_unidades": 30,
+          "cumplimiento_pct": 30.2,
+          "estado": "30 uds"
         },
         {
           "segmento": "UHD",
           "target": 18,
-          "venta": 21,
+          "venta": 26,
           "debe_unidades": 0,
-          "cumplimiento_pct": 116.7,
+          "cumplimiento_pct": 144.4,
           "estado": "Al día"
         },
         {
@@ -3400,20 +3400,20 @@
         "mensaje": "▲ +19.1% vs W41"
       },
       "puntos": {
-        "total": 710,
-        "por_venta": 660,
+        "total": 730,
+        "por_venta": 680,
         "bono": 50,
-        "explicacion": "66 unidades vendidas en el mes (x10 pts = 660 pts) + bono de 50 pts por cumplimiento MTD (54.5%)."
+        "explicacion": "68 unidades vendidas en el mes (x10 pts = 680 pts) + bono de 50 pts por cumplimiento MTD (56.2%)."
       },
       "periodos": {
         "W43": {
           "label": "Semana en Curso (W43)",
           "target": 28,
-          "venta_uds": 18,
-          "venta_pesos": 18841674,
-          "cumplimiento": 64.3,
+          "venta_uds": 20,
+          "venta_pesos": 19008802,
+          "cumplimiento": 71.4,
           "semaforo": "ROJO",
-          "debe": 10
+          "debe": 8
         },
         "W42": {
           "label": "Semana Anterior (W42)",
@@ -3427,11 +3427,11 @@
         "MTD": {
           "label": "Mes Acumulado Octubre (MTD)",
           "target": 121,
-          "venta_uds": 66,
-          "venta_pesos": 104073850,
-          "cumplimiento": 54.5,
+          "venta_uds": 68,
+          "venta_pesos": 104240978,
+          "cumplimiento": 56.2,
           "semaforo": "ROJO",
-          "debe": 55
+          "debe": 53
         }
       },
       "segmentos": [
@@ -3462,10 +3462,10 @@
         {
           "segmento": "UHD",
           "target": 29,
-          "venta": 18,
-          "debe_unidades": 11,
-          "cumplimiento_pct": 62.1,
-          "estado": "11 uds"
+          "venta": 20,
+          "debe_unidades": 9,
+          "cumplimiento_pct": 69.0,
+          "estado": "9 uds"
         },
         {
           "segmento": "AUDIO",
@@ -3597,20 +3597,20 @@
         "mensaje": "▲ +15.5% vs W41"
       },
       "puntos": {
-        "total": 1290,
-        "por_venta": 1240,
+        "total": 1370,
+        "por_venta": 1320,
         "bono": 50,
-        "explicacion": "124 unidades vendidas en el mes (x10 pts = 1240 pts) + bono de 50 pts por cumplimiento MTD (66.7%)."
+        "explicacion": "132 unidades vendidas en el mes (x10 pts = 1320 pts) + bono de 50 pts por cumplimiento MTD (71.0%)."
       },
       "periodos": {
         "W43": {
           "label": "Semana en Curso (W43)",
           "target": 43,
-          "venta_uds": 39,
-          "venta_pesos": 43951861,
-          "cumplimiento": 90.7,
-          "semaforo": "AMARILLO",
-          "debe": 4
+          "venta_uds": 47,
+          "venta_pesos": 50700060,
+          "cumplimiento": 109.3,
+          "semaforo": "VERDE",
+          "debe": 0
         },
         "W42": {
           "label": "Semana Anterior (W42)",
@@ -3624,11 +3624,11 @@
         "MTD": {
           "label": "Mes Acumulado Octubre (MTD)",
           "target": 186,
-          "venta_uds": 124,
-          "venta_pesos": 237968831,
-          "cumplimiento": 66.7,
+          "venta_uds": 132,
+          "venta_pesos": 244717030,
+          "cumplimiento": 71.0,
           "semaforo": "ROJO",
-          "debe": 62
+          "debe": 54
         }
       },
       "segmentos": [
@@ -3651,26 +3651,26 @@
         {
           "segmento": "QLED / MINILED",
           "target": 68,
-          "venta": 15,
-          "debe_unidades": 53,
-          "cumplimiento_pct": 22.1,
-          "estado": "53 uds"
+          "venta": 16,
+          "debe_unidades": 52,
+          "cumplimiento_pct": 23.5,
+          "estado": "52 uds"
         },
         {
           "segmento": "UHD",
           "target": 35,
-          "venta": 58,
+          "venta": 63,
           "debe_unidades": 0,
-          "cumplimiento_pct": 165.7,
+          "cumplimiento_pct": 180.0,
           "estado": "Al día"
         },
         {
           "segmento": "AUDIO",
           "target": 42,
-          "venta": 35,
-          "debe_unidades": 7,
-          "cumplimiento_pct": 83.3,
-          "estado": "7 uds"
+          "venta": 37,
+          "debe_unidades": 5,
+          "cumplimiento_pct": 88.1,
+          "estado": "5 uds"
         }
       ],
       "total_stock": 189,
@@ -3920,20 +3920,20 @@
         "mensaje": "▼ -2.7% vs W41"
       },
       "puntos": {
-        "total": 570,
-        "por_venta": 520,
+        "total": 590,
+        "por_venta": 540,
         "bono": 50,
-        "explicacion": "52 unidades vendidas en el mes (x10 pts = 520 pts) + bono de 50 pts por cumplimiento MTD (65.8%)."
+        "explicacion": "54 unidades vendidas en el mes (x10 pts = 540 pts) + bono de 50 pts por cumplimiento MTD (68.4%)."
       },
       "periodos": {
         "W43": {
           "label": "Semana en Curso (W43)",
           "target": 18,
-          "venta_uds": 8,
-          "venta_pesos": 15037175,
-          "cumplimiento": 44.4,
+          "venta_uds": 10,
+          "venta_pesos": 18201994,
+          "cumplimiento": 55.6,
           "semaforo": "ROJO",
-          "debe": 10
+          "debe": 8
         },
         "W42": {
           "label": "Semana Anterior (W42)",
@@ -3947,11 +3947,11 @@
         "MTD": {
           "label": "Mes Acumulado Octubre (MTD)",
           "target": 79,
-          "venta_uds": 52,
-          "venta_pesos": 94466305,
-          "cumplimiento": 65.8,
+          "venta_uds": 54,
+          "venta_pesos": 97631124,
+          "cumplimiento": 68.4,
           "semaforo": "ROJO",
-          "debe": 27
+          "debe": 25
         }
       },
       "segmentos": [
@@ -3974,10 +3974,10 @@
         {
           "segmento": "QLED / MINILED",
           "target": 32,
-          "venta": 12,
-          "debe_unidades": 20,
-          "cumplimiento_pct": 37.5,
-          "estado": "20 uds"
+          "venta": 13,
+          "debe_unidades": 19,
+          "cumplimiento_pct": 40.6,
+          "estado": "19 uds"
         },
         {
           "segmento": "UHD",
@@ -3990,9 +3990,9 @@
         {
           "segmento": "AUDIO",
           "target": 22,
-          "venta": 22,
+          "venta": 23,
           "debe_unidades": 0,
-          "cumplimiento_pct": 100.0,
+          "cumplimiento_pct": 104.5,
           "estado": "Al día"
         }
       ],
@@ -4129,20 +4129,20 @@
         "mensaje": "▲ +5.0% vs W41"
       },
       "puntos": {
-        "total": 830,
-        "por_venta": 780,
+        "total": 910,
+        "por_venta": 860,
         "bono": 50,
-        "explicacion": "78 unidades vendidas en el mes (x10 pts = 780 pts) + bono de 50 pts por cumplimiento MTD (43.6%)."
+        "explicacion": "86 unidades vendidas en el mes (x10 pts = 860 pts) + bono de 50 pts por cumplimiento MTD (48.0%)."
       },
       "periodos": {
         "W43": {
           "label": "Semana en Curso (W43)",
           "target": 41,
-          "venta_uds": 12,
-          "venta_pesos": 13874038,
-          "cumplimiento": 29.3,
+          "venta_uds": 20,
+          "venta_pesos": 26377522,
+          "cumplimiento": 48.8,
           "semaforo": "ROJO",
-          "debe": 29
+          "debe": 21
         },
         "W42": {
           "label": "Semana Anterior (W42)",
@@ -4156,11 +4156,11 @@
         "MTD": {
           "label": "Mes Acumulado Octubre (MTD)",
           "target": 179,
-          "venta_uds": 78,
-          "venta_pesos": 161330333,
-          "cumplimiento": 43.6,
+          "venta_uds": 86,
+          "venta_pesos": 173833817,
+          "cumplimiento": 48.0,
           "semaforo": "ROJO",
-          "debe": 101
+          "debe": 93
         }
       },
       "segmentos": [
@@ -4175,34 +4175,34 @@
         {
           "segmento": "PREMIUM",
           "target": 7,
-          "venta": 8,
+          "venta": 10,
           "debe_unidades": 0,
-          "cumplimiento_pct": 114.3,
+          "cumplimiento_pct": 142.9,
           "estado": "Al día"
         },
         {
           "segmento": "QLED / MINILED",
           "target": 77,
-          "venta": 11,
-          "debe_unidades": 66,
-          "cumplimiento_pct": 14.3,
-          "estado": "66 uds"
+          "venta": 12,
+          "debe_unidades": 65,
+          "cumplimiento_pct": 15.6,
+          "estado": "65 uds"
         },
         {
           "segmento": "UHD",
           "target": 47,
-          "venta": 20,
-          "debe_unidades": 27,
-          "cumplimiento_pct": 42.6,
-          "estado": "27 uds"
+          "venta": 24,
+          "debe_unidades": 23,
+          "cumplimiento_pct": 51.1,
+          "estado": "23 uds"
         },
         {
           "segmento": "AUDIO",
           "target": 43,
-          "venta": 28,
-          "debe_unidades": 15,
-          "cumplimiento_pct": 65.1,
-          "estado": "15 uds"
+          "venta": 29,
+          "debe_unidades": 14,
+          "cumplimiento_pct": 67.4,
+          "estado": "14 uds"
         }
       ],
       "total_stock": 170,
@@ -4458,20 +4458,20 @@
         "mensaje": "▲ +3.8% vs W41"
       },
       "puntos": {
-        "total": 930,
-        "por_venta": 880,
+        "total": 970,
+        "por_venta": 920,
         "bono": 50,
-        "explicacion": "88 unidades vendidas en el mes (x10 pts = 880 pts) + bono de 50 pts por cumplimiento MTD (50.3%)."
+        "explicacion": "92 unidades vendidas en el mes (x10 pts = 920 pts) + bono de 50 pts por cumplimiento MTD (52.6%)."
       },
       "periodos": {
         "W43": {
           "label": "Semana en Curso (W43)",
           "target": 40,
-          "venta_uds": 14,
-          "venta_pesos": 18545799,
-          "cumplimiento": 35.0,
+          "venta_uds": 18,
+          "venta_pesos": 27193945,
+          "cumplimiento": 45.0,
           "semaforo": "ROJO",
-          "debe": 26
+          "debe": 22
         },
         "W42": {
           "label": "Semana Anterior (W42)",
@@ -4485,21 +4485,21 @@
         "MTD": {
           "label": "Mes Acumulado Octubre (MTD)",
           "target": 175,
-          "venta_uds": 88,
-          "venta_pesos": 153997493,
-          "cumplimiento": 50.3,
+          "venta_uds": 92,
+          "venta_pesos": 162645639,
+          "cumplimiento": 52.6,
           "semaforo": "ROJO",
-          "debe": 87
+          "debe": 83
         }
       },
       "segmentos": [
         {
           "segmento": "75↑",
           "target": 12,
-          "venta": 4,
-          "debe_unidades": 8,
-          "cumplimiento_pct": 33.3,
-          "estado": "8 uds"
+          "venta": 7,
+          "debe_unidades": 5,
+          "cumplimiento_pct": 58.3,
+          "estado": "5 uds"
         },
         {
           "segmento": "PREMIUM",
@@ -4520,10 +4520,10 @@
         {
           "segmento": "UHD",
           "target": 37,
-          "venta": 27,
-          "debe_unidades": 10,
-          "cumplimiento_pct": 73.0,
-          "estado": "10 uds"
+          "venta": 28,
+          "debe_unidades": 9,
+          "cumplimiento_pct": 75.7,
+          "estado": "9 uds"
         },
         {
           "segmento": "AUDIO",
@@ -4751,20 +4751,20 @@
         "mensaje": "▲ +15.5% vs W41"
       },
       "puntos": {
-        "total": 1290,
-        "por_venta": 1240,
+        "total": 1370,
+        "por_venta": 1320,
         "bono": 50,
-        "explicacion": "124 unidades vendidas en el mes (x10 pts = 1240 pts) + bono de 50 pts por cumplimiento MTD (66.7%)."
+        "explicacion": "132 unidades vendidas en el mes (x10 pts = 1320 pts) + bono de 50 pts por cumplimiento MTD (71.0%)."
       },
       "periodos": {
         "W43": {
           "label": "Semana en Curso (W43)",
           "target": 43,
-          "venta_uds": 39,
-          "venta_pesos": 43951861,
-          "cumplimiento": 90.7,
-          "semaforo": "AMARILLO",
-          "debe": 4
+          "venta_uds": 47,
+          "venta_pesos": 50700060,
+          "cumplimiento": 109.3,
+          "semaforo": "VERDE",
+          "debe": 0
         },
         "W42": {
           "label": "Semana Anterior (W42)",
@@ -4778,11 +4778,11 @@
         "MTD": {
           "label": "Mes Acumulado Octubre (MTD)",
           "target": 186,
-          "venta_uds": 124,
-          "venta_pesos": 237968831,
-          "cumplimiento": 66.7,
+          "venta_uds": 132,
+          "venta_pesos": 244717030,
+          "cumplimiento": 71.0,
           "semaforo": "ROJO",
-          "debe": 62
+          "debe": 54
         }
       },
       "segmentos": [
@@ -4805,26 +4805,26 @@
         {
           "segmento": "QLED / MINILED",
           "target": 68,
-          "venta": 15,
-          "debe_unidades": 53,
-          "cumplimiento_pct": 22.1,
-          "estado": "53 uds"
+          "venta": 16,
+          "debe_unidades": 52,
+          "cumplimiento_pct": 23.5,
+          "estado": "52 uds"
         },
         {
           "segmento": "UHD",
           "target": 35,
-          "venta": 58,
+          "venta": 63,
           "debe_unidades": 0,
-          "cumplimiento_pct": 165.7,
+          "cumplimiento_pct": 180.0,
           "estado": "Al día"
         },
         {
           "segmento": "AUDIO",
           "target": 42,
-          "venta": 35,
-          "debe_unidades": 7,
-          "cumplimiento_pct": 83.3,
-          "estado": "7 uds"
+          "venta": 37,
+          "debe_unidades": 5,
+          "cumplimiento_pct": 88.1,
+          "estado": "5 uds"
         }
       ],
       "total_stock": 189,
@@ -5074,20 +5074,20 @@
         "mensaje": "▼ -11.3% vs W41"
       },
       "puntos": {
-        "total": 340,
-        "por_venta": 290,
-        "bono": 50,
-        "explicacion": "29 unidades vendidas en el mes (x10 pts = 290 pts) + bono de 50 pts por cumplimiento MTD (43.3%)."
+        "total": 840,
+        "por_venta": 640,
+        "bono": 200,
+        "explicacion": "64 unidades vendidas en el mes (x10 pts = 640 pts) + bono de 200 pts por cumplimiento MTD (95.5%)."
       },
       "periodos": {
         "W43": {
           "label": "Semana en Curso (W43)",
           "target": 16,
-          "venta_uds": 6,
-          "venta_pesos": 3521469,
-          "cumplimiento": 37.5,
-          "semaforo": "ROJO",
-          "debe": 10
+          "venta_uds": 40,
+          "venta_pesos": 6904050,
+          "cumplimiento": 250.0,
+          "semaforo": "VERDE",
+          "debe": 0
         },
         "W42": {
           "label": "Semana Anterior (W42)",
@@ -5101,11 +5101,11 @@
         "MTD": {
           "label": "Mes Acumulado Octubre (MTD)",
           "target": 67,
-          "venta_uds": 29,
-          "venta_pesos": 39068561,
-          "cumplimiento": 43.3,
-          "semaforo": "ROJO",
-          "debe": 38
+          "venta_uds": 64,
+          "venta_pesos": 42451142,
+          "cumplimiento": 95.5,
+          "semaforo": "AMARILLO",
+          "debe": 3
         }
       },
       "segmentos": [
@@ -5136,18 +5136,18 @@
         {
           "segmento": "UHD",
           "target": 14,
-          "venta": 7,
-          "debe_unidades": 7,
-          "cumplimiento_pct": 50.0,
-          "estado": "7 uds"
+          "venta": 41,
+          "debe_unidades": 0,
+          "cumplimiento_pct": 292.9,
+          "estado": "Al día"
         },
         {
           "segmento": "AUDIO",
           "target": 18,
-          "venta": 9,
-          "debe_unidades": 9,
-          "cumplimiento_pct": 50.0,
-          "estado": "9 uds"
+          "venta": 10,
+          "debe_unidades": 8,
+          "cumplimiento_pct": 55.6,
+          "estado": "8 uds"
         }
       ],
       "total_stock": 812,
@@ -5475,9 +5475,9 @@
       "total_asesores": 1,
       "total_tiendas": 1,
       "target_mtd": 121,
-      "venta_mtd": 66,
-      "debe_mtd": 55,
-      "cumplimiento_mtd": 54.5,
+      "venta_mtd": 68,
+      "debe_mtd": 53,
+      "cumplimiento_mtd": 56.2,
       "promedio_ihs_w42": 46.3,
       "semaforo": "ROJO",
       "tiendas_detalle": [
@@ -5485,10 +5485,10 @@
           "tienda": "FALABELLA ACQUA",
           "asistencia": "Asistida",
           "target_mtd": 121,
-          "venta_mtd": 66,
-          "cumplimiento_mtd": 54.9,
-          "debe_mtd": 55,
-          "venta_pesos": 104073850,
+          "venta_mtd": 68,
+          "cumplimiento_mtd": 56.6,
+          "debe_mtd": 53,
+          "venta_pesos": 104240978,
           "stock": 257,
           "ihs_w42": 46.3,
           "ihs_w41": 27.2,
@@ -5499,11 +5499,11 @@
               "target": 21
             },
             "W43": {
-              "venta_sam": 18,
+              "venta_sam": 20,
               "target": 28
             },
             "MTD": {
-              "venta_sam": 66,
+              "venta_sam": 68,
               "target": 121
             }
           },
@@ -5531,7 +5531,7 @@
             },
             {
               "segmento": "UHD",
-              "venta_sam": 18,
+              "venta_sam": 20,
               "target": 29,
               "vs_competencia": "SAMSUNG LIDERA",
               "alerta_pierde": false
@@ -5563,20 +5563,20 @@
             "mensaje": "▲ +19.1% vs W41"
           },
           "puntos": {
-            "total": 710,
-            "por_venta": 660,
+            "total": 730,
+            "por_venta": 680,
             "bono": 50,
-            "explicacion": "66 unidades vendidas en el mes (x10 pts = 660 pts) + bono de 50 pts por cumplimiento MTD (54.5%)."
+            "explicacion": "68 unidades vendidas en el mes (x10 pts = 680 pts) + bono de 50 pts por cumplimiento MTD (56.2%)."
           },
           "periodos": {
             "W43": {
               "label": "Semana en Curso (W43)",
               "target": 28,
-              "venta_uds": 18,
-              "venta_pesos": 18841674,
-              "cumplimiento": 64.3,
+              "venta_uds": 20,
+              "venta_pesos": 19008802,
+              "cumplimiento": 71.4,
               "semaforo": "ROJO",
-              "debe": 10
+              "debe": 8
             },
             "W42": {
               "label": "Semana Anterior (W42)",
@@ -5590,11 +5590,11 @@
             "MTD": {
               "label": "Mes Acumulado Octubre (MTD)",
               "target": 121,
-              "venta_uds": 66,
-              "venta_pesos": 104073850,
-              "cumplimiento": 54.5,
+              "venta_uds": 68,
+              "venta_pesos": 104240978,
+              "cumplimiento": 56.2,
               "semaforo": "ROJO",
-              "debe": 55
+              "debe": 53
             }
           },
           "segmentos": [
@@ -5625,10 +5625,10 @@
             {
               "segmento": "UHD",
               "target": 29,
-              "venta": 18,
-              "debe_unidades": 11,
-              "cumplimiento_pct": 62.1,
-              "estado": "11 uds"
+              "venta": 20,
+              "debe_unidades": 9,
+              "cumplimiento_pct": 69.0,
+              "estado": "9 uds"
             },
             {
               "segmento": "AUDIO",
@@ -5754,9 +5754,9 @@
       "total_asesores": 2,
       "total_tiendas": 2,
       "target_mtd": 354,
-      "venta_mtd": 166,
-      "debe_mtd": 188,
-      "cumplimiento_mtd": 46.9,
+      "venta_mtd": 178,
+      "debe_mtd": 176,
+      "cumplimiento_mtd": 50.3,
       "promedio_ihs_w42": 40.0,
       "semaforo": "ROJO",
       "tiendas_detalle": [
@@ -5764,10 +5764,10 @@
           "tienda": "FALABELLA Buenavista",
           "asistencia": "Asistida",
           "target_mtd": 179,
-          "venta_mtd": 78,
-          "cumplimiento_mtd": 43.6,
-          "debe_mtd": 101,
-          "venta_pesos": 161330333,
+          "venta_mtd": 86,
+          "cumplimiento_mtd": 48.1,
+          "debe_mtd": 93,
+          "venta_pesos": 173833817,
           "stock": 170,
           "ihs_w42": 49.2,
           "ihs_w41": 44.2,
@@ -5778,11 +5778,11 @@
               "target": 30
             },
             "W43": {
-              "venta_sam": 12,
+              "venta_sam": 20,
               "target": 41
             },
             "MTD": {
-              "venta_sam": 78,
+              "venta_sam": 86,
               "target": 179
             }
           },
@@ -5796,28 +5796,28 @@
             },
             {
               "segmento": "PREMIUM",
-              "venta_sam": 8,
+              "venta_sam": 10,
               "target": 7,
               "vs_competencia": "SAMSUNG LIDERA",
               "alerta_pierde": false
             },
             {
               "segmento": "QLED / MINILED",
-              "venta_sam": 11,
+              "venta_sam": 12,
               "target": 77,
               "vs_competencia": "COMPETENCIA GANA",
               "alerta_pierde": true
             },
             {
               "segmento": "UHD",
-              "venta_sam": 20,
+              "venta_sam": 24,
               "target": 47,
-              "vs_competencia": "COMPETENCIA GANA",
-              "alerta_pierde": true
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
             },
             {
               "segmento": "AUDIO",
-              "venta_sam": 28,
+              "venta_sam": 29,
               "target": 43,
               "vs_competencia": "SAMSUNG LIDERA",
               "alerta_pierde": false
@@ -5828,10 +5828,10 @@
           "tienda": "FALABELLA El Castillo",
           "asistencia": "Asistida",
           "target_mtd": 175,
-          "venta_mtd": 88,
-          "cumplimiento_mtd": 50.4,
-          "debe_mtd": 87,
-          "venta_pesos": 153997493,
+          "venta_mtd": 92,
+          "cumplimiento_mtd": 52.7,
+          "debe_mtd": 83,
+          "venta_pesos": 162645639,
           "stock": 159,
           "ihs_w42": 30.7,
           "ihs_w41": 26.9,
@@ -5842,21 +5842,21 @@
               "target": 30
             },
             "W43": {
-              "venta_sam": 14,
+              "venta_sam": 18,
               "target": 40
             },
             "MTD": {
-              "venta_sam": 88,
+              "venta_sam": 92,
               "target": 175
             }
           },
           "segmentos_comp": [
             {
               "segmento": "75↑",
-              "venta_sam": 4,
+              "venta_sam": 7,
               "target": 12,
-              "vs_competencia": "COMPETENCIA GANA",
-              "alerta_pierde": true
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
             },
             {
               "segmento": "PREMIUM",
@@ -5874,7 +5874,7 @@
             },
             {
               "segmento": "UHD",
-              "venta_sam": 27,
+              "venta_sam": 28,
               "target": 37,
               "vs_competencia": "SAMSUNG LIDERA",
               "alerta_pierde": false
@@ -5919,20 +5919,20 @@
             "mensaje": "▲ +5.0% vs W41"
           },
           "puntos": {
-            "total": 830,
-            "por_venta": 780,
+            "total": 910,
+            "por_venta": 860,
             "bono": 50,
-            "explicacion": "78 unidades vendidas en el mes (x10 pts = 780 pts) + bono de 50 pts por cumplimiento MTD (43.6%)."
+            "explicacion": "86 unidades vendidas en el mes (x10 pts = 860 pts) + bono de 50 pts por cumplimiento MTD (48.0%)."
           },
           "periodos": {
             "W43": {
               "label": "Semana en Curso (W43)",
               "target": 41,
-              "venta_uds": 12,
-              "venta_pesos": 13874038,
-              "cumplimiento": 29.3,
+              "venta_uds": 20,
+              "venta_pesos": 26377522,
+              "cumplimiento": 48.8,
               "semaforo": "ROJO",
-              "debe": 29
+              "debe": 21
             },
             "W42": {
               "label": "Semana Anterior (W42)",
@@ -5946,11 +5946,11 @@
             "MTD": {
               "label": "Mes Acumulado Octubre (MTD)",
               "target": 179,
-              "venta_uds": 78,
-              "venta_pesos": 161330333,
-              "cumplimiento": 43.6,
+              "venta_uds": 86,
+              "venta_pesos": 173833817,
+              "cumplimiento": 48.0,
               "semaforo": "ROJO",
-              "debe": 101
+              "debe": 93
             }
           },
           "segmentos": [
@@ -5965,34 +5965,34 @@
             {
               "segmento": "PREMIUM",
               "target": 7,
-              "venta": 8,
+              "venta": 10,
               "debe_unidades": 0,
-              "cumplimiento_pct": 114.3,
+              "cumplimiento_pct": 142.9,
               "estado": "Al día"
             },
             {
               "segmento": "QLED / MINILED",
               "target": 77,
-              "venta": 11,
-              "debe_unidades": 66,
-              "cumplimiento_pct": 14.3,
-              "estado": "66 uds"
+              "venta": 12,
+              "debe_unidades": 65,
+              "cumplimiento_pct": 15.6,
+              "estado": "65 uds"
             },
             {
               "segmento": "UHD",
               "target": 47,
-              "venta": 20,
-              "debe_unidades": 27,
-              "cumplimiento_pct": 42.6,
-              "estado": "27 uds"
+              "venta": 24,
+              "debe_unidades": 23,
+              "cumplimiento_pct": 51.1,
+              "estado": "23 uds"
             },
             {
               "segmento": "AUDIO",
               "target": 43,
-              "venta": 28,
-              "debe_unidades": 15,
-              "cumplimiento_pct": 65.1,
-              "estado": "15 uds"
+              "venta": 29,
+              "debe_unidades": 14,
+              "cumplimiento_pct": 67.4,
+              "estado": "14 uds"
             }
           ],
           "total_stock": 170,
@@ -6248,20 +6248,20 @@
             "mensaje": "▲ +3.8% vs W41"
           },
           "puntos": {
-            "total": 930,
-            "por_venta": 880,
+            "total": 970,
+            "por_venta": 920,
             "bono": 50,
-            "explicacion": "88 unidades vendidas en el mes (x10 pts = 880 pts) + bono de 50 pts por cumplimiento MTD (50.3%)."
+            "explicacion": "92 unidades vendidas en el mes (x10 pts = 920 pts) + bono de 50 pts por cumplimiento MTD (52.6%)."
           },
           "periodos": {
             "W43": {
               "label": "Semana en Curso (W43)",
               "target": 40,
-              "venta_uds": 14,
-              "venta_pesos": 18545799,
-              "cumplimiento": 35.0,
+              "venta_uds": 18,
+              "venta_pesos": 27193945,
+              "cumplimiento": 45.0,
               "semaforo": "ROJO",
-              "debe": 26
+              "debe": 22
             },
             "W42": {
               "label": "Semana Anterior (W42)",
@@ -6275,21 +6275,21 @@
             "MTD": {
               "label": "Mes Acumulado Octubre (MTD)",
               "target": 175,
-              "venta_uds": 88,
-              "venta_pesos": 153997493,
-              "cumplimiento": 50.3,
+              "venta_uds": 92,
+              "venta_pesos": 162645639,
+              "cumplimiento": 52.6,
               "semaforo": "ROJO",
-              "debe": 87
+              "debe": 83
             }
           },
           "segmentos": [
             {
               "segmento": "75↑",
               "target": 12,
-              "venta": 4,
-              "debe_unidades": 8,
-              "cumplimiento_pct": 33.3,
-              "estado": "8 uds"
+              "venta": 7,
+              "debe_unidades": 5,
+              "cumplimiento_pct": 58.3,
+              "estado": "5 uds"
             },
             {
               "segmento": "PREMIUM",
@@ -6310,10 +6310,10 @@
             {
               "segmento": "UHD",
               "target": 37,
-              "venta": 27,
-              "debe_unidades": 10,
-              "cumplimiento_pct": 73.0,
-              "estado": "10 uds"
+              "venta": 28,
+              "debe_unidades": 9,
+              "cumplimiento_pct": 75.7,
+              "estado": "9 uds"
             },
             {
               "segmento": "AUDIO",
@@ -6535,404 +6535,20 @@
       "total_asesores": 7,
       "total_tiendas": 7,
       "target_mtd": 786,
-      "venta_mtd": 390,
-      "debe_mtd": 396,
-      "cumplimiento_mtd": 49.6,
+      "venta_mtd": 507,
+      "debe_mtd": 279,
+      "cumplimiento_mtd": 64.5,
       "promedio_ihs_w42": 24.6,
       "semaforo": "ROJO",
       "tiendas_detalle": [
         {
-          "tienda": "FALABELLA COLINA",
-          "asistencia": "Asistida",
-          "target_mtd": 157,
-          "venta_mtd": 56,
-          "cumplimiento_mtd": 35.8,
-          "debe_mtd": 101,
-          "venta_pesos": 111483949,
-          "stock": 147,
-          "ihs_w42": 24.7,
-          "ihs_w41": 37.3,
-          "ihs_mensaje": "▼ -12.6% vs W41",
-          "semanal": {
-            "W42": {
-              "venta_sam": 10,
-              "target": 27
-            },
-            "W43": {
-              "venta_sam": 10,
-              "target": 36
-            },
-            "MTD": {
-              "venta_sam": 56,
-              "target": 157
-            }
-          },
-          "segmentos_comp": [
-            {
-              "segmento": "75↑",
-              "venta_sam": 5,
-              "target": 10,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "PREMIUM",
-              "venta_sam": 12,
-              "target": 14,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "QLED / MINILED",
-              "venta_sam": 6,
-              "target": 70,
-              "vs_competencia": "COMPETENCIA GANA",
-              "alerta_pierde": true
-            },
-            {
-              "segmento": "UHD",
-              "venta_sam": 15,
-              "target": 22,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "AUDIO",
-              "venta_sam": 18,
-              "target": 43,
-              "vs_competencia": "COMPETENCIA GANA",
-              "alerta_pierde": true
-            }
-          ]
-        },
-        {
-          "tienda": "FALABELLA GALERIAS",
-          "asistencia": "Asistida",
-          "target_mtd": 68,
-          "venta_mtd": 35,
-          "cumplimiento_mtd": 52.1,
-          "debe_mtd": 33,
-          "venta_pesos": 48308464,
-          "stock": 128,
-          "ihs_w42": 30.8,
-          "ihs_w41": 22.4,
-          "ihs_mensaje": "▲ +8.4% vs W41",
-          "semanal": {
-            "W42": {
-              "venta_sam": 9,
-              "target": 12
-            },
-            "W43": {
-              "venta_sam": 6,
-              "target": 16
-            },
-            "MTD": {
-              "venta_sam": 35,
-              "target": 68
-            }
-          },
-          "segmentos_comp": [
-            {
-              "segmento": "75↑",
-              "venta_sam": 3,
-              "target": 3,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "PREMIUM",
-              "venta_sam": 1,
-              "target": 1,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "QLED / MINILED",
-              "venta_sam": 12,
-              "target": 26,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "UHD",
-              "venta_sam": 5,
-              "target": 21,
-              "vs_competencia": "COMPETENCIA GANA",
-              "alerta_pierde": true
-            },
-            {
-              "segmento": "AUDIO",
-              "venta_sam": 14,
-              "target": 19,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            }
-          ]
-        },
-        {
-          "tienda": "FALABELLA UNICENTRO",
-          "asistencia": "Asistida",
-          "target_mtd": 124,
-          "venta_mtd": 78,
-          "cumplimiento_mtd": 63.0,
-          "debe_mtd": 46,
-          "venta_pesos": 151107467,
-          "stock": 135,
-          "ihs_w42": 43.0,
-          "ihs_w41": 51.9,
-          "ihs_mensaje": "▼ -8.9% vs W41",
-          "semanal": {
-            "W42": {
-              "venta_sam": 18,
-              "target": 21
-            },
-            "W43": {
-              "venta_sam": 19,
-              "target": 29
-            },
-            "MTD": {
-              "venta_sam": 78,
-              "target": 124
-            }
-          },
-          "segmentos_comp": [
-            {
-              "segmento": "75↑",
-              "venta_sam": 6,
-              "target": 8,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "PREMIUM",
-              "venta_sam": 18,
-              "target": 15,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "QLED / MINILED",
-              "venta_sam": 8,
-              "target": 50,
-              "vs_competencia": "COMPETENCIA GANA",
-              "alerta_pierde": true
-            },
-            {
-              "segmento": "UHD",
-              "venta_sam": 22,
-              "target": 18,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "AUDIO",
-              "venta_sam": 24,
-              "target": 34,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            }
-          ]
-        },
-        {
-          "tienda": "FALABELLA SANTAFE",
-          "asistencia": "Asistida",
-          "target_mtd": 66,
-          "venta_mtd": 23,
-          "cumplimiento_mtd": 35.0,
-          "debe_mtd": 43,
-          "venta_pesos": 29828658,
-          "stock": 684,
-          "ihs_w42": 3.4,
-          "ihs_w41": 14.7,
-          "ihs_mensaje": "▼ -11.3% vs W41",
-          "semanal": {
-            "W42": {
-              "venta_sam": 2,
-              "target": 12
-            },
-            "W43": {
-              "venta_sam": 5,
-              "target": 15
-            },
-            "MTD": {
-              "venta_sam": 23,
-              "target": 66
-            }
-          },
-          "segmentos_comp": [
-            {
-              "segmento": "75↑",
-              "venta_sam": 0,
-              "target": 4,
-              "vs_competencia": "COMPETENCIA GANA",
-              "alerta_pierde": true
-            },
-            {
-              "segmento": "PREMIUM",
-              "venta_sam": 2,
-              "target": 4,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "QLED / MINILED",
-              "venta_sam": 9,
-              "target": 33,
-              "vs_competencia": "COMPETENCIA GANA",
-              "alerta_pierde": true
-            },
-            {
-              "segmento": "UHD",
-              "venta_sam": 8,
-              "target": 8,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "AUDIO",
-              "venta_sam": 4,
-              "target": 18,
-              "vs_competencia": "COMPETENCIA GANA",
-              "alerta_pierde": true
-            }
-          ]
-        },
-        {
-          "tienda": "FALABELLA CENTRO MAYOR",
-          "asistencia": "Asistida",
-          "target_mtd": 112,
-          "venta_mtd": 51,
-          "cumplimiento_mtd": 45.6,
-          "debe_mtd": 61,
-          "venta_pesos": 79519058,
-          "stock": 151,
-          "ihs_w42": 14.7,
-          "ihs_w41": 21.7,
-          "ihs_mensaje": "▼ -7.0% vs W41",
-          "semanal": {
-            "W42": {
-              "venta_sam": 7,
-              "target": 19
-            },
-            "W43": {
-              "venta_sam": 11,
-              "target": 26
-            },
-            "MTD": {
-              "venta_sam": 51,
-              "target": 112
-            }
-          },
-          "segmentos_comp": [
-            {
-              "segmento": "75↑",
-              "venta_sam": 5,
-              "target": 10,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "PREMIUM",
-              "venta_sam": 3,
-              "target": 1,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "QLED / MINILED",
-              "venta_sam": 8,
-              "target": 51,
-              "vs_competencia": "COMPETENCIA GANA",
-              "alerta_pierde": true
-            },
-            {
-              "segmento": "UHD",
-              "venta_sam": 20,
-              "target": 29,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "AUDIO",
-              "venta_sam": 15,
-              "target": 23,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            }
-          ]
-        },
-        {
-          "tienda": "FALABELLA TITAN",
-          "asistencia": "Asistida",
-          "target_mtd": 122,
-          "venta_mtd": 78,
-          "cumplimiento_mtd": 64.2,
-          "debe_mtd": 44,
-          "venta_pesos": 141613012,
-          "stock": 273,
-          "ihs_w42": 34.1,
-          "ihs_w41": 38.8,
-          "ihs_mensaje": "▼ -4.7% vs W41",
-          "semanal": {
-            "W42": {
-              "venta_sam": 22,
-              "target": 21
-            },
-            "W43": {
-              "venta_sam": 17,
-              "target": 28
-            },
-            "MTD": {
-              "venta_sam": 78,
-              "target": 122
-            }
-          },
-          "segmentos_comp": [
-            {
-              "segmento": "75↑",
-              "venta_sam": 12,
-              "target": 8,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "PREMIUM",
-              "venta_sam": 5,
-              "target": 9,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "QLED / MINILED",
-              "venta_sam": 19,
-              "target": 59,
-              "vs_competencia": "COMPETENCIA GANA",
-              "alerta_pierde": true
-            },
-            {
-              "segmento": "UHD",
-              "venta_sam": 19,
-              "target": 18,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "AUDIO",
-              "venta_sam": 23,
-              "target": 30,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            }
-          ]
-        },
-        {
           "tienda": "FALABELLA FONTANAR",
           "asistencia": "Asistida",
           "target_mtd": 137,
-          "venta_mtd": 69,
-          "cumplimiento_mtd": 50.5,
-          "debe_mtd": 68,
-          "venta_pesos": 114570932,
+          "venta_mtd": 80,
+          "cumplimiento_mtd": 58.6,
+          "debe_mtd": 57,
+          "venta_pesos": 117796777,
           "stock": 256,
           "ihs_w42": 21.8,
           "ihs_w41": 32.6,
@@ -6943,11 +6559,11 @@
               "target": 23
             },
             "W43": {
-              "venta_sam": 12,
+              "venta_sam": 23,
               "target": 32
             },
             "MTD": {
-              "venta_sam": 69,
+              "venta_sam": 80,
               "target": 137
             }
           },
@@ -6975,7 +6591,7 @@
             },
             {
               "segmento": "UHD",
-              "venta_sam": 20,
+              "venta_sam": 31,
               "target": 26,
               "vs_competencia": "SAMSUNG LIDERA",
               "alerta_pierde": false
@@ -6988,6 +6604,390 @@
               "alerta_pierde": false
             }
           ]
+        },
+        {
+          "tienda": "FALABELLA GALERIAS",
+          "asistencia": "Asistida",
+          "target_mtd": 68,
+          "venta_mtd": 37,
+          "cumplimiento_mtd": 55.1,
+          "debe_mtd": 31,
+          "venta_pesos": 48474232,
+          "stock": 128,
+          "ihs_w42": 30.8,
+          "ihs_w41": 22.4,
+          "ihs_mensaje": "▲ +8.4% vs W41",
+          "semanal": {
+            "W42": {
+              "venta_sam": 9,
+              "target": 12
+            },
+            "W43": {
+              "venta_sam": 8,
+              "target": 16
+            },
+            "MTD": {
+              "venta_sam": 37,
+              "target": 68
+            }
+          },
+          "segmentos_comp": [
+            {
+              "segmento": "75↑",
+              "venta_sam": 3,
+              "target": 3,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "PREMIUM",
+              "venta_sam": 1,
+              "target": 1,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "QLED / MINILED",
+              "venta_sam": 12,
+              "target": 26,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "UHD",
+              "venta_sam": 7,
+              "target": 21,
+              "vs_competencia": "COMPETENCIA GANA",
+              "alerta_pierde": true
+            },
+            {
+              "segmento": "AUDIO",
+              "venta_sam": 14,
+              "target": 19,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            }
+          ]
+        },
+        {
+          "tienda": "FALABELLA SANTAFE",
+          "asistencia": "Asistida",
+          "target_mtd": 66,
+          "venta_mtd": 90,
+          "cumplimiento_mtd": 136.8,
+          "debe_mtd": 0,
+          "venta_pesos": 36428053,
+          "stock": 684,
+          "ihs_w42": 3.4,
+          "ihs_w41": 14.7,
+          "ihs_mensaje": "▼ -11.3% vs W41",
+          "semanal": {
+            "W42": {
+              "venta_sam": 2,
+              "target": 12
+            },
+            "W43": {
+              "venta_sam": 72,
+              "target": 15
+            },
+            "MTD": {
+              "venta_sam": 90,
+              "target": 66
+            }
+          },
+          "segmentos_comp": [
+            {
+              "segmento": "75↑",
+              "venta_sam": 0,
+              "target": 4,
+              "vs_competencia": "COMPETENCIA GANA",
+              "alerta_pierde": true
+            },
+            {
+              "segmento": "PREMIUM",
+              "venta_sam": 2,
+              "target": 4,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "QLED / MINILED",
+              "venta_sam": 9,
+              "target": 33,
+              "vs_competencia": "COMPETENCIA GANA",
+              "alerta_pierde": true
+            },
+            {
+              "segmento": "UHD",
+              "venta_sam": 74,
+              "target": 8,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "AUDIO",
+              "venta_sam": 5,
+              "target": 18,
+              "vs_competencia": "COMPETENCIA GANA",
+              "alerta_pierde": true
+            }
+          ]
+        },
+        {
+          "tienda": "FALABELLA UNICENTRO",
+          "asistencia": "Asistida",
+          "target_mtd": 124,
+          "venta_mtd": 86,
+          "cumplimiento_mtd": 69.5,
+          "debe_mtd": 38,
+          "venta_pesos": 157582334,
+          "stock": 135,
+          "ihs_w42": 43.0,
+          "ihs_w41": 51.9,
+          "ihs_mensaje": "▼ -8.9% vs W41",
+          "semanal": {
+            "W42": {
+              "venta_sam": 18,
+              "target": 21
+            },
+            "W43": {
+              "venta_sam": 27,
+              "target": 29
+            },
+            "MTD": {
+              "venta_sam": 86,
+              "target": 124
+            }
+          },
+          "segmentos_comp": [
+            {
+              "segmento": "75↑",
+              "venta_sam": 6,
+              "target": 8,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "PREMIUM",
+              "venta_sam": 19,
+              "target": 15,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "QLED / MINILED",
+              "venta_sam": 9,
+              "target": 50,
+              "vs_competencia": "COMPETENCIA GANA",
+              "alerta_pierde": true
+            },
+            {
+              "segmento": "UHD",
+              "venta_sam": 27,
+              "target": 18,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "AUDIO",
+              "venta_sam": 25,
+              "target": 34,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            }
+          ]
+        },
+        {
+          "tienda": "FALABELLA CENTRO MAYOR",
+          "asistencia": "Asistida",
+          "target_mtd": 112,
+          "venta_mtd": 56,
+          "cumplimiento_mtd": 50.0,
+          "debe_mtd": 56,
+          "venta_pesos": 83301919,
+          "stock": 151,
+          "ihs_w42": 14.7,
+          "ihs_w41": 21.7,
+          "ihs_mensaje": "▼ -7.0% vs W41",
+          "semanal": {
+            "W42": {
+              "venta_sam": 7,
+              "target": 19
+            },
+            "W43": {
+              "venta_sam": 16,
+              "target": 26
+            },
+            "MTD": {
+              "venta_sam": 56,
+              "target": 112
+            }
+          },
+          "segmentos_comp": [
+            {
+              "segmento": "75↑",
+              "venta_sam": 5,
+              "target": 10,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "PREMIUM",
+              "venta_sam": 4,
+              "target": 1,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "QLED / MINILED",
+              "venta_sam": 8,
+              "target": 51,
+              "vs_competencia": "COMPETENCIA GANA",
+              "alerta_pierde": true
+            },
+            {
+              "segmento": "UHD",
+              "venta_sam": 23,
+              "target": 29,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "AUDIO",
+              "venta_sam": 16,
+              "target": 23,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            }
+          ]
+        },
+        {
+          "tienda": "FALABELLA TITAN",
+          "asistencia": "Asistida",
+          "target_mtd": 122,
+          "venta_mtd": 98,
+          "cumplimiento_mtd": 80.7,
+          "debe_mtd": 24,
+          "venta_pesos": 158499171,
+          "stock": 273,
+          "ihs_w42": 34.1,
+          "ihs_w41": 38.8,
+          "ihs_mensaje": "▼ -4.7% vs W41",
+          "semanal": {
+            "W42": {
+              "venta_sam": 22,
+              "target": 21
+            },
+            "W43": {
+              "venta_sam": 37,
+              "target": 28
+            },
+            "MTD": {
+              "venta_sam": 98,
+              "target": 122
+            }
+          },
+          "segmentos_comp": [
+            {
+              "segmento": "75↑",
+              "venta_sam": 12,
+              "target": 8,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "PREMIUM",
+              "venta_sam": 7,
+              "target": 9,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "QLED / MINILED",
+              "venta_sam": 19,
+              "target": 59,
+              "vs_competencia": "COMPETENCIA GANA",
+              "alerta_pierde": true
+            },
+            {
+              "segmento": "UHD",
+              "venta_sam": 34,
+              "target": 18,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "AUDIO",
+              "venta_sam": 26,
+              "target": 30,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            }
+          ]
+        },
+        {
+          "tienda": "FALABELLA COLINA",
+          "asistencia": "Asistida",
+          "target_mtd": 157,
+          "venta_mtd": 60,
+          "cumplimiento_mtd": 38.3,
+          "debe_mtd": 97,
+          "venta_pesos": 123057428,
+          "stock": 147,
+          "ihs_w42": 24.7,
+          "ihs_w41": 37.3,
+          "ihs_mensaje": "▼ -12.6% vs W41",
+          "semanal": {
+            "W42": {
+              "venta_sam": 10,
+              "target": 27
+            },
+            "W43": {
+              "venta_sam": 14,
+              "target": 36
+            },
+            "MTD": {
+              "venta_sam": 60,
+              "target": 157
+            }
+          },
+          "segmentos_comp": [
+            {
+              "segmento": "75↑",
+              "venta_sam": 6,
+              "target": 10,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "PREMIUM",
+              "venta_sam": 15,
+              "target": 14,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "QLED / MINILED",
+              "venta_sam": 6,
+              "target": 70,
+              "vs_competencia": "COMPETENCIA GANA",
+              "alerta_pierde": true
+            },
+            {
+              "segmento": "UHD",
+              "venta_sam": 15,
+              "target": 22,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "AUDIO",
+              "venta_sam": 18,
+              "target": 43,
+              "vs_competencia": "COMPETENCIA GANA",
+              "alerta_pierde": true
+            }
+          ]
         }
       ],
       "ventas_cero": [
@@ -6995,6 +6995,30 @@
           "tienda": "FALABELLA COLINA",
           "fecha": "19/10/2026",
           "dia": "Lunes",
+          "estado": "0 Uds"
+        },
+        {
+          "tienda": "FALABELLA CENTRO MAYOR",
+          "fecha": "18/10/2026",
+          "dia": "Domingo",
+          "estado": "0 Uds"
+        },
+        {
+          "tienda": "FALABELLA CENTRO MAYOR",
+          "fecha": "20/10/2026",
+          "dia": "Martes",
+          "estado": "0 Uds"
+        },
+        {
+          "tienda": "FALABELLA GALERIAS",
+          "fecha": "19/10/2026",
+          "dia": "Lunes",
+          "estado": "0 Uds"
+        },
+        {
+          "tienda": "FALABELLA GALERIAS",
+          "fecha": "20/10/2026",
+          "dia": "Martes",
           "estado": "0 Uds"
         },
         {
@@ -7014,36 +7038,6 @@
           "fecha": "23/10/2026",
           "dia": "Viernes",
           "estado": "0 Uds"
-        },
-        {
-          "tienda": "FALABELLA CENTRO MAYOR",
-          "fecha": "18/10/2026",
-          "dia": "Domingo",
-          "estado": "0 Uds"
-        },
-        {
-          "tienda": "FALABELLA CENTRO MAYOR",
-          "fecha": "20/10/2026",
-          "dia": "Martes",
-          "estado": "0 Uds"
-        },
-        {
-          "tienda": "FALABELLA GALERIAS",
-          "fecha": "17/10/2026",
-          "dia": "Sábado",
-          "estado": "0 Uds"
-        },
-        {
-          "tienda": "FALABELLA GALERIAS",
-          "fecha": "19/10/2026",
-          "dia": "Lunes",
-          "estado": "0 Uds"
-        },
-        {
-          "tienda": "FALABELLA GALERIAS",
-          "fecha": "20/10/2026",
-          "dia": "Martes",
-          "estado": "0 Uds"
         }
       ],
       "asesores": [
@@ -7062,20 +7056,20 @@
             "mensaje": "▼ -8.9% vs W41"
           },
           "puntos": {
-            "total": 830,
-            "por_venta": 780,
+            "total": 910,
+            "por_venta": 860,
             "bono": 50,
-            "explicacion": "78 unidades vendidas en el mes (x10 pts = 780 pts) + bono de 50 pts por cumplimiento MTD (62.9%)."
+            "explicacion": "86 unidades vendidas en el mes (x10 pts = 860 pts) + bono de 50 pts por cumplimiento MTD (69.4%)."
           },
           "periodos": {
             "W43": {
               "label": "Semana en Curso (W43)",
               "target": 29,
-              "venta_uds": 19,
-              "venta_pesos": 19546988,
-              "cumplimiento": 65.5,
-              "semaforo": "ROJO",
-              "debe": 10
+              "venta_uds": 27,
+              "venta_pesos": 26021855,
+              "cumplimiento": 93.1,
+              "semaforo": "AMARILLO",
+              "debe": 2
             },
             "W42": {
               "label": "Semana Anterior (W42)",
@@ -7089,11 +7083,11 @@
             "MTD": {
               "label": "Mes Acumulado Octubre (MTD)",
               "target": 124,
-              "venta_uds": 78,
-              "venta_pesos": 151107467,
-              "cumplimiento": 62.9,
+              "venta_uds": 86,
+              "venta_pesos": 157582334,
+              "cumplimiento": 69.4,
               "semaforo": "ROJO",
-              "debe": 46
+              "debe": 38
             }
           },
           "segmentos": [
@@ -7108,34 +7102,34 @@
             {
               "segmento": "PREMIUM",
               "target": 15,
-              "venta": 18,
+              "venta": 19,
               "debe_unidades": 0,
-              "cumplimiento_pct": 120.0,
+              "cumplimiento_pct": 126.7,
               "estado": "Al día"
             },
             {
               "segmento": "QLED / MINILED",
               "target": 50,
-              "venta": 8,
-              "debe_unidades": 42,
-              "cumplimiento_pct": 16.0,
-              "estado": "42 uds"
+              "venta": 9,
+              "debe_unidades": 41,
+              "cumplimiento_pct": 18.0,
+              "estado": "41 uds"
             },
             {
               "segmento": "UHD",
               "target": 18,
-              "venta": 22,
+              "venta": 27,
               "debe_unidades": 0,
-              "cumplimiento_pct": 122.2,
+              "cumplimiento_pct": 150.0,
               "estado": "Al día"
             },
             {
               "segmento": "AUDIO",
               "target": 34,
-              "venta": 24,
-              "debe_unidades": 10,
-              "cumplimiento_pct": 70.6,
-              "estado": "10 uds"
+              "venta": 25,
+              "debe_unidades": 9,
+              "cumplimiento_pct": 73.5,
+              "estado": "9 uds"
             }
           ],
           "total_stock": 135,
@@ -7325,20 +7319,20 @@
             "mensaje": "▼ -7.0% vs W41"
           },
           "puntos": {
-            "total": 560,
-            "por_venta": 510,
+            "total": 610,
+            "por_venta": 560,
             "bono": 50,
-            "explicacion": "51 unidades vendidas en el mes (x10 pts = 510 pts) + bono de 50 pts por cumplimiento MTD (45.5%)."
+            "explicacion": "56 unidades vendidas en el mes (x10 pts = 560 pts) + bono de 50 pts por cumplimiento MTD (50.0%)."
           },
           "periodos": {
             "W43": {
               "label": "Semana en Curso (W43)",
               "target": 26,
-              "venta_uds": 11,
-              "venta_pesos": 7681778,
-              "cumplimiento": 42.3,
+              "venta_uds": 16,
+              "venta_pesos": 11464639,
+              "cumplimiento": 61.5,
               "semaforo": "ROJO",
-              "debe": 15
+              "debe": 10
             },
             "W42": {
               "label": "Semana Anterior (W42)",
@@ -7352,11 +7346,11 @@
             "MTD": {
               "label": "Mes Acumulado Octubre (MTD)",
               "target": 112,
-              "venta_uds": 51,
-              "venta_pesos": 79519058,
-              "cumplimiento": 45.5,
+              "venta_uds": 56,
+              "venta_pesos": 83301919,
+              "cumplimiento": 50.0,
               "semaforo": "ROJO",
-              "debe": 61
+              "debe": 56
             }
           },
           "segmentos": [
@@ -7371,9 +7365,9 @@
             {
               "segmento": "PREMIUM",
               "target": 1,
-              "venta": 3,
+              "venta": 4,
               "debe_unidades": 0,
-              "cumplimiento_pct": 300.0,
+              "cumplimiento_pct": 400.0,
               "estado": "Al día"
             },
             {
@@ -7387,18 +7381,18 @@
             {
               "segmento": "UHD",
               "target": 29,
-              "venta": 20,
-              "debe_unidades": 9,
-              "cumplimiento_pct": 69.0,
-              "estado": "9 uds"
+              "venta": 23,
+              "debe_unidades": 6,
+              "cumplimiento_pct": 79.3,
+              "estado": "6 uds"
             },
             {
               "segmento": "AUDIO",
               "target": 23,
-              "venta": 15,
-              "debe_unidades": 8,
-              "cumplimiento_pct": 65.2,
-              "estado": "8 uds"
+              "venta": 16,
+              "debe_unidades": 7,
+              "cumplimiento_pct": 69.6,
+              "estado": "7 uds"
             }
           ],
           "total_stock": 151,
@@ -7522,20 +7516,20 @@
             "mensaje": "▼ -4.7% vs W41"
           },
           "puntos": {
-            "total": 830,
-            "por_venta": 780,
-            "bono": 50,
-            "explicacion": "78 unidades vendidas en el mes (x10 pts = 780 pts) + bono de 50 pts por cumplimiento MTD (63.9%)."
+            "total": 1180,
+            "por_venta": 980,
+            "bono": 200,
+            "explicacion": "98 unidades vendidas en el mes (x10 pts = 980 pts) + bono de 200 pts por cumplimiento MTD (80.3%)."
           },
           "periodos": {
             "W43": {
               "label": "Semana en Curso (W43)",
               "target": 28,
-              "venta_uds": 17,
-              "venta_pesos": 18919078,
-              "cumplimiento": 60.7,
-              "semaforo": "ROJO",
-              "debe": 11
+              "venta_uds": 37,
+              "venta_pesos": 35805237,
+              "cumplimiento": 132.1,
+              "semaforo": "VERDE",
+              "debe": 0
             },
             "W42": {
               "label": "Semana Anterior (W42)",
@@ -7549,11 +7543,11 @@
             "MTD": {
               "label": "Mes Acumulado Octubre (MTD)",
               "target": 122,
-              "venta_uds": 78,
-              "venta_pesos": 141613012,
-              "cumplimiento": 63.9,
-              "semaforo": "ROJO",
-              "debe": 44
+              "venta_uds": 98,
+              "venta_pesos": 158499171,
+              "cumplimiento": 80.3,
+              "semaforo": "AMARILLO",
+              "debe": 24
             }
           },
           "segmentos": [
@@ -7568,10 +7562,10 @@
             {
               "segmento": "PREMIUM",
               "target": 9,
-              "venta": 5,
-              "debe_unidades": 4,
-              "cumplimiento_pct": 55.6,
-              "estado": "4 uds"
+              "venta": 7,
+              "debe_unidades": 2,
+              "cumplimiento_pct": 77.8,
+              "estado": "2 uds"
             },
             {
               "segmento": "QLED / MINILED",
@@ -7584,18 +7578,18 @@
             {
               "segmento": "UHD",
               "target": 18,
-              "venta": 19,
+              "venta": 34,
               "debe_unidades": 0,
-              "cumplimiento_pct": 105.6,
+              "cumplimiento_pct": 188.9,
               "estado": "Al día"
             },
             {
               "segmento": "AUDIO",
               "target": 30,
-              "venta": 23,
-              "debe_unidades": 7,
-              "cumplimiento_pct": 76.7,
-              "estado": "7 uds"
+              "venta": 26,
+              "debe_unidades": 4,
+              "cumplimiento_pct": 86.7,
+              "estado": "4 uds"
             }
           ],
           "total_stock": 273,
@@ -7845,20 +7839,20 @@
             "mensaje": "▼ -10.8% vs W41"
           },
           "puntos": {
-            "total": 740,
-            "por_venta": 690,
+            "total": 850,
+            "por_venta": 800,
             "bono": 50,
-            "explicacion": "69 unidades vendidas en el mes (x10 pts = 690 pts) + bono de 50 pts por cumplimiento MTD (50.4%)."
+            "explicacion": "80 unidades vendidas en el mes (x10 pts = 800 pts) + bono de 50 pts por cumplimiento MTD (58.4%)."
           },
           "periodos": {
             "W43": {
               "label": "Semana en Curso (W43)",
               "target": 32,
-              "venta_uds": 12,
-              "venta_pesos": 15983264,
-              "cumplimiento": 37.5,
+              "venta_uds": 23,
+              "venta_pesos": 19209109,
+              "cumplimiento": 71.9,
               "semaforo": "ROJO",
-              "debe": 20
+              "debe": 9
             },
             "W42": {
               "label": "Semana Anterior (W42)",
@@ -7872,11 +7866,11 @@
             "MTD": {
               "label": "Mes Acumulado Octubre (MTD)",
               "target": 137,
-              "venta_uds": 69,
-              "venta_pesos": 114570932,
-              "cumplimiento": 50.4,
+              "venta_uds": 80,
+              "venta_pesos": 117796777,
+              "cumplimiento": 58.4,
               "semaforo": "ROJO",
-              "debe": 68
+              "debe": 57
             }
           },
           "segmentos": [
@@ -7907,10 +7901,10 @@
             {
               "segmento": "UHD",
               "target": 26,
-              "venta": 20,
-              "debe_unidades": 6,
-              "cumplimiento_pct": 76.9,
-              "estado": "6 uds"
+              "venta": 31,
+              "debe_unidades": 0,
+              "cumplimiento_pct": 119.2,
+              "estado": "Al día"
             },
             {
               "segmento": "AUDIO",
@@ -8228,20 +8222,20 @@
             "mensaje": "▼ -10.8% vs W41"
           },
           "puntos": {
-            "total": 740,
-            "por_venta": 690,
+            "total": 850,
+            "por_venta": 800,
             "bono": 50,
-            "explicacion": "69 unidades vendidas en el mes (x10 pts = 690 pts) + bono de 50 pts por cumplimiento MTD (50.4%)."
+            "explicacion": "80 unidades vendidas en el mes (x10 pts = 800 pts) + bono de 50 pts por cumplimiento MTD (58.4%)."
           },
           "periodos": {
             "W43": {
               "label": "Semana en Curso (W43)",
               "target": 32,
-              "venta_uds": 12,
-              "venta_pesos": 15983264,
-              "cumplimiento": 37.5,
+              "venta_uds": 23,
+              "venta_pesos": 19209109,
+              "cumplimiento": 71.9,
               "semaforo": "ROJO",
-              "debe": 20
+              "debe": 9
             },
             "W42": {
               "label": "Semana Anterior (W42)",
@@ -8255,11 +8249,11 @@
             "MTD": {
               "label": "Mes Acumulado Octubre (MTD)",
               "target": 137,
-              "venta_uds": 69,
-              "venta_pesos": 114570932,
-              "cumplimiento": 50.4,
+              "venta_uds": 80,
+              "venta_pesos": 117796777,
+              "cumplimiento": 58.4,
               "semaforo": "ROJO",
-              "debe": 68
+              "debe": 57
             }
           },
           "segmentos": [
@@ -8290,10 +8284,10 @@
             {
               "segmento": "UHD",
               "target": 26,
-              "venta": 20,
-              "debe_unidades": 6,
-              "cumplimiento_pct": 76.9,
-              "estado": "6 uds"
+              "venta": 31,
+              "debe_unidades": 0,
+              "cumplimiento_pct": 119.2,
+              "estado": "Al día"
             },
             {
               "segmento": "AUDIO",
@@ -8611,20 +8605,20 @@
             "mensaje": "▼ -12.6% vs W41"
           },
           "puntos": {
-            "total": 610,
-            "por_venta": 560,
+            "total": 650,
+            "por_venta": 600,
             "bono": 50,
-            "explicacion": "56 unidades vendidas en el mes (x10 pts = 560 pts) + bono de 50 pts por cumplimiento MTD (35.7%)."
+            "explicacion": "60 unidades vendidas en el mes (x10 pts = 600 pts) + bono de 50 pts por cumplimiento MTD (38.2%)."
           },
           "periodos": {
             "W43": {
               "label": "Semana en Curso (W43)",
               "target": 36,
-              "venta_uds": 10,
-              "venta_pesos": 8760422,
-              "cumplimiento": 27.8,
+              "venta_uds": 14,
+              "venta_pesos": 20333901,
+              "cumplimiento": 38.9,
               "semaforo": "ROJO",
-              "debe": 26
+              "debe": 22
             },
             "W42": {
               "label": "Semana Anterior (W42)",
@@ -8638,29 +8632,29 @@
             "MTD": {
               "label": "Mes Acumulado Octubre (MTD)",
               "target": 157,
-              "venta_uds": 56,
-              "venta_pesos": 111483949,
-              "cumplimiento": 35.7,
+              "venta_uds": 60,
+              "venta_pesos": 123057428,
+              "cumplimiento": 38.2,
               "semaforo": "ROJO",
-              "debe": 101
+              "debe": 97
             }
           },
           "segmentos": [
             {
               "segmento": "75↑",
               "target": 10,
-              "venta": 5,
-              "debe_unidades": 5,
-              "cumplimiento_pct": 50.0,
-              "estado": "5 uds"
+              "venta": 6,
+              "debe_unidades": 4,
+              "cumplimiento_pct": 60.0,
+              "estado": "4 uds"
             },
             {
               "segmento": "PREMIUM",
               "target": 14,
-              "venta": 12,
-              "debe_unidades": 2,
-              "cumplimiento_pct": 85.7,
-              "estado": "2 uds"
+              "venta": 15,
+              "debe_unidades": 0,
+              "cumplimiento_pct": 107.1,
+              "estado": "Al día"
             },
             {
               "segmento": "QLED / MINILED",
@@ -8922,20 +8916,20 @@
             "mensaje": "▼ -11.3% vs W41"
           },
           "puntos": {
-            "total": 340,
-            "por_venta": 290,
-            "bono": 50,
-            "explicacion": "29 unidades vendidas en el mes (x10 pts = 290 pts) + bono de 50 pts por cumplimiento MTD (43.3%)."
+            "total": 840,
+            "por_venta": 640,
+            "bono": 200,
+            "explicacion": "64 unidades vendidas en el mes (x10 pts = 640 pts) + bono de 200 pts por cumplimiento MTD (95.5%)."
           },
           "periodos": {
             "W43": {
               "label": "Semana en Curso (W43)",
               "target": 16,
-              "venta_uds": 6,
-              "venta_pesos": 3521469,
-              "cumplimiento": 37.5,
-              "semaforo": "ROJO",
-              "debe": 10
+              "venta_uds": 40,
+              "venta_pesos": 6904050,
+              "cumplimiento": 250.0,
+              "semaforo": "VERDE",
+              "debe": 0
             },
             "W42": {
               "label": "Semana Anterior (W42)",
@@ -8949,11 +8943,11 @@
             "MTD": {
               "label": "Mes Acumulado Octubre (MTD)",
               "target": 67,
-              "venta_uds": 29,
-              "venta_pesos": 39068561,
-              "cumplimiento": 43.3,
-              "semaforo": "ROJO",
-              "debe": 38
+              "venta_uds": 64,
+              "venta_pesos": 42451142,
+              "cumplimiento": 95.5,
+              "semaforo": "AMARILLO",
+              "debe": 3
             }
           },
           "segmentos": [
@@ -8984,18 +8978,18 @@
             {
               "segmento": "UHD",
               "target": 14,
-              "venta": 7,
-              "debe_unidades": 7,
-              "cumplimiento_pct": 50.0,
-              "estado": "7 uds"
+              "venta": 41,
+              "debe_unidades": 0,
+              "cumplimiento_pct": 292.9,
+              "estado": "Al día"
             },
             {
               "segmento": "AUDIO",
               "target": 18,
-              "venta": 9,
-              "debe_unidades": 9,
-              "cumplimiento_pct": 50.0,
-              "estado": "9 uds"
+              "venta": 10,
+              "debe_unidades": 8,
+              "cumplimiento_pct": 55.6,
+              "estado": "8 uds"
             }
           ],
           "total_stock": 812,
@@ -9323,9 +9317,9 @@
       "total_asesores": 1,
       "total_tiendas": 1,
       "target_mtd": 92,
-      "venta_mtd": 56,
-      "debe_mtd": 36,
-      "cumplimiento_mtd": 60.9,
+      "venta_mtd": 62,
+      "debe_mtd": 30,
+      "cumplimiento_mtd": 67.4,
       "promedio_ihs_w42": 27.2,
       "semaforo": "ROJO",
       "tiendas_detalle": [
@@ -9333,10 +9327,10 @@
           "tienda": "FALABELLA  CARACOLI",
           "asistencia": "No Asistida",
           "target_mtd": 92,
-          "venta_mtd": 56,
-          "cumplimiento_mtd": 61.1,
-          "debe_mtd": 36,
-          "venta_pesos": 82870516,
+          "venta_mtd": 62,
+          "cumplimiento_mtd": 67.7,
+          "debe_mtd": 30,
+          "venta_pesos": 84374786,
           "stock": 113,
           "ihs_w42": 27.2,
           "ihs_w41": 29.1,
@@ -9347,11 +9341,11 @@
               "target": 16
             },
             "W43": {
-              "venta_sam": 9,
+              "venta_sam": 15,
               "target": 21
             },
             "MTD": {
-              "venta_sam": 56,
+              "venta_sam": 62,
               "target": 92
             }
           },
@@ -9372,14 +9366,14 @@
             },
             {
               "segmento": "QLED / MINILED",
-              "venta_sam": 12,
+              "venta_sam": 13,
               "target": 43,
               "vs_competencia": "COMPETENCIA GANA",
               "alerta_pierde": true
             },
             {
               "segmento": "UHD",
-              "venta_sam": 21,
+              "venta_sam": 26,
               "target": 18,
               "vs_competencia": "SAMSUNG LIDERA",
               "alerta_pierde": false
@@ -9411,20 +9405,20 @@
             "mensaje": "▼ -1.9% vs W41"
           },
           "puntos": {
-            "total": 610,
-            "por_venta": 560,
+            "total": 670,
+            "por_venta": 620,
             "bono": 50,
-            "explicacion": "56 unidades vendidas en el mes (x10 pts = 560 pts) + bono de 50 pts por cumplimiento MTD (60.9%)."
+            "explicacion": "62 unidades vendidas en el mes (x10 pts = 620 pts) + bono de 50 pts por cumplimiento MTD (67.4%)."
           },
           "periodos": {
             "W43": {
               "label": "Semana en Curso (W43)",
               "target": 21,
-              "venta_uds": 9,
-              "venta_pesos": 9872211,
-              "cumplimiento": 42.9,
+              "venta_uds": 15,
+              "venta_pesos": 11376481,
+              "cumplimiento": 71.4,
               "semaforo": "ROJO",
-              "debe": 12
+              "debe": 6
             },
             "W42": {
               "label": "Semana Anterior (W42)",
@@ -9438,11 +9432,11 @@
             "MTD": {
               "label": "Mes Acumulado Octubre (MTD)",
               "target": 92,
-              "venta_uds": 56,
-              "venta_pesos": 82870516,
-              "cumplimiento": 60.9,
+              "venta_uds": 62,
+              "venta_pesos": 84374786,
+              "cumplimiento": 67.4,
               "semaforo": "ROJO",
-              "debe": 36
+              "debe": 30
             }
           },
           "segmentos": [
@@ -9465,17 +9459,17 @@
             {
               "segmento": "QLED / MINILED",
               "target": 43,
-              "venta": 12,
-              "debe_unidades": 31,
-              "cumplimiento_pct": 27.9,
-              "estado": "31 uds"
+              "venta": 13,
+              "debe_unidades": 30,
+              "cumplimiento_pct": 30.2,
+              "estado": "30 uds"
             },
             {
               "segmento": "UHD",
               "target": 18,
-              "venta": 21,
+              "venta": 26,
               "debe_unidades": 0,
-              "cumplimiento_pct": 116.7,
+              "cumplimiento_pct": 144.4,
               "estado": "Al día"
             },
             {
@@ -9614,9 +9608,9 @@
       "total_asesores": 1,
       "total_tiendas": 1,
       "target_mtd": 130,
-      "venta_mtd": 57,
-      "debe_mtd": 73,
-      "cumplimiento_mtd": 43.8,
+      "venta_mtd": 59,
+      "debe_mtd": 71,
+      "cumplimiento_mtd": 45.4,
       "promedio_ihs_w42": 12.8,
       "semaforo": "ROJO",
       "tiendas_detalle": [
@@ -9624,10 +9618,10 @@
           "tienda": "FALABELLA  LA CAROLA",
           "asistencia": "Asistida",
           "target_mtd": 130,
-          "venta_mtd": 57,
-          "cumplimiento_mtd": 44.0,
-          "debe_mtd": 73,
-          "venta_pesos": 77977417,
+          "venta_mtd": 59,
+          "cumplimiento_mtd": 45.5,
+          "debe_mtd": 71,
+          "venta_pesos": 81153986,
           "stock": 57,
           "ihs_w42": 12.8,
           "ihs_w41": 40.4,
@@ -9638,11 +9632,11 @@
               "target": 22
             },
             "W43": {
-              "venta_sam": 12,
+              "venta_sam": 14,
               "target": 30
             },
             "MTD": {
-              "venta_sam": 57,
+              "venta_sam": 59,
               "target": 130
             }
           },
@@ -9670,7 +9664,7 @@
             },
             {
               "segmento": "UHD",
-              "venta_sam": 37,
+              "venta_sam": 39,
               "target": 33,
               "vs_competencia": "SAMSUNG LIDERA",
               "alerta_pierde": false
@@ -9709,20 +9703,20 @@
             "mensaje": "▼ -27.6% vs W41"
           },
           "puntos": {
-            "total": 620,
-            "por_venta": 570,
+            "total": 640,
+            "por_venta": 590,
             "bono": 50,
-            "explicacion": "57 unidades vendidas en el mes (x10 pts = 570 pts) + bono de 50 pts por cumplimiento MTD (43.8%)."
+            "explicacion": "59 unidades vendidas en el mes (x10 pts = 590 pts) + bono de 50 pts por cumplimiento MTD (45.4%)."
           },
           "periodos": {
             "W43": {
               "label": "Semana en Curso (W43)",
               "target": 30,
-              "venta_uds": 12,
-              "venta_pesos": 9788363,
-              "cumplimiento": 40.0,
+              "venta_uds": 14,
+              "venta_pesos": 12964932,
+              "cumplimiento": 46.7,
               "semaforo": "ROJO",
-              "debe": 18
+              "debe": 16
             },
             "W42": {
               "label": "Semana Anterior (W42)",
@@ -9736,11 +9730,11 @@
             "MTD": {
               "label": "Mes Acumulado Octubre (MTD)",
               "target": 130,
-              "venta_uds": 57,
-              "venta_pesos": 77977417,
-              "cumplimiento": 43.8,
+              "venta_uds": 59,
+              "venta_pesos": 81153986,
+              "cumplimiento": 45.4,
               "semaforo": "ROJO",
-              "debe": 73
+              "debe": 71
             }
           },
           "segmentos": [
@@ -9771,9 +9765,9 @@
             {
               "segmento": "UHD",
               "target": 33,
-              "venta": 37,
+              "venta": 39,
               "debe_unidades": 0,
-              "cumplimiento_pct": 112.1,
+              "cumplimiento_pct": 118.2,
               "estado": "Al día"
             },
             {
@@ -9882,84 +9876,20 @@
       "total_asesores": 2,
       "total_tiendas": 2,
       "target_mtd": 229,
-      "venta_mtd": 105,
-      "debe_mtd": 124,
-      "cumplimiento_mtd": 45.9,
+      "venta_mtd": 116,
+      "debe_mtd": 113,
+      "cumplimiento_mtd": 50.7,
       "promedio_ihs_w42": 25.5,
       "semaforo": "ROJO",
       "tiendas_detalle": [
         {
-          "tienda": "FALABELLA WTC Cali",
-          "asistencia": "Asistida",
-          "target_mtd": 79,
-          "venta_mtd": 52,
-          "cumplimiento_mtd": 65.8,
-          "debe_mtd": 27,
-          "venta_pesos": 94466305,
-          "stock": 90,
-          "ihs_w42": 23.8,
-          "ihs_w41": 26.5,
-          "ihs_mensaje": "▼ -2.7% vs W41",
-          "semanal": {
-            "W42": {
-              "venta_sam": 12,
-              "target": 14
-            },
-            "W43": {
-              "venta_sam": 8,
-              "target": 18
-            },
-            "MTD": {
-              "venta_sam": 52,
-              "target": 79
-            }
-          },
-          "segmentos_comp": [
-            {
-              "segmento": "75↑",
-              "venta_sam": 4,
-              "target": 4,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "PREMIUM",
-              "venta_sam": 6,
-              "target": 5,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "QLED / MINILED",
-              "venta_sam": 12,
-              "target": 32,
-              "vs_competencia": "COMPETENCIA GANA",
-              "alerta_pierde": true
-            },
-            {
-              "segmento": "UHD",
-              "venta_sam": 8,
-              "target": 18,
-              "vs_competencia": "COMPETENCIA GANA",
-              "alerta_pierde": true
-            },
-            {
-              "segmento": "AUDIO",
-              "venta_sam": 22,
-              "target": 22,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            }
-          ]
-        },
-        {
           "tienda": "FALABELLA JARDIN PLAZA",
           "asistencia": "Asistida",
           "target_mtd": 150,
-          "venta_mtd": 53,
-          "cumplimiento_mtd": 35.5,
-          "debe_mtd": 97,
-          "venta_pesos": 76234253,
+          "venta_mtd": 62,
+          "cumplimiento_mtd": 41.5,
+          "debe_mtd": 88,
+          "venta_pesos": 79648358,
           "stock": 135,
           "ihs_w42": 27.2,
           "ihs_w41": 28.3,
@@ -9970,11 +9900,11 @@
               "target": 26
             },
             "W43": {
-              "venta_sam": 23,
+              "venta_sam": 32,
               "target": 34
             },
             "MTD": {
-              "venta_sam": 53,
+              "venta_sam": 62,
               "target": 150
             }
           },
@@ -10002,15 +9932,79 @@
             },
             {
               "segmento": "UHD",
-              "venta_sam": 27,
+              "venta_sam": 35,
               "target": 39,
               "vs_competencia": "SAMSUNG LIDERA",
               "alerta_pierde": false
             },
             {
               "segmento": "AUDIO",
-              "venta_sam": 22,
+              "venta_sam": 23,
               "target": 43,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            }
+          ]
+        },
+        {
+          "tienda": "FALABELLA WTC Cali",
+          "asistencia": "Asistida",
+          "target_mtd": 79,
+          "venta_mtd": 54,
+          "cumplimiento_mtd": 68.4,
+          "debe_mtd": 25,
+          "venta_pesos": 97631124,
+          "stock": 90,
+          "ihs_w42": 23.8,
+          "ihs_w41": 26.5,
+          "ihs_mensaje": "▼ -2.7% vs W41",
+          "semanal": {
+            "W42": {
+              "venta_sam": 12,
+              "target": 14
+            },
+            "W43": {
+              "venta_sam": 10,
+              "target": 18
+            },
+            "MTD": {
+              "venta_sam": 54,
+              "target": 79
+            }
+          },
+          "segmentos_comp": [
+            {
+              "segmento": "75↑",
+              "venta_sam": 4,
+              "target": 4,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "PREMIUM",
+              "venta_sam": 6,
+              "target": 5,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "QLED / MINILED",
+              "venta_sam": 13,
+              "target": 32,
+              "vs_competencia": "COMPETENCIA GANA",
+              "alerta_pierde": true
+            },
+            {
+              "segmento": "UHD",
+              "venta_sam": 8,
+              "target": 18,
+              "vs_competencia": "COMPETENCIA GANA",
+              "alerta_pierde": true
+            },
+            {
+              "segmento": "AUDIO",
+              "venta_sam": 23,
+              "target": 22,
               "vs_competencia": "SAMSUNG LIDERA",
               "alerta_pierde": false
             }
@@ -10047,20 +10041,20 @@
             "mensaje": "▼ -1.1% vs W41"
           },
           "puntos": {
-            "total": 580,
-            "por_venta": 530,
+            "total": 670,
+            "por_venta": 620,
             "bono": 50,
-            "explicacion": "53 unidades vendidas en el mes (x10 pts = 530 pts) + bono de 50 pts por cumplimiento MTD (35.3%)."
+            "explicacion": "62 unidades vendidas en el mes (x10 pts = 620 pts) + bono de 50 pts por cumplimiento MTD (41.3%)."
           },
           "periodos": {
             "W43": {
               "label": "Semana en Curso (W43)",
               "target": 34,
-              "venta_uds": 23,
-              "venta_pesos": 22115501,
-              "cumplimiento": 67.6,
-              "semaforo": "ROJO",
-              "debe": 11
+              "venta_uds": 32,
+              "venta_pesos": 25529606,
+              "cumplimiento": 94.1,
+              "semaforo": "AMARILLO",
+              "debe": 2
             },
             "W42": {
               "label": "Semana Anterior (W42)",
@@ -10074,11 +10068,11 @@
             "MTD": {
               "label": "Mes Acumulado Octubre (MTD)",
               "target": 150,
-              "venta_uds": 53,
-              "venta_pesos": 76234253,
-              "cumplimiento": 35.3,
+              "venta_uds": 62,
+              "venta_pesos": 79648358,
+              "cumplimiento": 41.3,
               "semaforo": "ROJO",
-              "debe": 97
+              "debe": 88
             }
           },
           "segmentos": [
@@ -10109,18 +10103,18 @@
             {
               "segmento": "UHD",
               "target": 39,
-              "venta": 27,
-              "debe_unidades": 12,
-              "cumplimiento_pct": 69.2,
-              "estado": "12 uds"
+              "venta": 35,
+              "debe_unidades": 4,
+              "cumplimiento_pct": 89.7,
+              "estado": "4 uds"
             },
             {
               "segmento": "AUDIO",
               "target": 43,
-              "venta": 22,
-              "debe_unidades": 21,
-              "cumplimiento_pct": 51.2,
-              "estado": "21 uds"
+              "venta": 23,
+              "debe_unidades": 20,
+              "cumplimiento_pct": 53.5,
+              "estado": "20 uds"
             }
           ],
           "total_stock": 135,
@@ -10292,20 +10286,20 @@
             "mensaje": "▼ -2.7% vs W41"
           },
           "puntos": {
-            "total": 570,
-            "por_venta": 520,
+            "total": 590,
+            "por_venta": 540,
             "bono": 50,
-            "explicacion": "52 unidades vendidas en el mes (x10 pts = 520 pts) + bono de 50 pts por cumplimiento MTD (65.8%)."
+            "explicacion": "54 unidades vendidas en el mes (x10 pts = 540 pts) + bono de 50 pts por cumplimiento MTD (68.4%)."
           },
           "periodos": {
             "W43": {
               "label": "Semana en Curso (W43)",
               "target": 18,
-              "venta_uds": 8,
-              "venta_pesos": 15037175,
-              "cumplimiento": 44.4,
+              "venta_uds": 10,
+              "venta_pesos": 18201994,
+              "cumplimiento": 55.6,
               "semaforo": "ROJO",
-              "debe": 10
+              "debe": 8
             },
             "W42": {
               "label": "Semana Anterior (W42)",
@@ -10319,11 +10313,11 @@
             "MTD": {
               "label": "Mes Acumulado Octubre (MTD)",
               "target": 79,
-              "venta_uds": 52,
-              "venta_pesos": 94466305,
-              "cumplimiento": 65.8,
+              "venta_uds": 54,
+              "venta_pesos": 97631124,
+              "cumplimiento": 68.4,
               "semaforo": "ROJO",
-              "debe": 27
+              "debe": 25
             }
           },
           "segmentos": [
@@ -10346,10 +10340,10 @@
             {
               "segmento": "QLED / MINILED",
               "target": 32,
-              "venta": 12,
-              "debe_unidades": 20,
-              "cumplimiento_pct": 37.5,
-              "estado": "20 uds"
+              "venta": 13,
+              "debe_unidades": 19,
+              "cumplimiento_pct": 40.6,
+              "estado": "19 uds"
             },
             {
               "segmento": "UHD",
@@ -10362,9 +10356,9 @@
             {
               "segmento": "AUDIO",
               "target": 22,
-              "venta": 22,
+              "venta": 23,
               "debe_unidades": 0,
-              "cumplimiento_pct": 100.0,
+              "cumplimiento_pct": 104.5,
               "estado": "Al día"
             }
           ],
@@ -10495,9 +10489,9 @@
       "total_asesores": 5,
       "total_tiendas": 3,
       "target_mtd": 489,
-      "venta_mtd": 260,
-      "debe_mtd": 229,
-      "cumplimiento_mtd": 53.2,
+      "venta_mtd": 282,
+      "debe_mtd": 207,
+      "cumplimiento_mtd": 57.7,
       "promedio_ihs_w42": 45.6,
       "semaforo": "ROJO",
       "tiendas_detalle": [
@@ -10505,10 +10499,10 @@
           "tienda": "FALABELLA SANTAFE MEDELLIN",
           "asistencia": "Asistida",
           "target_mtd": 186,
-          "venta_mtd": 124,
-          "cumplimiento_mtd": 66.7,
-          "debe_mtd": 62,
-          "venta_pesos": 237968831,
+          "venta_mtd": 132,
+          "cumplimiento_mtd": 71.0,
+          "debe_mtd": 54,
+          "venta_pesos": 244717030,
           "stock": 189,
           "ihs_w42": 53.8,
           "ihs_w41": 38.3,
@@ -10519,11 +10513,11 @@
               "target": 32
             },
             "W43": {
-              "venta_sam": 39,
+              "venta_sam": 47,
               "target": 43
             },
             "MTD": {
-              "venta_sam": 124,
+              "venta_sam": 132,
               "target": 186
             }
           },
@@ -10544,22 +10538,86 @@
             },
             {
               "segmento": "QLED / MINILED",
-              "venta_sam": 15,
+              "venta_sam": 16,
               "target": 68,
               "vs_competencia": "COMPETENCIA GANA",
               "alerta_pierde": true
             },
             {
               "segmento": "UHD",
-              "venta_sam": 58,
+              "venta_sam": 63,
               "target": 35,
               "vs_competencia": "SAMSUNG LIDERA",
               "alerta_pierde": false
             },
             {
               "segmento": "AUDIO",
-              "venta_sam": 35,
+              "venta_sam": 37,
               "target": 42,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            }
+          ]
+        },
+        {
+          "tienda": "FALABELLA SAN DIEGO",
+          "asistencia": "Asistida",
+          "target_mtd": 194,
+          "venta_mtd": 102,
+          "cumplimiento_mtd": 52.8,
+          "debe_mtd": 92,
+          "venta_pesos": 172606604,
+          "stock": 261,
+          "ihs_w42": 34.2,
+          "ihs_w41": 37.6,
+          "ihs_mensaje": "▼ -3.4% vs W41",
+          "semanal": {
+            "W42": {
+              "venta_sam": 27,
+              "target": 33
+            },
+            "W43": {
+              "venta_sam": 27,
+              "target": 44
+            },
+            "MTD": {
+              "venta_sam": 102,
+              "target": 194
+            }
+          },
+          "segmentos_comp": [
+            {
+              "segmento": "75↑",
+              "venta_sam": 6,
+              "target": 18,
+              "vs_competencia": "COMPETENCIA GANA",
+              "alerta_pierde": true
+            },
+            {
+              "segmento": "PREMIUM",
+              "venta_sam": 8,
+              "target": 13,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "QLED / MINILED",
+              "venta_sam": 15,
+              "target": 77,
+              "vs_competencia": "COMPETENCIA GANA",
+              "alerta_pierde": true
+            },
+            {
+              "segmento": "UHD",
+              "venta_sam": 33,
+              "target": 41,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "AUDIO",
+              "venta_sam": 40,
+              "target": 47,
               "vs_competencia": "SAMSUNG LIDERA",
               "alerta_pierde": false
             }
@@ -10569,10 +10627,10 @@
           "tienda": "FALABELLA ARKADIA",
           "asistencia": "Asistida",
           "target_mtd": 109,
-          "venta_mtd": 45,
-          "cumplimiento_mtd": 41.4,
-          "debe_mtd": 64,
-          "venta_pesos": 82742345,
+          "venta_mtd": 48,
+          "cumplimiento_mtd": 44.2,
+          "debe_mtd": 61,
+          "venta_pesos": 86301040,
           "stock": 84,
           "ihs_w42": 48.8,
           "ihs_w41": 28.8,
@@ -10583,11 +10641,11 @@
               "target": 19
             },
             "W43": {
-              "venta_sam": 4,
+              "venta_sam": 7,
               "target": 25
             },
             "MTD": {
-              "venta_sam": 45,
+              "venta_sam": 48,
               "target": 109
             }
           },
@@ -10615,81 +10673,17 @@
             },
             {
               "segmento": "UHD",
-              "venta_sam": 12,
+              "venta_sam": 14,
               "target": 29,
-              "vs_competencia": "COMPETENCIA GANA",
-              "alerta_pierde": true
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
             },
             {
               "segmento": "AUDIO",
-              "venta_sam": 10,
+              "venta_sam": 11,
               "target": 25,
               "vs_competencia": "COMPETENCIA GANA",
               "alerta_pierde": true
-            }
-          ]
-        },
-        {
-          "tienda": "FALABELLA SAN DIEGO",
-          "asistencia": "Asistida",
-          "target_mtd": 194,
-          "venta_mtd": 91,
-          "cumplimiento_mtd": 47.1,
-          "debe_mtd": 103,
-          "venta_pesos": 155532630,
-          "stock": 261,
-          "ihs_w42": 34.2,
-          "ihs_w41": 37.6,
-          "ihs_mensaje": "▼ -3.4% vs W41",
-          "semanal": {
-            "W42": {
-              "venta_sam": 27,
-              "target": 33
-            },
-            "W43": {
-              "venta_sam": 16,
-              "target": 44
-            },
-            "MTD": {
-              "venta_sam": 91,
-              "target": 194
-            }
-          },
-          "segmentos_comp": [
-            {
-              "segmento": "75↑",
-              "venta_sam": 5,
-              "target": 18,
-              "vs_competencia": "COMPETENCIA GANA",
-              "alerta_pierde": true
-            },
-            {
-              "segmento": "PREMIUM",
-              "venta_sam": 7,
-              "target": 13,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "QLED / MINILED",
-              "venta_sam": 13,
-              "target": 77,
-              "vs_competencia": "COMPETENCIA GANA",
-              "alerta_pierde": true
-            },
-            {
-              "segmento": "UHD",
-              "venta_sam": 28,
-              "target": 41,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "AUDIO",
-              "venta_sam": 38,
-              "target": 47,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
             }
           ]
         }
@@ -10718,20 +10712,20 @@
             "mensaje": "▼ -3.4% vs W41"
           },
           "puntos": {
-            "total": 960,
-            "por_venta": 910,
+            "total": 1070,
+            "por_venta": 1020,
             "bono": 50,
-            "explicacion": "91 unidades vendidas en el mes (x10 pts = 910 pts) + bono de 50 pts por cumplimiento MTD (46.9%)."
+            "explicacion": "102 unidades vendidas en el mes (x10 pts = 1020 pts) + bono de 50 pts por cumplimiento MTD (52.6%)."
           },
           "periodos": {
             "W43": {
               "label": "Semana en Curso (W43)",
               "target": 44,
-              "venta_uds": 16,
-              "venta_pesos": 25761292,
-              "cumplimiento": 36.4,
+              "venta_uds": 27,
+              "venta_pesos": 42835266,
+              "cumplimiento": 61.4,
               "semaforo": "ROJO",
-              "debe": 28
+              "debe": 17
             },
             "W42": {
               "label": "Semana Anterior (W42)",
@@ -10745,53 +10739,53 @@
             "MTD": {
               "label": "Mes Acumulado Octubre (MTD)",
               "target": 194,
-              "venta_uds": 91,
-              "venta_pesos": 155532630,
-              "cumplimiento": 46.9,
+              "venta_uds": 102,
+              "venta_pesos": 172606604,
+              "cumplimiento": 52.6,
               "semaforo": "ROJO",
-              "debe": 103
+              "debe": 92
             }
           },
           "segmentos": [
             {
               "segmento": "75↑",
               "target": 18,
-              "venta": 5,
-              "debe_unidades": 13,
-              "cumplimiento_pct": 27.8,
-              "estado": "13 uds"
+              "venta": 6,
+              "debe_unidades": 12,
+              "cumplimiento_pct": 33.3,
+              "estado": "12 uds"
             },
             {
               "segmento": "PREMIUM",
               "target": 13,
-              "venta": 7,
-              "debe_unidades": 6,
-              "cumplimiento_pct": 53.8,
-              "estado": "6 uds"
+              "venta": 8,
+              "debe_unidades": 5,
+              "cumplimiento_pct": 61.5,
+              "estado": "5 uds"
             },
             {
               "segmento": "QLED / MINILED",
               "target": 77,
-              "venta": 13,
-              "debe_unidades": 64,
-              "cumplimiento_pct": 16.9,
-              "estado": "64 uds"
+              "venta": 15,
+              "debe_unidades": 62,
+              "cumplimiento_pct": 19.5,
+              "estado": "62 uds"
             },
             {
               "segmento": "UHD",
               "target": 41,
-              "venta": 28,
-              "debe_unidades": 13,
-              "cumplimiento_pct": 68.3,
-              "estado": "13 uds"
+              "venta": 33,
+              "debe_unidades": 8,
+              "cumplimiento_pct": 80.5,
+              "estado": "8 uds"
             },
             {
               "segmento": "AUDIO",
               "target": 47,
-              "venta": 38,
-              "debe_unidades": 9,
-              "cumplimiento_pct": 80.9,
-              "estado": "9 uds"
+              "venta": 40,
+              "debe_unidades": 7,
+              "cumplimiento_pct": 85.1,
+              "estado": "7 uds"
             }
           ],
           "total_stock": 261,
@@ -11047,20 +11041,20 @@
             "mensaje": "▲ +20.0% vs W41"
           },
           "puntos": {
-            "total": 500,
-            "por_venta": 450,
+            "total": 530,
+            "por_venta": 480,
             "bono": 50,
-            "explicacion": "45 unidades vendidas en el mes (x10 pts = 450 pts) + bono de 50 pts por cumplimiento MTD (41.3%)."
+            "explicacion": "48 unidades vendidas en el mes (x10 pts = 480 pts) + bono de 50 pts por cumplimiento MTD (44.0%)."
           },
           "periodos": {
             "W43": {
               "label": "Semana en Curso (W43)",
               "target": 25,
-              "venta_uds": 4,
-              "venta_pesos": 11089556,
-              "cumplimiento": 16.0,
+              "venta_uds": 7,
+              "venta_pesos": 14648251,
+              "cumplimiento": 28.0,
               "semaforo": "ROJO",
-              "debe": 21
+              "debe": 18
             },
             "W42": {
               "label": "Semana Anterior (W42)",
@@ -11074,11 +11068,11 @@
             "MTD": {
               "label": "Mes Acumulado Octubre (MTD)",
               "target": 109,
-              "venta_uds": 45,
-              "venta_pesos": 82742345,
-              "cumplimiento": 41.3,
+              "venta_uds": 48,
+              "venta_pesos": 86301040,
+              "cumplimiento": 44.0,
               "semaforo": "ROJO",
-              "debe": 64
+              "debe": 61
             }
           },
           "segmentos": [
@@ -11109,18 +11103,18 @@
             {
               "segmento": "UHD",
               "target": 29,
-              "venta": 12,
-              "debe_unidades": 17,
-              "cumplimiento_pct": 41.4,
-              "estado": "17 uds"
+              "venta": 14,
+              "debe_unidades": 15,
+              "cumplimiento_pct": 48.3,
+              "estado": "15 uds"
             },
             {
               "segmento": "AUDIO",
               "target": 25,
-              "venta": 10,
-              "debe_unidades": 15,
-              "cumplimiento_pct": 40.0,
-              "estado": "15 uds"
+              "venta": 11,
+              "debe_unidades": 14,
+              "cumplimiento_pct": 44.0,
+              "estado": "14 uds"
             }
           ],
           "total_stock": 84,
@@ -11280,20 +11274,20 @@
             "mensaje": "▼ -3.4% vs W41"
           },
           "puntos": {
-            "total": 960,
-            "por_venta": 910,
+            "total": 1070,
+            "por_venta": 1020,
             "bono": 50,
-            "explicacion": "91 unidades vendidas en el mes (x10 pts = 910 pts) + bono de 50 pts por cumplimiento MTD (46.9%)."
+            "explicacion": "102 unidades vendidas en el mes (x10 pts = 1020 pts) + bono de 50 pts por cumplimiento MTD (52.6%)."
           },
           "periodos": {
             "W43": {
               "label": "Semana en Curso (W43)",
               "target": 44,
-              "venta_uds": 16,
-              "venta_pesos": 25761292,
-              "cumplimiento": 36.4,
+              "venta_uds": 27,
+              "venta_pesos": 42835266,
+              "cumplimiento": 61.4,
               "semaforo": "ROJO",
-              "debe": 28
+              "debe": 17
             },
             "W42": {
               "label": "Semana Anterior (W42)",
@@ -11307,53 +11301,53 @@
             "MTD": {
               "label": "Mes Acumulado Octubre (MTD)",
               "target": 194,
-              "venta_uds": 91,
-              "venta_pesos": 155532630,
-              "cumplimiento": 46.9,
+              "venta_uds": 102,
+              "venta_pesos": 172606604,
+              "cumplimiento": 52.6,
               "semaforo": "ROJO",
-              "debe": 103
+              "debe": 92
             }
           },
           "segmentos": [
             {
               "segmento": "75↑",
               "target": 18,
-              "venta": 5,
-              "debe_unidades": 13,
-              "cumplimiento_pct": 27.8,
-              "estado": "13 uds"
+              "venta": 6,
+              "debe_unidades": 12,
+              "cumplimiento_pct": 33.3,
+              "estado": "12 uds"
             },
             {
               "segmento": "PREMIUM",
               "target": 13,
-              "venta": 7,
-              "debe_unidades": 6,
-              "cumplimiento_pct": 53.8,
-              "estado": "6 uds"
+              "venta": 8,
+              "debe_unidades": 5,
+              "cumplimiento_pct": 61.5,
+              "estado": "5 uds"
             },
             {
               "segmento": "QLED / MINILED",
               "target": 77,
-              "venta": 13,
-              "debe_unidades": 64,
-              "cumplimiento_pct": 16.9,
-              "estado": "64 uds"
+              "venta": 15,
+              "debe_unidades": 62,
+              "cumplimiento_pct": 19.5,
+              "estado": "62 uds"
             },
             {
               "segmento": "UHD",
               "target": 41,
-              "venta": 28,
-              "debe_unidades": 13,
-              "cumplimiento_pct": 68.3,
-              "estado": "13 uds"
+              "venta": 33,
+              "debe_unidades": 8,
+              "cumplimiento_pct": 80.5,
+              "estado": "8 uds"
             },
             {
               "segmento": "AUDIO",
               "target": 47,
-              "venta": 38,
-              "debe_unidades": 9,
-              "cumplimiento_pct": 80.9,
-              "estado": "9 uds"
+              "venta": 40,
+              "debe_unidades": 7,
+              "cumplimiento_pct": 85.1,
+              "estado": "7 uds"
             }
           ],
           "total_stock": 261,
@@ -11609,20 +11603,20 @@
             "mensaje": "▲ +15.5% vs W41"
           },
           "puntos": {
-            "total": 1290,
-            "por_venta": 1240,
+            "total": 1370,
+            "por_venta": 1320,
             "bono": 50,
-            "explicacion": "124 unidades vendidas en el mes (x10 pts = 1240 pts) + bono de 50 pts por cumplimiento MTD (66.7%)."
+            "explicacion": "132 unidades vendidas en el mes (x10 pts = 1320 pts) + bono de 50 pts por cumplimiento MTD (71.0%)."
           },
           "periodos": {
             "W43": {
               "label": "Semana en Curso (W43)",
               "target": 43,
-              "venta_uds": 39,
-              "venta_pesos": 43951861,
-              "cumplimiento": 90.7,
-              "semaforo": "AMARILLO",
-              "debe": 4
+              "venta_uds": 47,
+              "venta_pesos": 50700060,
+              "cumplimiento": 109.3,
+              "semaforo": "VERDE",
+              "debe": 0
             },
             "W42": {
               "label": "Semana Anterior (W42)",
@@ -11636,11 +11630,11 @@
             "MTD": {
               "label": "Mes Acumulado Octubre (MTD)",
               "target": 186,
-              "venta_uds": 124,
-              "venta_pesos": 237968831,
-              "cumplimiento": 66.7,
+              "venta_uds": 132,
+              "venta_pesos": 244717030,
+              "cumplimiento": 71.0,
               "semaforo": "ROJO",
-              "debe": 62
+              "debe": 54
             }
           },
           "segmentos": [
@@ -11663,26 +11657,26 @@
             {
               "segmento": "QLED / MINILED",
               "target": 68,
-              "venta": 15,
-              "debe_unidades": 53,
-              "cumplimiento_pct": 22.1,
-              "estado": "53 uds"
+              "venta": 16,
+              "debe_unidades": 52,
+              "cumplimiento_pct": 23.5,
+              "estado": "52 uds"
             },
             {
               "segmento": "UHD",
               "target": 35,
-              "venta": 58,
+              "venta": 63,
               "debe_unidades": 0,
-              "cumplimiento_pct": 165.7,
+              "cumplimiento_pct": 180.0,
               "estado": "Al día"
             },
             {
               "segmento": "AUDIO",
               "target": 42,
-              "venta": 35,
-              "debe_unidades": 7,
-              "cumplimiento_pct": 83.3,
-              "estado": "7 uds"
+              "venta": 37,
+              "debe_unidades": 5,
+              "cumplimiento_pct": 88.1,
+              "estado": "5 uds"
             }
           ],
           "total_stock": 189,
@@ -11932,20 +11926,20 @@
             "mensaje": "▲ +15.5% vs W41"
           },
           "puntos": {
-            "total": 1290,
-            "por_venta": 1240,
+            "total": 1370,
+            "por_venta": 1320,
             "bono": 50,
-            "explicacion": "124 unidades vendidas en el mes (x10 pts = 1240 pts) + bono de 50 pts por cumplimiento MTD (66.7%)."
+            "explicacion": "132 unidades vendidas en el mes (x10 pts = 1320 pts) + bono de 50 pts por cumplimiento MTD (71.0%)."
           },
           "periodos": {
             "W43": {
               "label": "Semana en Curso (W43)",
               "target": 43,
-              "venta_uds": 39,
-              "venta_pesos": 43951861,
-              "cumplimiento": 90.7,
-              "semaforo": "AMARILLO",
-              "debe": 4
+              "venta_uds": 47,
+              "venta_pesos": 50700060,
+              "cumplimiento": 109.3,
+              "semaforo": "VERDE",
+              "debe": 0
             },
             "W42": {
               "label": "Semana Anterior (W42)",
@@ -11959,11 +11953,11 @@
             "MTD": {
               "label": "Mes Acumulado Octubre (MTD)",
               "target": 186,
-              "venta_uds": 124,
-              "venta_pesos": 237968831,
-              "cumplimiento": 66.7,
+              "venta_uds": 132,
+              "venta_pesos": 244717030,
+              "cumplimiento": 71.0,
               "semaforo": "ROJO",
-              "debe": 62
+              "debe": 54
             }
           },
           "segmentos": [
@@ -11986,26 +11980,26 @@
             {
               "segmento": "QLED / MINILED",
               "target": 68,
-              "venta": 15,
-              "debe_unidades": 53,
-              "cumplimiento_pct": 22.1,
-              "estado": "53 uds"
+              "venta": 16,
+              "debe_unidades": 52,
+              "cumplimiento_pct": 23.5,
+              "estado": "52 uds"
             },
             {
               "segmento": "UHD",
               "target": 35,
-              "venta": 58,
+              "venta": 63,
               "debe_unidades": 0,
-              "cumplimiento_pct": 165.7,
+              "cumplimiento_pct": 180.0,
               "estado": "Al día"
             },
             {
               "segmento": "AUDIO",
               "target": 42,
-              "venta": 35,
-              "debe_unidades": 7,
-              "cumplimiento_pct": 83.3,
-              "estado": "7 uds"
+              "venta": 37,
+              "debe_unidades": 5,
+              "cumplimiento_pct": 88.1,
+              "estado": "5 uds"
             }
           ],
           "total_stock": 189,
