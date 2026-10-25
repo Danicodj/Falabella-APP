@@ -1,5 +1,5 @@
 {
-  "fecha_corte": "24/10/2026 09:25",
+  "fecha_corte": "25/10/2026 07:44",
   "consultores": [
     {
       "cedula": "75075710",
@@ -6542,93 +6542,29 @@
       "semaforo": "ROJO",
       "tiendas_detalle": [
         {
-          "tienda": "FALABELLA UNICENTRO",
+          "tienda": "FALABELLA COLINA",
           "asistencia": "Asistida",
-          "target_mtd": 124,
-          "venta_mtd": 78,
-          "cumplimiento_mtd": 63.0,
-          "debe_mtd": 46,
-          "venta_pesos": 151107467,
-          "stock": 135,
-          "ihs_w42": 43.0,
-          "ihs_w41": 51.9,
-          "ihs_mensaje": "▼ -8.9% vs W41",
+          "target_mtd": 157,
+          "venta_mtd": 56,
+          "cumplimiento_mtd": 35.8,
+          "debe_mtd": 101,
+          "venta_pesos": 111483949,
+          "stock": 147,
+          "ihs_w42": 24.7,
+          "ihs_w41": 37.3,
+          "ihs_mensaje": "▼ -12.6% vs W41",
           "semanal": {
             "W42": {
-              "venta_sam": 18,
-              "target": 21
+              "venta_sam": 10,
+              "target": 27
             },
             "W43": {
-              "venta_sam": 19,
-              "target": 29
+              "venta_sam": 10,
+              "target": 36
             },
             "MTD": {
-              "venta_sam": 78,
-              "target": 124
-            }
-          },
-          "segmentos_comp": [
-            {
-              "segmento": "75↑",
-              "venta_sam": 6,
-              "target": 8,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "PREMIUM",
-              "venta_sam": 18,
-              "target": 15,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "QLED / MINILED",
-              "venta_sam": 8,
-              "target": 50,
-              "vs_competencia": "COMPETENCIA GANA",
-              "alerta_pierde": true
-            },
-            {
-              "segmento": "UHD",
-              "venta_sam": 22,
-              "target": 18,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "AUDIO",
-              "venta_sam": 24,
-              "target": 34,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            }
-          ]
-        },
-        {
-          "tienda": "FALABELLA CENTRO MAYOR",
-          "asistencia": "Asistida",
-          "target_mtd": 112,
-          "venta_mtd": 51,
-          "cumplimiento_mtd": 45.6,
-          "debe_mtd": 61,
-          "venta_pesos": 79519058,
-          "stock": 151,
-          "ihs_w42": 14.7,
-          "ihs_w41": 21.7,
-          "ihs_mensaje": "▼ -7.0% vs W41",
-          "semanal": {
-            "W42": {
-              "venta_sam": 7,
-              "target": 19
-            },
-            "W43": {
-              "venta_sam": 11,
-              "target": 26
-            },
-            "MTD": {
-              "venta_sam": 51,
-              "target": 112
+              "venta_sam": 56,
+              "target": 157
             }
           },
           "segmentos_comp": [
@@ -6641,31 +6577,31 @@
             },
             {
               "segmento": "PREMIUM",
-              "venta_sam": 3,
-              "target": 1,
+              "venta_sam": 12,
+              "target": 14,
               "vs_competencia": "SAMSUNG LIDERA",
               "alerta_pierde": false
             },
             {
               "segmento": "QLED / MINILED",
-              "venta_sam": 8,
-              "target": 51,
+              "venta_sam": 6,
+              "target": 70,
               "vs_competencia": "COMPETENCIA GANA",
               "alerta_pierde": true
             },
             {
               "segmento": "UHD",
-              "venta_sam": 20,
-              "target": 29,
+              "venta_sam": 15,
+              "target": 22,
               "vs_competencia": "SAMSUNG LIDERA",
               "alerta_pierde": false
             },
             {
               "segmento": "AUDIO",
-              "venta_sam": 15,
-              "target": 23,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
+              "venta_sam": 18,
+              "target": 43,
+              "vs_competencia": "COMPETENCIA GANA",
+              "alerta_pierde": true
             }
           ]
         },
@@ -6734,130 +6670,66 @@
           ]
         },
         {
-          "tienda": "FALABELLA FONTANAR",
+          "tienda": "FALABELLA UNICENTRO",
           "asistencia": "Asistida",
-          "target_mtd": 137,
-          "venta_mtd": 69,
-          "cumplimiento_mtd": 50.5,
-          "debe_mtd": 68,
-          "venta_pesos": 114570932,
-          "stock": 256,
-          "ihs_w42": 21.8,
-          "ihs_w41": 32.6,
-          "ihs_mensaje": "▼ -10.8% vs W41",
+          "target_mtd": 124,
+          "venta_mtd": 78,
+          "cumplimiento_mtd": 63.0,
+          "debe_mtd": 46,
+          "venta_pesos": 151107467,
+          "stock": 135,
+          "ihs_w42": 43.0,
+          "ihs_w41": 51.9,
+          "ihs_mensaje": "▼ -8.9% vs W41",
           "semanal": {
             "W42": {
-              "venta_sam": 16,
-              "target": 23
+              "venta_sam": 18,
+              "target": 21
             },
             "W43": {
-              "venta_sam": 12,
-              "target": 32
+              "venta_sam": 19,
+              "target": 29
             },
             "MTD": {
-              "venta_sam": 69,
-              "target": 137
+              "venta_sam": 78,
+              "target": 124
             }
           },
           "segmentos_comp": [
             {
               "segmento": "75↑",
-              "venta_sam": 5,
-              "target": 10,
+              "venta_sam": 6,
+              "target": 8,
               "vs_competencia": "SAMSUNG LIDERA",
               "alerta_pierde": false
             },
             {
               "segmento": "PREMIUM",
-              "venta_sam": 6,
-              "target": 10,
+              "venta_sam": 18,
+              "target": 15,
               "vs_competencia": "SAMSUNG LIDERA",
               "alerta_pierde": false
             },
             {
               "segmento": "QLED / MINILED",
-              "venta_sam": 14,
-              "target": 62,
+              "venta_sam": 8,
+              "target": 50,
               "vs_competencia": "COMPETENCIA GANA",
               "alerta_pierde": true
             },
             {
               "segmento": "UHD",
-              "venta_sam": 20,
-              "target": 26,
+              "venta_sam": 22,
+              "target": 18,
               "vs_competencia": "SAMSUNG LIDERA",
               "alerta_pierde": false
             },
             {
               "segmento": "AUDIO",
               "venta_sam": 24,
-              "target": 31,
+              "target": 34,
               "vs_competencia": "SAMSUNG LIDERA",
               "alerta_pierde": false
-            }
-          ]
-        },
-        {
-          "tienda": "FALABELLA COLINA",
-          "asistencia": "Asistida",
-          "target_mtd": 157,
-          "venta_mtd": 56,
-          "cumplimiento_mtd": 35.8,
-          "debe_mtd": 101,
-          "venta_pesos": 111483949,
-          "stock": 147,
-          "ihs_w42": 24.7,
-          "ihs_w41": 37.3,
-          "ihs_mensaje": "▼ -12.6% vs W41",
-          "semanal": {
-            "W42": {
-              "venta_sam": 10,
-              "target": 27
-            },
-            "W43": {
-              "venta_sam": 10,
-              "target": 36
-            },
-            "MTD": {
-              "venta_sam": 56,
-              "target": 157
-            }
-          },
-          "segmentos_comp": [
-            {
-              "segmento": "75↑",
-              "venta_sam": 5,
-              "target": 10,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "PREMIUM",
-              "venta_sam": 12,
-              "target": 14,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "QLED / MINILED",
-              "venta_sam": 6,
-              "target": 70,
-              "vs_competencia": "COMPETENCIA GANA",
-              "alerta_pierde": true
-            },
-            {
-              "segmento": "UHD",
-              "venta_sam": 15,
-              "target": 22,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "AUDIO",
-              "venta_sam": 18,
-              "target": 43,
-              "vs_competencia": "COMPETENCIA GANA",
-              "alerta_pierde": true
             }
           ]
         },
@@ -6926,6 +6798,70 @@
           ]
         },
         {
+          "tienda": "FALABELLA CENTRO MAYOR",
+          "asistencia": "Asistida",
+          "target_mtd": 112,
+          "venta_mtd": 51,
+          "cumplimiento_mtd": 45.6,
+          "debe_mtd": 61,
+          "venta_pesos": 79519058,
+          "stock": 151,
+          "ihs_w42": 14.7,
+          "ihs_w41": 21.7,
+          "ihs_mensaje": "▼ -7.0% vs W41",
+          "semanal": {
+            "W42": {
+              "venta_sam": 7,
+              "target": 19
+            },
+            "W43": {
+              "venta_sam": 11,
+              "target": 26
+            },
+            "MTD": {
+              "venta_sam": 51,
+              "target": 112
+            }
+          },
+          "segmentos_comp": [
+            {
+              "segmento": "75↑",
+              "venta_sam": 5,
+              "target": 10,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "PREMIUM",
+              "venta_sam": 3,
+              "target": 1,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "QLED / MINILED",
+              "venta_sam": 8,
+              "target": 51,
+              "vs_competencia": "COMPETENCIA GANA",
+              "alerta_pierde": true
+            },
+            {
+              "segmento": "UHD",
+              "venta_sam": 20,
+              "target": 29,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "AUDIO",
+              "venta_sam": 15,
+              "target": 23,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            }
+          ]
+        },
+        {
           "tienda": "FALABELLA TITAN",
           "asistencia": "Asistida",
           "target_mtd": 122,
@@ -6988,9 +6924,97 @@
               "alerta_pierde": false
             }
           ]
+        },
+        {
+          "tienda": "FALABELLA FONTANAR",
+          "asistencia": "Asistida",
+          "target_mtd": 137,
+          "venta_mtd": 69,
+          "cumplimiento_mtd": 50.5,
+          "debe_mtd": 68,
+          "venta_pesos": 114570932,
+          "stock": 256,
+          "ihs_w42": 21.8,
+          "ihs_w41": 32.6,
+          "ihs_mensaje": "▼ -10.8% vs W41",
+          "semanal": {
+            "W42": {
+              "venta_sam": 16,
+              "target": 23
+            },
+            "W43": {
+              "venta_sam": 12,
+              "target": 32
+            },
+            "MTD": {
+              "venta_sam": 69,
+              "target": 137
+            }
+          },
+          "segmentos_comp": [
+            {
+              "segmento": "75↑",
+              "venta_sam": 5,
+              "target": 10,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "PREMIUM",
+              "venta_sam": 6,
+              "target": 10,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "QLED / MINILED",
+              "venta_sam": 14,
+              "target": 62,
+              "vs_competencia": "COMPETENCIA GANA",
+              "alerta_pierde": true
+            },
+            {
+              "segmento": "UHD",
+              "venta_sam": 20,
+              "target": 26,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "AUDIO",
+              "venta_sam": 24,
+              "target": 31,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            }
+          ]
         }
       ],
       "ventas_cero": [
+        {
+          "tienda": "FALABELLA COLINA",
+          "fecha": "19/10/2026",
+          "dia": "Lunes",
+          "estado": "0 Uds"
+        },
+        {
+          "tienda": "FALABELLA SANTAFE",
+          "fecha": "20/10/2026",
+          "dia": "Martes",
+          "estado": "0 Uds"
+        },
+        {
+          "tienda": "FALABELLA SANTAFE",
+          "fecha": "22/10/2026",
+          "dia": "Jueves",
+          "estado": "0 Uds"
+        },
+        {
+          "tienda": "FALABELLA SANTAFE",
+          "fecha": "23/10/2026",
+          "dia": "Viernes",
+          "estado": "0 Uds"
+        },
         {
           "tienda": "FALABELLA CENTRO MAYOR",
           "fecha": "18/10/2026",
@@ -7019,30 +7043,6 @@
           "tienda": "FALABELLA GALERIAS",
           "fecha": "20/10/2026",
           "dia": "Martes",
-          "estado": "0 Uds"
-        },
-        {
-          "tienda": "FALABELLA COLINA",
-          "fecha": "19/10/2026",
-          "dia": "Lunes",
-          "estado": "0 Uds"
-        },
-        {
-          "tienda": "FALABELLA SANTAFE",
-          "fecha": "20/10/2026",
-          "dia": "Martes",
-          "estado": "0 Uds"
-        },
-        {
-          "tienda": "FALABELLA SANTAFE",
-          "fecha": "22/10/2026",
-          "dia": "Jueves",
-          "estado": "0 Uds"
-        },
-        {
-          "tienda": "FALABELLA SANTAFE",
-          "fecha": "23/10/2026",
-          "dia": "Viernes",
           "estado": "0 Uds"
         }
       ],
@@ -10566,70 +10566,6 @@
           ]
         },
         {
-          "tienda": "FALABELLA SAN DIEGO",
-          "asistencia": "Asistida",
-          "target_mtd": 194,
-          "venta_mtd": 91,
-          "cumplimiento_mtd": 47.1,
-          "debe_mtd": 103,
-          "venta_pesos": 155532630,
-          "stock": 261,
-          "ihs_w42": 34.2,
-          "ihs_w41": 37.6,
-          "ihs_mensaje": "▼ -3.4% vs W41",
-          "semanal": {
-            "W42": {
-              "venta_sam": 27,
-              "target": 33
-            },
-            "W43": {
-              "venta_sam": 16,
-              "target": 44
-            },
-            "MTD": {
-              "venta_sam": 91,
-              "target": 194
-            }
-          },
-          "segmentos_comp": [
-            {
-              "segmento": "75↑",
-              "venta_sam": 5,
-              "target": 18,
-              "vs_competencia": "COMPETENCIA GANA",
-              "alerta_pierde": true
-            },
-            {
-              "segmento": "PREMIUM",
-              "venta_sam": 7,
-              "target": 13,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "QLED / MINILED",
-              "venta_sam": 13,
-              "target": 77,
-              "vs_competencia": "COMPETENCIA GANA",
-              "alerta_pierde": true
-            },
-            {
-              "segmento": "UHD",
-              "venta_sam": 28,
-              "target": 41,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            },
-            {
-              "segmento": "AUDIO",
-              "venta_sam": 38,
-              "target": 47,
-              "vs_competencia": "SAMSUNG LIDERA",
-              "alerta_pierde": false
-            }
-          ]
-        },
-        {
           "tienda": "FALABELLA ARKADIA",
           "asistencia": "Asistida",
           "target_mtd": 109,
@@ -10690,6 +10626,70 @@
               "target": 25,
               "vs_competencia": "COMPETENCIA GANA",
               "alerta_pierde": true
+            }
+          ]
+        },
+        {
+          "tienda": "FALABELLA SAN DIEGO",
+          "asistencia": "Asistida",
+          "target_mtd": 194,
+          "venta_mtd": 91,
+          "cumplimiento_mtd": 47.1,
+          "debe_mtd": 103,
+          "venta_pesos": 155532630,
+          "stock": 261,
+          "ihs_w42": 34.2,
+          "ihs_w41": 37.6,
+          "ihs_mensaje": "▼ -3.4% vs W41",
+          "semanal": {
+            "W42": {
+              "venta_sam": 27,
+              "target": 33
+            },
+            "W43": {
+              "venta_sam": 16,
+              "target": 44
+            },
+            "MTD": {
+              "venta_sam": 91,
+              "target": 194
+            }
+          },
+          "segmentos_comp": [
+            {
+              "segmento": "75↑",
+              "venta_sam": 5,
+              "target": 18,
+              "vs_competencia": "COMPETENCIA GANA",
+              "alerta_pierde": true
+            },
+            {
+              "segmento": "PREMIUM",
+              "venta_sam": 7,
+              "target": 13,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "QLED / MINILED",
+              "venta_sam": 13,
+              "target": 77,
+              "vs_competencia": "COMPETENCIA GANA",
+              "alerta_pierde": true
+            },
+            {
+              "segmento": "UHD",
+              "venta_sam": 28,
+              "target": 41,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
+            },
+            {
+              "segmento": "AUDIO",
+              "venta_sam": 38,
+              "target": 47,
+              "vs_competencia": "SAMSUNG LIDERA",
+              "alerta_pierde": false
             }
           ]
         }
