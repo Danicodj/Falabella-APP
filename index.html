@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portal Maestro de Ventas | Samsung Falabella</title>
+  <title>Portal Maestro de Ventas & Sensing | Samsung Falabella</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
@@ -211,8 +211,6 @@
             <i data-lucide="list" class="w-3.5 h-3.5"></i> Ver todos los modelos en stock
           </button>
         </div>
-        
-        <!-- Top Modelos -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5" id="cGridStock"></div>
       </div>
 
@@ -240,7 +238,6 @@
           </div>
         </div>
 
-        <!-- 4 TARJETAS KPI SUPERVISOR -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6 pt-6 border-t border-slate-800">
           <div class="bg-slate-950/50 p-3 rounded-xl border border-slate-800">
             <p class="text-xs text-slate-400">Ventas Equipo (Uds)</p>
@@ -255,7 +252,7 @@
           <div class="bg-slate-950/50 p-3 rounded-xl border border-slate-800">
             <p class="text-xs text-slate-400">IHS Promedio W42</p>
             <p id="sPromIHS" class="text-2xl font-black text-blue-400 mt-1">0%</p>
-            <p class="text-[11px] text-slate-500">Cuota Samsung en su zona</p>
+            <p class="text-[11px] text-slate-500">Cuota Samsung en zona</p>
           </div>
           <div class="bg-slate-950/50 p-3 rounded-xl border border-slate-800">
             <p class="text-xs text-slate-400">Consultores Reales</p>
@@ -265,20 +262,82 @@
         </div>
       </div>
 
-      <!-- INFORME DETALLADO TIENDA POR TIENDA (ASISTIDAS VS NO ASISTIDAS) -->
-      <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 shadow-2xl">
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+      <!-- MÓDULO ANÁLISIS POR TIENDA Y SEMANA CON COMPETENCIA -->
+      <div class="bg-slate-900/95 border border-slate-800 rounded-3xl p-6 shadow-2xl space-y-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-4">
           <div>
-            <h3 class="text-base font-bold text-white flex items-center gap-2">
-              <i data-lucide="store" class="w-5 h-5 text-blue-400"></i> Desempeño Detallado por Tienda
+            <h3 class="text-lg font-bold text-white flex items-center gap-2">
+              <i data-lucide="filter" class="w-5 h-5 text-blue-400"></i> Auditoría Semanal & IHS por Tienda
             </h3>
-            <p class="text-xs text-slate-400 mt-0.5">Ventas, stock disponible e IHS clasificado por tipo de atención</p>
+            <p class="text-xs text-slate-400 mt-0.5">Selecciona una tienda para ver su desempeño por semanas y los segmentos donde gana la competencia.</p>
           </div>
-          <span class="text-xs text-slate-400 bg-slate-950 px-3 py-1.5 rounded-xl border border-slate-800 self-start md:self-auto">
-            Mes Acumulado Octubre (MTD)
-          </span>
+          
+          <!-- Filtro de Tienda -->
+          <div class="w-full md:w-72">
+            <label class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1">Filtrar Tienda:</label>
+            <select id="selectTiendaSupervisor" onchange="actualizarDetalleTiendaSeleccionada()" class="w-full bg-slate-950 border border-slate-700 text-white rounded-xl px-3 py-2 text-xs font-semibold focus:outline-none focus:border-blue-500">
+            </select>
+          </div>
         </div>
 
+        <!-- Tarjetas Semanales de la Tienda Seleccionada -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="cardsSemanalesTienda">
+          <!-- W42 -->
+          <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-slate-400">Semana Anterior (W42)</span>
+              <span id="tBadgeIHS_W42" class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded font-bold">IHS: --%</span>
+            </div>
+            <p class="text-2xl font-black text-white" id="tVentaW42">0 uds</p>
+            <p class="text-xs text-slate-500 mt-1" id="tTargetW42">Meta: 0 uds</p>
+          </div>
+          <!-- W43 -->
+          <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-slate-400">Semana en Curso (W43)</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded font-bold">En curso</span>
+            </div>
+            <p class="text-2xl font-black text-white" id="tVentaW43">0 uds</p>
+            <p class="text-xs text-slate-500 mt-1" id="tTargetW43">Meta: 0 uds</p>
+          </div>
+          <!-- Acumulado MTD -->
+          <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-slate-400">Mes Acumulado (MTD)</span>
+              <span id="tCumplMTD" class="text-xs font-black text-emerald-400">0%</span>
+            </div>
+            <p class="text-2xl font-black text-white" id="tVentaMTD">0 uds</p>
+            <p class="text-xs text-slate-500 mt-1" id="tStockPiso">Stock en bodega: 0 uds</p>
+          </div>
+        </div>
+
+        <!-- Segmentos de la Tienda y Alerta vs Competencia -->
+        <div>
+          <h4 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-3 flex items-center gap-1.5">
+            <i data-lucide="shield-alert" class="w-4 h-4 text-amber-400"></i> Desempeño por Segmentos vs Competencia
+          </h4>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs">
+              <thead class="bg-slate-950 text-slate-400 uppercase tracking-wider text-[11px]">
+                <tr>
+                  <th class="px-4 py-2.5">Segmento</th>
+                  <th class="px-3 py-2.5 text-center">Venta Samsung</th>
+                  <th class="px-3 py-2.5 text-center">Target</th>
+                  <th class="px-3 py-2.5 text-center">Estado vs Competencia</th>
+                  <th class="px-3 py-2.5 text-center">Diagnóstico</th>
+                </tr>
+              </thead>
+              <tbody id="sTablaSegmentosCompetencia" class="divide-y divide-slate-800"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- INFORME GENERAL TIENDA POR TIENDA -->
+      <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 shadow-2xl">
+        <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2">
+          <i data-lucide="store" class="w-5 h-5 text-blue-400"></i> Consolidado General de Tiendas
+        </h3>
         <div class="overflow-x-auto">
           <table class="w-full text-left text-xs md:text-sm">
             <thead class="bg-slate-950 text-slate-400 uppercase tracking-wider text-[11px]">
@@ -298,15 +357,44 @@
         </div>
       </div>
 
-      <!-- RANKING DEL EQUIPO DE CONSULTORES REALES -->
-      <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 shadow-2xl">
+      <!-- RECUADRO: CONTROL DE VENTA CERO POR DÍA -->
+      <div class="bg-slate-900/95 border border-rose-500/30 rounded-3xl p-6 shadow-2xl">
         <div class="flex items-center justify-between mb-4">
-          <h3 class="text-base font-bold text-white flex items-center gap-2">
-            <i data-lucide="users" class="w-5 h-5 text-indigo-400"></i> Consultores a Cargo (Ranking Individual)
-          </h3>
-          <span class="text-xs text-slate-400">Solo asesores de piso (sin supervisores)</span>
+          <div class="flex items-center gap-2">
+            <div class="p-2 rounded-xl bg-rose-500/10 text-rose-400 border border-rose-500/20">
+              <i data-lucide="alert-octagon" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-white">Auditoría de Venta Cero por Día</h3>
+              <p class="text-xs text-slate-400">Tiendas del territorio que registraron 0 unidades vendidas por fecha</p>
+            </div>
+          </div>
+          <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-rose-500/20 text-rose-300 border border-rose-500/30">
+            Control de Rotación
+          </span>
         </div>
 
+        <div class="overflow-x-auto max-h-64 overflow-y-auto pr-1">
+          <table class="w-full text-left text-xs">
+            <thead class="bg-slate-950 text-slate-400 uppercase text-[10px] sticky top-0">
+              <tr>
+                <th class="px-4 py-2.5">Fecha</th>
+                <th class="px-4 py-2.5">Día</th>
+                <th class="px-4 py-2.5">Tienda Afectada</th>
+                <th class="px-4 py-2.5 text-center">Registro Sell Out</th>
+                <th class="px-4 py-2.5 text-center">Acción</th>
+              </tr>
+            </thead>
+            <tbody id="sTablaVentaCero" class="divide-y divide-slate-800"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- RANKING INDIVIDUAL DE CONSULTORES -->
+      <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 shadow-2xl">
+        <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2">
+          <i data-lucide="users" class="w-5 h-5 text-indigo-400"></i> Consultores a Cargo (Ranking Individual)
+        </h3>
         <div class="overflow-x-auto">
           <table class="w-full text-left text-xs md:text-sm">
             <thead class="bg-slate-950 text-slate-400 uppercase tracking-wider text-[11px]">
@@ -387,18 +475,30 @@
   <script>
     let DATOS_APP = null;
     let CONSULTOR_ACTUAL = null;
+    let SUPERVISOR_ACTUAL = null;
     let PERIODO_SELECCIONADO = 'MTD';
 
     async function inicializarApp() {
+      const corteEl = document.getElementById('corteInfo');
       try {
         const res = await fetch('data_app.json?t=' + new Date().getTime());
-        if (!res.ok) throw new Error("No se pudo cargar data_app.json");
+        if (!res.ok) {
+          throw new Error("HTTP " + res.status);
+        }
         DATOS_APP = await res.json();
-        document.getElementById('corteInfo').innerText = `Corte: ${DATOS_APP.fecha_corte}`;
+        corteEl.innerText = `Corte: ${DATOS_APP.fecha_corte}`;
       } catch (err) {
-        document.getElementById('corteInfo').innerText = "Ejecuta 'actualizar_app.bat' para generar la data.";
+        console.error("Error cargando data_app.json:", err);
+        corteEl.innerText = "Error cargando datos. Verifica data_app.json.";
+        corteEl.classList.add('text-rose-400');
       }
-      lucide.createIcons();
+      if (window.lucide) lucide.createIcons();
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', inicializarApp);
+    } else {
+      inicializarApp();
     }
 
     function autenticar(e) {
@@ -487,7 +587,7 @@
       });
 
       actualizarVistaPeriodo();
-      lucide.createIcons();
+      if (window.lucide) lucide.createIcons();
     }
 
     function cambiarPeriodo(periodo) {
@@ -551,7 +651,7 @@
       document.getElementById('mPuntosBono').innerText = `+${c.puntos.bono} pts por bono de cumplimiento acumulado MTD.`;
       document.getElementById('mPuntosTotal').innerText = c.puntos.total.toLocaleString();
       document.getElementById('modalPuntos').classList.remove('hidden');
-      lucide.createIcons();
+      if (window.lucide) lucide.createIcons();
     }
 
     function cerrarModalPuntos() {
@@ -580,7 +680,7 @@
       });
 
       document.getElementById('modalStock').classList.remove('hidden');
-      lucide.createIcons();
+      if (window.lucide) lucide.createIcons();
     }
 
     function cerrarModalStock() {
@@ -589,13 +689,14 @@
 
     // MOSTRAR PANEL SUPERVISOR DETALLADO
     function mostrarSupervisor(s) {
+      SUPERVISOR_ACTUAL = s;
       document.getElementById('vistaLogin').classList.add('hidden');
       document.getElementById('vistaConsultor').classList.add('hidden');
       document.getElementById('vistaSupervisor').classList.remove('hidden');
       document.getElementById('btnCerrarSesion').classList.remove('hidden');
 
       document.getElementById('sNombre').innerText = s.nombre;
-      document.getElementById('sCiudadBase').innerText = s.ciudad_base;
+      document.getElementById('sCiudadBase').innerText = s.ciudad_base || "Colombia";
       document.getElementById('sTotalTiendas').innerText = s.total_tiendas;
 
       document.getElementById('sVentaMTD').innerText = s.venta_mtd;
@@ -603,8 +704,8 @@
       document.getElementById('sDebeMTD').innerText = s.debe_mtd;
       document.getElementById('sPromIHS').innerText = s.promedio_ihs_w42 + '%';
       document.getElementById('sTotalAsesores').innerText = s.total_asesores;
-
       document.getElementById('sCumplGlobal').innerText = s.cumplimiento_mtd + '%';
+
       const badgeGlobal = document.getElementById('sBadgeSemaforoGlobal');
       if (s.semaforo === 'VERDE') {
         badgeGlobal.className = "inline-block mt-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase border bg-emerald-500/20 text-emerald-300 border-emerald-500/40";
@@ -617,7 +718,20 @@
         badgeGlobal.innerText = "Acelerar";
       }
 
-      // 1. TABLA TIENDAS DETALLE
+      // Llenar selector de tiendas del supervisor
+      const sel = document.getElementById('selectTiendaSupervisor');
+      sel.innerHTML = '';
+      s.tiendas_detalle.forEach((t, i) => {
+        const opt = document.createElement('option');
+        opt.value = t.tienda;
+        opt.innerText = t.tienda;
+        if (i === 0) opt.selected = true;
+        sel.appendChild(opt);
+      });
+
+      actualizarDetalleTiendaSeleccionada();
+
+      // Llenar tabla general de tiendas
       const tTiendas = document.getElementById('sTablaTiendas');
       tTiendas.innerHTML = '';
       s.tiendas_detalle.forEach(t => {
@@ -648,7 +762,28 @@
         tTiendas.appendChild(tr);
       });
 
-      // 2. TABLA RANKING CONSULTORES REALES
+      // Llenar tabla de Ventas Cero por Día
+      const tVtaCero = document.getElementById('sTablaVentaCero');
+      tVtaCero.innerHTML = '';
+      const listaCero = s.ventas_cero || [];
+      if (listaCero.length === 0) {
+        tVtaCero.innerHTML = `<tr><td colspan="5" class="px-4 py-4 text-center text-slate-400">No hay registros de venta cero en los últimos días. ¡Excelente rotación!</td></tr>`;
+      } else {
+        listaCero.forEach(vc => {
+          const tr = document.createElement('tr');
+          tr.className = "hover:bg-rose-500/5 transition";
+          tr.innerHTML = `
+            <td class="px-4 py-2.5 font-bold text-white">${vc.fecha}</td>
+            <td class="px-4 py-2.5 text-slate-300">${vc.dia}</td>
+            <td class="px-4 py-2.5 font-semibold text-rose-300">${vc.tienda}</td>
+            <td class="px-4 py-2.5 text-center"><span class="px-2 py-0.5 rounded bg-rose-500/20 text-rose-400 font-black text-[10px] border border-rose-500/30">0 Uds</span></td>
+            <td class="px-4 py-2.5 text-center text-[11px] text-amber-400 font-semibold">Revisar asistencia / piso</td>
+          `;
+          tVtaCero.appendChild(tr);
+        });
+      }
+
+      // Ranking individual de consultores
       const tCons = document.getElementById('sTablaConsultores');
       tCons.innerHTML = '';
       const asesoresOrdenados = [...s.asesores].sort((a, b) => b.periodos.MTD.cumplimiento - a.periodos.MTD.cumplimiento);
@@ -672,7 +807,50 @@
         tCons.appendChild(tr);
       });
 
-      lucide.createIcons();
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function actualizarDetalleTiendaSeleccionada() {
+      const tiendaNom = document.getElementById('selectTiendaSupervisor').value;
+      const t = SUPERVISOR_ACTUAL.tiendas_detalle.find(item => item.tienda === tiendaNom);
+      if (!t) return;
+
+      document.getElementById('tBadgeIHS_W42').innerText = `IHS: ${t.ihs_w42}%`;
+      document.getElementById('tVentaW42').innerText = `${t.semanal ? t.semanal.W42.venta_sam : 0} uds`;
+      document.getElementById('tTargetW42').innerText = `Meta: ${t.semanal ? t.semanal.W42.target : 0} uds`;
+
+      document.getElementById('tVentaW43').innerText = `${t.semanal ? t.semanal.W43.venta_sam : 0} uds`;
+      document.getElementById('tTargetW43').innerText = `Meta: ${t.semanal ? t.semanal.W43.target : 0} uds`;
+
+      document.getElementById('tVentaMTD').innerText = `${t.venta_mtd} uds`;
+      document.getElementById('tCumplMTD').innerText = `${t.cumplimiento_mtd}%`;
+      document.getElementById('tStockPiso').innerText = `Stock en bodega: ${t.stock} uds`;
+
+      const tbody = document.getElementById('sTablaSegmentosCompetencia');
+      tbody.innerHTML = '';
+      
+      const segmentosData = t.segmentos_comp || [];
+      segmentosData.forEach(seg => {
+        const tr = document.createElement('tr');
+        const badgeClass = seg.alerta_pierde 
+          ? 'bg-rose-500/20 text-rose-300 border border-rose-500/40 font-black' 
+          : 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-black';
+
+        tr.innerHTML = `
+          <td class="px-4 py-2.5 font-bold text-white">${seg.segmento}</td>
+          <td class="px-3 py-2.5 text-center font-bold text-white">${seg.venta_sam} uds</td>
+          <td class="px-3 py-2.5 text-center text-slate-400">${seg.target} uds</td>
+          <td class="px-3 py-2.5 text-center">
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] ${badgeClass}">${seg.vs_competencia}</span>
+          </td>
+          <td class="px-3 py-2.5 text-center text-[11px] ${seg.alerta_pierde ? 'text-rose-400 font-semibold' : 'text-slate-400'}">
+            ${seg.alerta_pierde ? '🔴 Presión en piso / Perdiendo cuota' : '🟢 Liderando la categoría'}
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      if (window.lucide) lucide.createIcons();
     }
 
     function cerrarSesion() {
@@ -682,8 +860,6 @@
       document.getElementById('btnCerrarSesion').classList.add('hidden');
       document.getElementById('inputCedula').value = '';
     }
-
-    window.onload = inicializarApp;
   </script>
 </body>
 </html>
