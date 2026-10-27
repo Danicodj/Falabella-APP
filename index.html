@@ -120,17 +120,26 @@
         </div>
       </div>
 
-      <!-- SELECTOR TEMPORALIDAD (PERIODOS W43, W42, MTD) -->
+      <!-- SELECTOR TEMPORALIDAD (W40 A W44 + MTD) -->
       <div class="flex items-center gap-2 border-b border-slate-800/80 pb-2 overflow-x-auto">
         <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mr-1">Periodo:</span>
         <button onclick="cambiarPeriodo('MTD')" id="btnMTD" class="px-3.5 py-2 rounded-xl text-xs font-bold transition bg-blue-600 text-white shadow-lg shadow-blue-500/20 whitespace-nowrap">
           Mes Octubre (MTD)
         </button>
+        <button onclick="cambiarPeriodo('W40')" id="btnW40" class="px-3.5 py-2 rounded-xl text-xs font-bold transition bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800 whitespace-nowrap">
+          Semana 40 (W40)
+        </button>
+        <button onclick="cambiarPeriodo('W41')" id="btnW41" class="px-3.5 py-2 rounded-xl text-xs font-bold transition bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800 whitespace-nowrap">
+          Semana 41 (W41)
+        </button>
         <button onclick="cambiarPeriodo('W42')" id="btnW42" class="px-3.5 py-2 rounded-xl text-xs font-bold transition bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800 whitespace-nowrap">
-          Semana Anterior (W42)
+          Semana 42 (W42)
         </button>
         <button onclick="cambiarPeriodo('W43')" id="btnW43" class="px-3.5 py-2 rounded-xl text-xs font-bold transition bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800 whitespace-nowrap">
-          Semana en Curso (W43)
+          Semana 43 (W43)
+        </button>
+        <button onclick="cambiarPeriodo('W44')" id="btnW44" class="px-3.5 py-2 rounded-xl text-xs font-bold transition bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800 whitespace-nowrap">
+          Semana 44 (Actual)
         </button>
       </div>
 
@@ -159,7 +168,7 @@
         <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl">
           <p class="text-xs text-slate-400">Unidades Vendidas</p>
           <p id="cVentaUds" class="text-2xl font-black text-white mt-1">0</p>
-          <p class="text-[11px] text-slate-500 mt-0.5">Target: <span id="cTargetUds" class="text-slate-300 font-semibold">0</span></p>
+          <p class="text-xs text-slate-400 font-semibold mt-1">Meta / Target: <span id="cTargetUds" class="text-cyan-300 font-black">0</span> uds</p>
         </div>
         <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl">
           <p class="text-xs text-slate-400">Venta Neta COP</p>
@@ -821,8 +830,9 @@
 
     function cambiarPeriodo(periodo) {
       PERIODO_SELECCIONADO = periodo;
-      ['MTD', 'W42', 'W43'].forEach(p => {
+      ['MTD', 'W40', 'W41', 'W42', 'W43', 'W44'].forEach(p => {
         const btn = document.getElementById('btn' + p);
+        if (!btn) return;
         if (p === periodo) {
           btn.className = "px-3.5 py-2 rounded-xl text-xs font-bold transition bg-blue-600 text-white shadow-lg shadow-blue-500/20 whitespace-nowrap";
         } else {
@@ -835,6 +845,8 @@
     function actualizarVistaPeriodo() {
       if (!CONSULTOR_ACTUAL) return;
       const pData = CONSULTOR_ACTUAL.periodos[PERIODO_SELECCIONADO];
+      if (!pData) return;
+
       document.getElementById('cPeriodoLabel').innerText = pData.label;
       document.getElementById('cVentaUds').innerText = pData.venta_uds;
       document.getElementById('cTargetUds').innerText = pData.target;
@@ -850,27 +862,23 @@
 
       bar.style.width = Math.min(pData.cumplimiento, 100) + '%';
 
-      if (pData.semaforo === "VERDE") {
+      // REGLA SOLICITADA: >= 80% es VERDE, < 80% es ROJO
+      if (pData.cumplimiento >= 80) {
         card.className = "p-6 rounded-2xl border transition-all duration-300 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 bg-emerald-950/40 border-emerald-500/50";
         badge.className = "px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-500/40";
-        badge.innerText = "Meta Superada";
-        msj.innerText = "¡Excelente ritmo! Has superado el objetivo asignado.";
-        brecha.innerText = "¡Estás al día con la cuota de este periodo!";
+        badge.innerText = pData.cumplimiento >= 100 ? "Meta Superada" : "En Meta (≥80%)";
+        msj.innerText = "¡Excelente ritmo! Has alcanzado el objetivo comercial.";
+        brecha.innerText = pData.debe === 0 ? "¡Estás al día con la meta!" : `Faltante: ${pData.debe} ${pData.debe === 1 ? 'unidad' : 'unidades'} para la meta.`;
         bar.className = "h-full rounded-full transition-all duration-700 bg-emerald-500";
-        confetti({ particleCount: 50, spread: 60, origin: { y: 0.6 } });
-      } else if (pData.semaforo === "AMARILLO") {
-        card.className = "p-6 rounded-2xl border transition-all duration-300 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 bg-amber-950/40 border-amber-500/50";
-        badge.className = "px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/40";
-        badge.innerText = "En Carrera";
-        msj.innerText = "¡Estás muy cerca de la meta!";
-        brecha.innerText = `Faltan solo ${pData.debe} ${pData.debe === 1 ? 'unidad' : 'unidades'} para el 100%.`;
-        bar.className = "h-full rounded-full transition-all duration-700 bg-amber-500";
+        if (pData.cumplimiento >= 100) {
+          confetti({ particleCount: 50, spread: 60, origin: { y: 0.6 } });
+        }
       } else {
         card.className = "p-6 rounded-2xl border transition-all duration-300 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 bg-rose-950/40 border-rose-500/50";
         badge.className = "px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-500/20 text-rose-300 border border-rose-500/40";
         badge.innerText = "Acelerar";
         msj.innerText = "El ritmo está por debajo del target.";
-        brecha.innerText = `Faltante: ${pData.debe} ${pData.debe === 1 ? 'unidad' : 'unidades'} para cerrar la brecha.`;
+        brecha.innerText = `Faltante: ${pData.debe} ${pData.debe === 1 ? 'unidad' : 'unidades'} para la meta.`;
         bar.className = "h-full rounded-full transition-all duration-700 bg-rose-500";
       }
     }
