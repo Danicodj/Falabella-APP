@@ -47,6 +47,8 @@
 
     <!-- LOGIN -->
     <div id="vistaLogin" class="max-w-md mx-auto mt-8 md:mt-16 bg-slate-900/95 border border-slate-800 p-8 rounded-3xl shadow-2xl text-center backdrop-blur-md">
+      
+      <!-- LOGOS HEADER -->
       <div class="flex items-center justify-center gap-4 mb-6">
         <div class="bg-emerald-500/10 border border-emerald-500/20 px-3.5 py-1.5 rounded-xl">
           <span class="text-xs font-black tracking-widest text-emerald-400">FALABELLA</span>
@@ -77,9 +79,12 @@
       <div id="loginError" class="mt-4 hidden p-3 bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs rounded-xl"></div>
     </div>
 
-    <!-- VISTA CONSULTOR (CON SELECTOR DE MES) -->
+    <!-- ========================================== -->
+    <!-- VISTA CONSULTOR (100% COMPLETA Y RESTAURADA) -->
+    <!-- ========================================== -->
     <div id="vistaConsultor" class="hidden space-y-6">
 
+      <!-- BANNER BIENVENIDA -->
       <div class="bg-blue-600/10 border border-blue-500/20 px-4 py-3 rounded-2xl flex items-center gap-3">
         <i data-lucide="sparkles" class="w-5 h-5 text-blue-400 flex-shrink-0"></i>
         <p class="text-xs md:text-sm text-blue-200">
@@ -87,6 +92,7 @@
         </p>
       </div>
 
+      <!-- TARJETA PERFIL -->
       <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div class="flex items-center gap-2">
@@ -127,7 +133,7 @@
         <div id="contenedorBotonesPeriodo" class="flex items-center gap-2 overflow-x-auto w-full"></div>
       </div>
 
-      <!-- TARJETA SEMÁFORO (>=80% VERDE, <80% ROJO) -->
+      <!-- TARJETA SEMÁFORO CON BARRA DE PROGRESO ANIMADA -->
       <div id="cCardSemaforo" class="p-6 rounded-2xl border transition-all duration-300 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
         <div class="flex-1">
           <div class="flex items-center gap-2">
@@ -135,7 +141,7 @@
             <span id="cPeriodoLabel" class="text-xs text-slate-400 font-medium">--</span>
           </div>
           <h3 id="cMensajeSemaforo" class="text-xl font-bold text-white mt-2">--</h3>
-          <p id="cMensajeBrecha" class="text-sm font-semibold text-emerald-400 mt-1">--</p>
+          <p id="cMensajeBrecha" class="text-sm font-semibold text-amber-400 mt-1">--</p>
 
           <div class="w-full bg-slate-950 rounded-full h-3.5 mt-4 overflow-hidden border border-slate-800 p-0.5">
             <div id="cProgressBar" class="h-full rounded-full transition-all duration-700" style="width: 0%;"></div>
@@ -173,9 +179,14 @@
 
       <!-- TABLA DE SEGMENTOS -->
       <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5 md:p-6 shadow-xl">
-        <h3 class="text-sm md:text-base font-bold text-white flex items-center gap-2 mb-3">
-          <i data-lucide="layers" class="w-4 h-4 text-blue-400"></i> Desempeño por Segmentos
-        </h3>
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-sm md:text-base font-bold text-white flex items-center gap-2">
+            <i data-lucide="layers" class="w-4 h-4 text-blue-400"></i> Desempeño por Segmentos
+          </h3>
+          <span id="badgeMesSegmentos" class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30 uppercase">
+            Octubre
+          </span>
+        </div>
         <div class="overflow-x-auto">
           <table class="w-full text-left text-xs md:text-sm">
             <thead class="bg-slate-950 text-slate-400 uppercase tracking-wider text-[11px]">
@@ -192,7 +203,7 @@
         </div>
       </div>
 
-      <!-- STOCK EN TIENDA -->
+      <!-- MÓDULO STOCK DISPONIBLE EN TIENDA -->
       <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5 md:p-6 shadow-xl">
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
           <div>
@@ -212,9 +223,12 @@
 
     </div>
 
-    <!-- VISTA SUPERVISOR -->
+    <!-- ========================================== -->
+    <!-- VISTA SUPERVISOR (COMPLETA) -->
+    <!-- ========================================== -->
     <div id="vistaSupervisor" class="hidden space-y-6">
 
+      <!-- BANNER SUPERVISOR -->
       <div class="bg-gradient-to-r from-blue-900/60 to-indigo-950/80 border border-blue-600/40 p-6 rounded-3xl shadow-2xl">
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
@@ -257,14 +271,14 @@
         </div>
       </div>
 
-      <!-- AUDITORÍA SEMANAL POR TIENDA -->
+      <!-- MÓDULO ANÁLISIS POR TIENDA Y SEMANA CON COMPETENCIA -->
       <div class="bg-slate-900/95 border border-slate-800 rounded-3xl p-6 shadow-2xl space-y-6">
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-4">
           <div>
             <h3 class="text-lg font-bold text-white flex items-center gap-2">
               <i data-lucide="filter" class="w-5 h-5 text-blue-400"></i> Auditoría Semanal & IHS por Tienda
             </h3>
-            <p class="text-xs text-slate-400 mt-0.5">Selecciona tienda y mes para auditar los resultados semanales y la competencia.</p>
+            <p class="text-xs text-slate-400 mt-0.5">Selecciona una tienda para ver su desempeño por semanas y los segmentos donde gana la competencia.</p>
           </div>
           
           <div class="flex flex-wrap items-center gap-3 w-full md:w-auto">
@@ -284,8 +298,35 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-6 gap-3" id="cardsSemanalesTienda"></div>
+        <!-- Tarjetas Semanales de la Tienda Seleccionada -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="cardsSemanalesTienda">
+          <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-slate-400">Semana Anterior (W42)</span>
+              <span id="tBadgeIHS_W42" class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded font-bold">IHS: --%</span>
+            </div>
+            <p class="text-2xl font-black text-white" id="tVentaW42">0 uds</p>
+            <p class="text-xs text-slate-500 mt-1" id="tTargetW42">Meta: 0 uds</p>
+          </div>
+          <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-slate-400">Semana en Curso (W43)</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded font-bold">En curso</span>
+            </div>
+            <p class="text-2xl font-black text-white" id="tVentaW43">0 uds</p>
+            <p class="text-xs text-slate-500 mt-1" id="tTargetW43">Meta: 0 uds</p>
+          </div>
+          <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-slate-400">Mes Acumulado (MTD)</span>
+              <span id="tCumplMTD" class="text-xs font-black text-emerald-400">0%</span>
+            </div>
+            <p class="text-2xl font-black text-white" id="tVentaMTD">0 uds</p>
+            <p class="text-xs text-slate-500 mt-1" id="tStockPiso">Stock en bodega: 0 uds</p>
+          </div>
+        </div>
 
+        <!-- Segmentos de la Tienda y Alerta vs Competencia -->
         <div>
           <h4 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-3 flex items-center gap-1.5">
             <i data-lucide="shield-alert" class="w-4 h-4 text-amber-400"></i> Desempeño por Segmentos vs Competencia
@@ -307,7 +348,7 @@
         </div>
       </div>
 
-      <!-- CONSOLIDADO DE TIENDAS -->
+      <!-- INFORME GENERAL TIENDA POR TIENDA -->
       <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 shadow-2xl">
         <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2">
           <i data-lucide="store" class="w-5 h-5 text-blue-400"></i> Consolidado General de Tiendas
@@ -331,7 +372,7 @@
         </div>
       </div>
 
-      <!-- VENTA CERO -->
+      <!-- RECUADRO: CONTROL DE VENTA CERO POR DÍA -->
       <div class="bg-slate-900/95 border border-rose-500/30 rounded-3xl p-6 shadow-2xl">
         <div class="flex items-center justify-between mb-4">
           <div class="flex items-center gap-2">
@@ -364,7 +405,7 @@
         </div>
       </div>
 
-      <!-- RANKING CONSULTORES -->
+      <!-- RANKING INDIVIDUAL DE CONSULTORES -->
       <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 shadow-2xl">
         <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2">
           <i data-lucide="users" class="w-5 h-5 text-indigo-400"></i> Consultores a Cargo (Ranking Individual)
@@ -389,9 +430,12 @@
 
     </div>
 
-    <!-- VISTA COORDINADOR GENERAL -->
+    <!-- ========================================== -->
+    <!-- VISTA COORDINADOR GENERAL (3 MENÚS) -->
+    <!-- ========================================== -->
     <div id="vistaCoordinador" class="hidden space-y-6">
 
+      <!-- BANNER COORDINACIÓN NACIONAL -->
       <div class="bg-gradient-to-r from-purple-950/80 via-blue-950/80 to-slate-900 border border-purple-500/30 p-6 rounded-3xl shadow-2xl flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <span class="text-xs bg-purple-500/20 text-purple-300 border border-purple-500/40 px-3 py-1 rounded-full font-bold uppercase tracking-wider">Coordinación de Cuenta Nacional</span>
@@ -399,6 +443,7 @@
           <p class="text-xs md:text-sm text-slate-300 mt-1">Control integral: Cadena completa, territorios de supervisión y desempeño tienda por tienda.</p>
         </div>
 
+        <!-- 3 MENÚS PRINCIPALES DE NAVEGACIÓN -->
         <div class="bg-slate-950/90 border border-slate-800 p-1.5 rounded-2xl flex items-center gap-1">
           <button onclick="cambiarMenuCoordinador('total')" id="btnCoordTotal" class="px-4 py-2.5 rounded-xl text-xs font-bold transition flex items-center gap-1.5 bg-blue-600 text-white shadow-lg shadow-blue-600/30">
             <i data-lucide="globe" class="w-4 h-4"></i> Menú Total
@@ -412,9 +457,10 @@
         </div>
       </div>
 
-      <!-- SECCIÓN TOTAL -->
+      <!-- SECCIÓN 1: MENÚ TOTAL (CONSOLIDADO NACIONAL) -->
       <div id="seccionCoordTotal" class="space-y-6">
 
+        <!-- MASTER KPIS NACIONALES -->
         <div class="grid grid-cols-2 md:grid-cols-6 gap-3">
           <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-2xl shadow-lg">
             <p class="text-xs text-slate-400">Ventas País (Uds)</p>
@@ -448,6 +494,7 @@
           </div>
         </div>
 
+        <!-- RESUMEN POR CATEGORÍAS/SEGMENTOS PAÍS -->
         <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 shadow-2xl">
           <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2">
             <i data-lucide="layers" class="w-5 h-5 text-blue-400"></i> Desempeño Consolidado por Segmentos (Nacional)
@@ -455,6 +502,7 @@
           <div class="grid grid-cols-1 md:grid-cols-5 gap-3" id="gridSegmentosNacional"></div>
         </div>
 
+        <!-- RANKING GENERAL DE SUPERVISORES -->
         <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 shadow-2xl">
           <div class="flex items-center justify-between mb-4">
             <h3 class="text-base font-bold text-white flex items-center gap-2">
@@ -484,6 +532,7 @@
           </div>
         </div>
 
+        <!-- RANKING GENERAL DE TIENDAS FALABELLA -->
         <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 shadow-2xl">
           <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-4">
             <div>
@@ -514,6 +563,7 @@
           </div>
         </div>
 
+        <!-- AUDITORÍA CONSOLIDADA DE VENTA CERO NACIONAL -->
         <div class="bg-slate-900/95 border border-rose-500/30 rounded-3xl p-6 shadow-2xl">
           <div class="flex items-center justify-between mb-4">
             <div class="flex items-center gap-2">
@@ -547,7 +597,7 @@
 
       </div>
 
-      <!-- SECCIÓN SUPERVISORES -->
+      <!-- SECCIÓN 2: MENÚ SUPERVISORES (SELECTOR TERRITORIAL) -->
       <div id="seccionCoordSupervisores" class="hidden space-y-6">
         <div class="bg-slate-900/95 border border-slate-800 rounded-3xl p-6 shadow-2xl flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
@@ -565,7 +615,7 @@
         <div id="contenedorDetalleSupervisorSeleccionado" class="space-y-6"></div>
       </div>
 
-      <!-- SECCIÓN CONSULTOR -->
+      <!-- SECCIÓN 3: MENÚ CONSULTOR O TIENDA (SELECTOR OPERATIVO COMPLETO) -->
       <div id="seccionCoordConsultores" class="hidden space-y-6">
         <div class="bg-slate-900/95 border border-slate-800 rounded-3xl p-6 shadow-2xl">
           <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-4">
@@ -620,7 +670,7 @@
     </div>
   </div>
 
-  <!-- MODAL CATÁLOGO STOCK -->
+  <!-- MODAL CATÁLOGO COMPLETO STOCK -->
   <div id="modalStock" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
     <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-2xl w-full p-6 space-y-4 max-h-[85vh] flex flex-col">
       <div class="flex items-center justify-between border-b border-slate-800 pb-3 flex-shrink-0">
@@ -754,24 +804,6 @@
       trendEl.innerText = c.ihs.mensaje;
       trendEl.className = c.ihs.tendencia === 'CRECIENDO' ? 'text-[11px] font-bold text-emerald-400 mt-0.5' : 'text-[11px] font-bold text-rose-400 mt-0.5';
 
-      // Tabla Segmentos
-      const tSeg = document.getElementById('cTablaSegmentos');
-      tSeg.innerHTML = '';
-      c.segmentos.forEach(s => {
-        const badgeClass = s.debe_unidades === 0 ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30' : 'bg-rose-500/20 text-rose-300 border-rose-500/30';
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-          <td class="px-3 py-2.5 font-bold text-white">${s.segmento}</td>
-          <td class="px-3 py-2.5 text-center text-slate-400">${s.target}</td>
-          <td class="px-3 py-2.5 text-center font-bold text-white">${s.venta}</td>
-          <td class="px-3 py-2.5 text-center">${s.cumplimiento_pct}%</td>
-          <td class="px-3 py-2.5 text-center">
-            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border ${badgeClass}">${s.estado}</span>
-          </td>
-        `;
-        tSeg.appendChild(tr);
-      });
-
       // Stock Grid
       const gStock = document.getElementById('cGridStock');
       gStock.innerHTML = '';
@@ -791,9 +823,10 @@
         gStock.appendChild(card);
       });
 
-      // Cargar botones según mes
+      // Cargar botones y tabla según mes activo
       document.getElementById('filtroMesConsultor').value = MES_ACTIVO_CONSULTOR;
       renderizarBotonesPeriodoConsultor(MES_ACTIVO_CONSULTOR);
+      renderizarTablaSegmentosConsultor(MES_ACTIVO_CONSULTOR);
 
       if (window.lucide) lucide.createIcons();
     }
@@ -801,6 +834,38 @@
     function cambiarMesConsultor(mes) {
       MES_ACTIVO_CONSULTOR = mes;
       renderizarBotonesPeriodoConsultor(mes);
+      renderizarTablaSegmentosConsultor(mes);
+    }
+
+    function renderizarTablaSegmentosConsultor(mes) {
+      if (!CONSULTOR_ACTUAL) return;
+      const tSeg = document.getElementById('cTablaSegmentos');
+      if (!tSeg) return;
+      tSeg.innerHTML = '';
+
+      const badgeMes = document.getElementById('badgeMesSegmentos');
+      if (badgeMes) {
+        badgeMes.innerText = mes === 'noviembre' ? 'Noviembre' : 'Octubre';
+      }
+
+      const lista = (mes === 'noviembre' && CONSULTOR_ACTUAL.segmentos_noviembre) 
+        ? CONSULTOR_ACTUAL.segmentos_noviembre 
+        : (CONSULTOR_ACTUAL.segmentos_octubre || CONSULTOR_ACTUAL.segmentos || []);
+
+      lista.forEach(s => {
+        const badgeClass = s.debe_unidades === 0 ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30' : 'bg-rose-500/20 text-rose-300 border-rose-500/30';
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td class="px-3 py-2.5 font-bold text-white">${s.segmento}</td>
+          <td class="px-3 py-2.5 text-center text-slate-400">${s.target}</td>
+          <td class="px-3 py-2.5 text-center font-bold text-white">${s.venta}</td>
+          <td class="px-3 py-2.5 text-center">${s.cumplimiento_pct}%</td>
+          <td class="px-3 py-2.5 text-center">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border ${badgeClass}">${s.estado}</span>
+          </td>
+        `;
+        tSeg.appendChild(tr);
+      });
     }
 
     function renderizarBotonesPeriodoConsultor(mes) {
@@ -931,7 +996,6 @@
       document.getElementById('modalStock').classList.add('hidden');
     }
 
-    // VISTA SUPERVISOR
     function mostrarSupervisorDirecto(s) {
       SUPERVISOR_ACTUAL = s;
       ocultarTodasVistas();
@@ -953,14 +1017,18 @@
       document.getElementById('sCumplGlobal').innerText = s.cumplimiento_mtd + '%';
 
       const badgeGlobal = document.getElementById('sBadgeSemaforoGlobal');
-      if (s.cumplimiento_mtd >= 80) {
+      if (s.semaforo === 'VERDE') {
         badgeGlobal.className = "inline-block mt-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase border bg-emerald-500/20 text-emerald-300 border-emerald-500/40";
-        badgeGlobal.innerText = s.cumplimiento_mtd >= 100 ? "Meta Superada" : "En Meta (≥80%)";
+        badgeGlobal.innerText = "Meta Superada";
+      } else if (s.semaforo === 'AMARILLO') {
+        badgeGlobal.className = "inline-block mt-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase border bg-amber-500/20 text-amber-300 border-amber-500/40";
+        badgeGlobal.innerText = "En Carrera";
       } else {
         badgeGlobal.className = "inline-block mt-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase border bg-rose-500/20 text-rose-300 border-rose-500/40";
         badgeGlobal.innerText = "Acelerar";
       }
 
+      // Llenar selector de tiendas del supervisor
       const sel = document.getElementById('selectTiendaSupervisor');
       sel.innerHTML = '';
       s.tiendas_detalle.forEach((t, i) => {
@@ -981,9 +1049,9 @@
           ? '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-500/20 text-blue-300 border border-blue-500/30">Asistida</span>'
           : '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-800 text-slate-400 border border-slate-700">No Asistida</span>';
         
-        const badgeCumpl = t.cumplimiento_mtd >= 80 
+        const badgeCumpl = t.cumplimiento_mtd >= 100 
           ? 'text-emerald-400 font-black' 
-          : 'text-rose-400 font-black';
+          : (t.cumplimiento_mtd >= 80 ? 'text-amber-400 font-black' : 'text-rose-400 font-black');
 
         const badgeDebe = t.debe_mtd === 0 
           ? '<span class="text-emerald-400 font-bold">Al día</span>' 
@@ -1004,7 +1072,7 @@
         tTiendas.appendChild(tr);
       });
 
-      // Auditoría Venta Cero
+      // Tabla de Ventas Cero por Día
       const tVtaCero = document.getElementById('sTablaVentaCero');
       tVtaCero.innerHTML = '';
       const listaCero = s.ventas_cero || [];
@@ -1028,11 +1096,11 @@
       // Ranking individual de consultores
       const tCons = document.getElementById('sTablaConsultores');
       tCons.innerHTML = '';
-      const asesoresOrdenados = [...s.asesores].sort((a, b) => b.periodos.MTD_octubre ? (b.periodos.MTD_octubre.cumplimiento - a.periodos.MTD_octubre.cumplimiento) : (b.periodos.MTD.cumplimiento - a.periodos.MTD.cumplimiento));
+      const asesoresOrdenados = [...s.asesores].sort((a, b) => b.periodos.MTD.cumplimiento - a.periodos.MTD.cumplimiento);
 
       asesoresOrdenados.forEach(a => {
-        const m = a.periodos.MTD_octubre || a.periodos.MTD;
-        const colorCumpl = m.cumplimiento >= 80 ? 'text-emerald-400 font-black' : 'text-rose-400 font-black';
+        const m = a.periodos.MTD;
+        const colorCumpl = m.cumplimiento >= 100 ? 'text-emerald-400 font-black' : (m.cumplimiento >= 80 ? 'text-amber-400 font-black' : 'text-rose-400 font-black');
         const badgeDebe = m.debe === 0 ? '<span class="text-emerald-400 font-bold">Al día</span>' : `<span class="text-rose-400 font-bold">${m.debe} uds</span>`;
 
         const tr = document.createElement('tr');
@@ -1097,10 +1165,13 @@
         contCards.appendChild(card);
       });
 
-      // Segmentos vs competencia
+      // Segmentos vs competencia (Actualizado por Mes)
       const tbody = document.getElementById('sTablaSegmentosCompetencia');
       tbody.innerHTML = '';
-      const segmentosData = t.segmentos_comp || [];
+      const segmentosData = (mesElegido === 'noviembre' && t.segmentos_comp_noviembre)
+        ? t.segmentos_comp_noviembre
+        : (t.segmentos_comp_octubre || t.segmentos_comp || []);
+
       segmentosData.forEach(seg => {
         const tr = document.createElement('tr');
         const badgeClass = seg.alerta_pierde 
@@ -1124,7 +1195,6 @@
       if (window.lucide) lucide.createIcons();
     }
 
-    // VISTA COORDINADOR GENERAL
     function mostrarCoordinador() {
       ocultarTodasVistas();
       document.getElementById('vistaCoordinador').classList.remove('hidden');
@@ -1144,9 +1214,12 @@
       document.getElementById('kpiTiendasTotal').innerText = tot.total_tiendas;
 
       const badgePais = document.getElementById('kpiBadgePais');
-      if (tot.cumplimiento_mtd >= 80) {
+      if (tot.cumplimiento_mtd >= 100) {
         badgePais.className = "inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase mt-0.5 border bg-emerald-500/20 text-emerald-300 border-emerald-500/40";
-        badgePais.innerText = tot.cumplimiento_mtd >= 100 ? "Cumplido" : "En Meta (≥80%)";
+        badgePais.innerText = "Cumplido";
+      } else if (tot.cumplimiento_mtd >= 80) {
+        badgePais.className = "inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase mt-0.5 border bg-amber-500/20 text-amber-300 border-amber-500/40";
+        badgePais.innerText = "En Carrera";
       } else {
         badgePais.className = "inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase mt-0.5 border bg-rose-500/20 text-rose-300 border-rose-500/40";
         badgePais.innerText = "Acelerar";
@@ -1157,7 +1230,7 @@
       gSeg.innerHTML = '';
       (tot.resumen_segmentos || []).forEach(seg => {
         const card = document.createElement('div');
-        const colorCumpl = seg.cumplimiento >= 80 ? 'text-emerald-400' : 'text-rose-400';
+        const colorCumpl = seg.cumplimiento >= 100 ? 'text-emerald-400' : (seg.cumplimiento >= 80 ? 'text-amber-400' : 'text-rose-400');
         card.className = "bg-slate-950 p-3.5 rounded-2xl border border-slate-800 space-y-1.5";
         card.innerHTML = `
           <div class="flex items-center justify-between">
@@ -1166,7 +1239,7 @@
           </div>
           <p class="text-xl font-black text-white">${seg.venta} <span class="text-xs text-slate-500 font-normal">/ ${seg.target} uds</span></p>
           <div class="w-full bg-slate-900 rounded-full h-1.5 overflow-hidden">
-            <div class="h-full ${seg.cumplimiento >= 80 ? 'bg-emerald-500' : 'bg-rose-500'} rounded-full" style="width: ${Math.min(seg.cumplimiento, 100)}%"></div>
+            <div class="h-full bg-blue-500 rounded-full" style="width: ${Math.min(seg.cumplimiento, 100)}%"></div>
           </div>
           <p class="text-[10px] text-slate-400">Faltante: <strong class="text-rose-400">${seg.debe} uds</strong></p>
         `;
@@ -1179,7 +1252,7 @@
       (tot.ranking_supervisores || []).forEach((s, idx) => {
         const tr = document.createElement('tr');
         tr.className = "hover:bg-slate-800/40 transition";
-        const cCumpl = s.cumplimiento_mtd >= 80 ? 'text-emerald-400 font-black' : 'text-rose-400 font-black';
+        const cCumpl = s.cumplimiento_mtd >= 100 ? 'text-emerald-400 font-black' : (s.cumplimiento_mtd >= 80 ? 'text-amber-400 font-black' : 'text-rose-400 font-black');
         tr.innerHTML = `
           <td class="px-4 py-3 font-bold text-slate-500">${idx + 1}</td>
           <td class="px-4 py-3 font-bold text-white">${s.nombre}</td>
@@ -1192,7 +1265,7 @@
           <td class="px-3 py-3 text-center text-rose-400 font-bold">${s.debe_mtd}</td>
           <td class="px-3 py-3 text-center font-bold text-blue-400">${s.promedio_ihs_w42}%</td>
           <td class="px-3 py-3 text-center">
-            <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase border ${s.cumplimiento_mtd >= 80 ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40' : 'bg-rose-500/20 text-rose-300 border-rose-500/40'}">${s.cumplimiento_mtd >= 80 ? 'En Meta' : 'Acelerar'}</span>
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase border ${s.semaforo === 'VERDE' ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40' : (s.semaforo === 'AMARILLO' ? 'bg-amber-500/20 text-amber-300 border-amber-500/40' : 'bg-rose-500/20 text-rose-300 border-rose-500/40')}">${s.semaforo}</span>
           </td>
         `;
         tSup.appendChild(tr);
@@ -1216,6 +1289,7 @@
         tCero.appendChild(tr);
       });
 
+      // Dropdowns
       const selSup = document.getElementById('selectSupervisorCoordinador');
       selSup.innerHTML = '';
       DATOS_APP.supervisores.forEach((s, i) => {
@@ -1247,7 +1321,7 @@
         const badgeAsist = t.asistencia === 'Asistida' 
           ? '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-500/20 text-blue-300 border border-blue-500/30">Asistida</span>'
           : '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-800 text-slate-400 border border-slate-700">No Asistida</span>';
-        const cCumpl = t.cumplimiento_mtd >= 80 ? 'text-emerald-400 font-black' : 'text-rose-400 font-black';
+        const cCumpl = t.cumplimiento_mtd >= 100 ? 'text-emerald-400 font-black' : (t.cumplimiento_mtd >= 80 ? 'text-amber-400 font-black' : 'text-rose-400 font-black');
         const tr = document.createElement('tr');
         tr.className = "hover:bg-slate-800/40 transition";
         tr.innerHTML = `
@@ -1306,17 +1380,18 @@
           <div class="bg-slate-900/90 border border-slate-700 p-4 rounded-2xl text-right">
             <p class="text-xs text-slate-400">Cumplimiento Territorial</p>
             <p class="text-3xl font-black text-white mt-1">${s.cumplimiento_mtd}%</p>
-            <span class="inline-block px-2.5 py-0.5 rounded text-[10px] font-bold uppercase border ${s.cumplimiento_mtd >= 80 ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40' : 'bg-rose-500/20 text-rose-300 border-rose-500/40'}">${s.cumplimiento_mtd >= 80 ? 'En Meta' : 'Acelerar'}</span>
+            <span class="inline-block px-2.5 py-0.5 rounded text-[10px] font-bold uppercase border ${s.semaforo === 'VERDE' ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40' : (s.semaforo === 'AMARILLO' ? 'bg-amber-500/20 text-amber-300 border-amber-500/40' : 'bg-rose-500/20 text-rose-300 border-rose-500/40')}">${s.semaforo}</span>
           </div>
         </div>
 
+        <!-- MÓDULO ANÁLISIS POR TIENDA Y SEMANAS -->
         <div class="bg-slate-900/95 border border-slate-800 rounded-3xl p-6 shadow-xl space-y-6">
           <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-4">
             <div>
               <h4 class="text-base font-bold text-white flex items-center gap-2">
                 <i data-lucide="filter" class="w-4 h-4 text-blue-400"></i> Auditoría Semanal & IHS por Tienda
               </h4>
-              <p class="text-xs text-slate-400">Resultados por semana (W40 a W44) y semáforo cara a cara vs competencia</p>
+              <p class="text-xs text-slate-400">Resultados por semana (W42 / W43) y semáforo cara a cara vs competencia</p>
             </div>
             <div class="w-full md:w-72">
               <select id="selTiendaSupCoord" onchange="actualizarTiendaSupCoord('${s.cedula}')" class="w-full bg-slate-950 border border-slate-700 text-white rounded-xl px-3 py-2 text-xs font-semibold focus:outline-none focus:border-blue-500">
@@ -1325,7 +1400,7 @@
             </div>
           </div>
 
-          <div id="cardsSemanalesSupCoord" class="grid grid-cols-2 md:grid-cols-6 gap-3"></div>
+          <div id="cardsSemanalesSupCoord" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
           
           <div>
             <h5 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Segmentos vs Competencia</h5>
@@ -1336,8 +1411,8 @@
                     <th class="px-4 py-2">Segmento</th>
                     <th class="px-3 py-2 text-center">Venta Samsung</th>
                     <th class="px-3 py-2 text-center">Target</th>
-                    <th class="px-3 py-2.5 text-center">Vs Competencia</th>
-                    <th class="px-3 py-2.5 text-center">Diagnóstico</th>
+                    <th class="px-3 py-2 text-center">Vs Competencia</th>
+                    <th class="px-3 py-2 text-center">Diagnóstico</th>
                   </tr>
                 </thead>
                 <tbody id="tablaSegmentosSupCoord" class="divide-y divide-slate-800"></tbody>
@@ -1346,6 +1421,7 @@
           </div>
         </div>
 
+        <!-- TABLA GENERAL DE TIENDAS DEL SUPERVISOR -->
         <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 shadow-xl">
           <h4 class="text-base font-bold text-white mb-4">Consolidado de Tiendas del Territorio</h4>
           <div class="overflow-x-auto">
@@ -1369,7 +1445,7 @@
                     <td class="px-3 py-3 text-center"><span class="px-2 py-0.5 rounded text-[10px] font-bold ${t.asistencia === 'Asistida' ? 'bg-blue-500/20 text-blue-300' : 'bg-slate-800 text-slate-400'}">${t.asistencia}</span></td>
                     <td class="px-3 py-3 text-center text-slate-400">${t.target_mtd}</td>
                     <td class="px-3 py-3 text-center font-bold text-white">${t.venta_mtd}</td>
-                    <td class="px-3 py-3 text-center font-bold ${t.cumplimiento_mtd >= 80 ? 'text-emerald-400' : 'text-rose-400'}">${t.cumplimiento_mtd}%</td>
+                    <td class="px-3 py-3 text-center font-bold ${t.cumplimiento_mtd >= 100 ? 'text-emerald-400' : (t.cumplimiento_mtd >= 80 ? 'text-amber-400' : 'text-rose-400')}">${t.cumplimiento_mtd}%</td>
                     <td class="px-3 py-3 text-center text-rose-400 font-bold">${t.debe_mtd} uds</td>
                     <td class="px-3 py-3 text-center text-cyan-400 font-semibold">${t.stock}</td>
                     <td class="px-3 py-3 text-center text-blue-400 font-semibold">${t.ihs_w42}%</td>
@@ -1380,6 +1456,7 @@
           </div>
         </div>
 
+        <!-- EQUIPO DE CONSULTORES A CARGO -->
         <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 shadow-xl">
           <h4 class="text-base font-bold text-white mb-4">Consultores a Cargo (Ranking Individual)</h4>
           <div class="overflow-x-auto">
@@ -1402,7 +1479,7 @@
                     <td class="px-3 py-3 text-slate-300 text-xs">${a.tienda}</td>
                     <td class="px-3 py-3 text-center text-slate-400">${a.periodos.MTD.target}</td>
                     <td class="px-3 py-3 text-center font-bold text-white">${a.periodos.MTD.venta_uds}</td>
-                    <td class="px-3 py-3 text-center font-bold ${a.periodos.MTD.cumplimiento >= 80 ? 'text-emerald-400' : 'text-rose-400'}">${a.periodos.MTD.cumplimiento}%</td>
+                    <td class="px-3 py-3 text-center font-bold ${a.periodos.MTD.cumplimiento >= 100 ? 'text-emerald-400' : (a.periodos.MTD.cumplimiento >= 80 ? 'text-amber-400' : 'text-rose-400')}">${a.periodos.MTD.cumplimiento}%</td>
                     <td class="px-3 py-3 text-center text-rose-400 font-bold">${a.periodos.MTD.debe} uds</td>
                     <td class="px-3 py-3 text-center text-amber-400 font-bold">${a.puntos.total.toLocaleString()}</td>
                   </tr>
@@ -1424,35 +1501,33 @@
       const t = s.tiendas_detalle.find(item => item.tienda === tiendaSel);
       if (!t) return;
 
-      const semanasLista = ['W40', 'W41', 'W42', 'W43', 'W44', 'MTD'];
-      const titulosLista = {
-        'W40': 'W40',
-        'W41': 'W41',
-        'W42': 'W42',
-        'W43': 'W43',
-        'W44': 'W44 (Act)',
-        'MTD': 'MTD Oct'
-      };
-
       const cards = document.getElementById('cardsSemanalesSupCoord');
-      cards.innerHTML = '';
-
-      semanasLista.forEach(sem => {
-        const d = (t.semanal && t.semanal[sem]) ? t.semanal[sem] : { venta_sam: 0, target: 0, cumplimiento: 0 };
-        const card = document.createElement('div');
-        card.className = "bg-slate-950 p-3 rounded-2xl border border-slate-800 flex flex-col justify-between";
-        card.innerHTML = `
-          <div class="flex items-center justify-between mb-1">
-            <span class="text-[11px] font-bold text-slate-400">${titulosLista[sem]}</span>
-            <span class="text-[11px] font-black ${d.cumplimiento >= 80 ? 'text-emerald-400' : 'text-rose-400'}">${d.cumplimiento}%</span>
+      cards.innerHTML = `
+        <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold text-slate-400">Semana W42</span>
+            <span class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded font-bold">IHS: ${t.ihs_w42}%</span>
           </div>
-          <p class="text-base font-black text-white">${d.venta_sam} <span class="text-[10px] text-slate-500 font-normal">/ ${d.target}</span></p>
-          <div class="w-full bg-slate-900 rounded-full h-1 mt-1.5 overflow-hidden">
-            <div class="h-full rounded-full ${d.cumplimiento >= 80 ? 'bg-emerald-500' : 'bg-rose-500'}" style="width: ${Math.min(d.cumplimiento, 100)}%;"></div>
+          <p class="text-2xl font-black text-white">${t.semanal ? t.semanal.W42.venta_sam : 0} uds</p>
+          <p class="text-xs text-slate-500 mt-1">Meta: ${t.semanal ? t.semanal.W42.target : 0} uds</p>
+        </div>
+        <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold text-slate-400">Semana W43</span>
+            <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded font-bold">En curso</span>
           </div>
-        `;
-        cards.appendChild(card);
-      });
+          <p class="text-2xl font-black text-white">${t.semanal ? t.semanal.W43.venta_sam : 0} uds</p>
+          <p class="text-xs text-slate-500 mt-1">Meta: ${t.semanal ? t.semanal.W43.target : 0} uds</p>
+        </div>
+        <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold text-slate-400">Mes Acumulado</span>
+            <span class="text-xs font-black text-emerald-400">${t.cumplimiento_mtd}%</span>
+          </div>
+          <p class="text-2xl font-black text-white">${t.venta_mtd} uds</p>
+          <p class="text-xs text-slate-500 mt-1">Stock en piso: ${t.stock} uds</p>
+        </div>
+      `;
 
       const tbody = document.getElementById('tablaSegmentosSupCoord');
       tbody.innerHTML = '';
@@ -1476,7 +1551,9 @@
       if (window.lucide) lucide.createIcons();
     }
 
-    // CONSULTOR EN COORDINADOR
+    // ==========================================
+    // MENÚ CONSULTOR O TIENDA EN COORDINADOR (COMPLETO)
+    // ==========================================
     function cargarConsultorEnCoordinador() {
       const ced = document.getElementById('selectConsultorCoordinador').value;
       const c = DATOS_APP.consultores.find(item => item.cedula === ced);
@@ -1502,12 +1579,13 @@
           </div>
         </div>
 
-        <div class="p-5 rounded-2xl border ${m.cumplimiento >= 80 ? 'bg-emerald-950/40 border-emerald-500/50' : 'bg-rose-950/40 border-rose-500/50'} flex flex-col md:flex-row items-center justify-between gap-4">
+        <!-- TARJETA SEMÁFORO DEL CONSULTOR -->
+        <div class="p-5 rounded-2xl border ${m.semaforo === 'VERDE' ? 'bg-emerald-950/40 border-emerald-500/50' : (m.semaforo === 'AMARILLO' ? 'bg-amber-950/40 border-amber-500/50' : 'bg-rose-950/40 border-rose-500/50')} flex flex-col md:flex-row items-center justify-between gap-4">
           <div class="flex-1 w-full">
-            <span class="px-2.5 py-0.5 rounded text-[10px] font-bold uppercase border ${m.cumplimiento >= 80 ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40' : 'bg-rose-500/20 text-rose-300 border-rose-500/40'}">${m.cumplimiento >= 80 ? 'En Meta' : 'Acelerar'}</span>
-            <p class="text-sm font-bold text-white mt-1">Cumplimiento MTD: ${m.cumplimiento}% (Faltante: ${m.debe} unidades para la meta)</p>
+            <span class="px-2.5 py-0.5 rounded text-[10px] font-bold uppercase border ${m.semaforo === 'VERDE' ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40' : (m.semaforo === 'AMARILLO' ? 'bg-amber-500/20 text-amber-300 border-amber-500/40' : 'bg-rose-500/20 text-rose-300 border-rose-500/40')}">${m.semaforo === 'VERDE' ? 'Meta Superada' : (m.semaforo === 'AMARILLO' ? 'En Carrera' : 'Acelerar')}</span>
+            <p class="text-sm font-bold text-white mt-1">Cumplimiento MTD: ${m.cumplimiento}% (Faltan: ${m.debe} uds)</p>
             <div class="w-full bg-slate-950 rounded-full h-2.5 mt-2 overflow-hidden border border-slate-800">
-              <div class="h-full rounded-full ${m.cumplimiento >= 80 ? 'bg-emerald-500' : 'bg-rose-500'}" style="width: ${Math.min(m.cumplimiento, 100)}%;"></div>
+              <div class="h-full rounded-full ${m.semaforo === 'VERDE' ? 'bg-emerald-500' : (m.semaforo === 'AMARILLO' ? 'bg-amber-500' : 'bg-rose-500')}" style="width: ${Math.min(m.cumplimiento, 100)}%;"></div>
             </div>
           </div>
           <div class="text-right">
@@ -1520,12 +1598,12 @@
           <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800">
             <p class="text-xs text-slate-400">Venta MTD</p>
             <p class="text-2xl font-black text-white mt-1">${m.venta_uds} uds</p>
-            <p class="text-xs text-slate-400 font-semibold mt-1">Meta: <span class="text-cyan-300 font-black">${m.target}</span> uds</p>
+            <p class="text-[11px] text-slate-500">Meta: ${m.target} uds</p>
           </div>
           <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800">
             <p class="text-xs text-slate-400">Cumplimiento MTD</p>
-            <p class="text-2xl font-black ${m.cumplimiento >= 80 ? 'text-emerald-400' : 'text-rose-400'} mt-1">${m.cumplimiento}%</p>
-            <p class="text-[11px] text-slate-500">Faltante: ${m.debe} uds</p>
+            <p class="text-2xl font-black ${m.cumplimiento >= 100 ? 'text-emerald-400' : (m.cumplimiento >= 80 ? 'text-amber-400' : 'text-rose-400')} mt-1">${m.cumplimiento}%</p>
+            <p class="text-[11px] text-slate-500">Faltan: ${m.debe} uds</p>
           </div>
           <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800">
             <p class="text-xs text-slate-400">IHS W42</p>
@@ -1539,6 +1617,7 @@
           </div>
         </div>
 
+        <!-- DETALLE POR SEGMENTOS -->
         <div class="bg-slate-950 p-6 rounded-3xl border border-slate-800">
           <h4 class="text-sm font-bold text-white mb-3">Detalle por Segmentos de Producto</h4>
           <div class="overflow-x-auto">
@@ -1569,6 +1648,7 @@
           </div>
         </div>
 
+        <!-- MÓDULO DE INVENTARIO DISPONIBLE EN TIENDA -->
         <div class="bg-slate-950 p-6 rounded-3xl border border-slate-800">
           <div class="flex items-center justify-between mb-4">
             <div>
