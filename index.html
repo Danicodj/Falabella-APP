@@ -179,12 +179,15 @@
 
       <!-- TABLA DE SEGMENTOS -->
       <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5 md:p-6 shadow-xl">
-        <div class="flex items-center justify-between mb-3">
-          <h3 class="text-sm md:text-base font-bold text-white flex items-center gap-2">
-            <i data-lucide="layers" class="w-4 h-4 text-blue-400"></i> Desempeño por Segmentos
-          </h3>
-          <span id="badgeMesSegmentos" class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30 uppercase">
-            Octubre
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+          <div>
+            <h3 class="text-sm md:text-base font-bold text-white flex items-center gap-2">
+              <i data-lucide="layers" class="w-4 h-4 text-blue-400"></i> Desempeño por Segmentos
+            </h3>
+            <p class="text-[11px] text-slate-400 mt-0.5">Metas y ventas por categoría correspondientes al periodo seleccionado arriba</p>
+          </div>
+          <span id="badgeMesSegmentos" class="text-[11px] font-bold px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30 self-start sm:self-auto">
+            Cierre Mes Octubre (MTD)
           </span>
         </div>
         <div class="overflow-x-auto">
@@ -328,9 +331,14 @@
 
         <!-- Segmentos de la Tienda y Alerta vs Competencia -->
         <div>
-          <h4 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-3 flex items-center gap-1.5">
-            <i data-lucide="shield-alert" class="w-4 h-4 text-amber-400"></i> Desempeño por Segmentos vs Competencia
-          </h4>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+            <h4 class="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
+              <i data-lucide="shield-alert" class="w-4 h-4 text-amber-400"></i> Desempeño por Segmentos vs Competencia
+            </h4>
+            <span id="badgePeriodoTiendaSup" class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30 self-start sm:self-auto">
+              Cierre Mes Octubre (MTD)
+            </span>
+          </div>
           <div class="overflow-x-auto">
             <table class="w-full text-left text-xs">
               <thead class="bg-slate-950 text-slate-400 uppercase tracking-wider text-[11px]">
@@ -826,7 +834,6 @@
       // Cargar botones y tabla según mes activo
       document.getElementById('filtroMesConsultor').value = MES_ACTIVO_CONSULTOR;
       renderizarBotonesPeriodoConsultor(MES_ACTIVO_CONSULTOR);
-      renderizarTablaSegmentosConsultor(MES_ACTIVO_CONSULTOR);
 
       if (window.lucide) lucide.createIcons();
     }
@@ -834,23 +841,29 @@
     function cambiarMesConsultor(mes) {
       MES_ACTIVO_CONSULTOR = mes;
       renderizarBotonesPeriodoConsultor(mes);
-      renderizarTablaSegmentosConsultor(mes);
     }
 
-    function renderizarTablaSegmentosConsultor(mes) {
+    function renderizarTablaSegmentosConsultor(periodo) {
       if (!CONSULTOR_ACTUAL) return;
       const tSeg = document.getElementById('cTablaSegmentos');
       if (!tSeg) return;
       tSeg.innerHTML = '';
 
+      const pKey = periodo || PERIODO_SELECCIONADO;
+      const pInfo = CONSULTOR_ACTUAL.periodos ? CONSULTOR_ACTUAL.periodos[pKey] : null;
       const badgeMes = document.getElementById('badgeMesSegmentos');
       if (badgeMes) {
-        badgeMes.innerText = mes === 'noviembre' ? 'Noviembre' : 'Octubre';
+        badgeMes.innerText = pInfo ? pInfo.label : (MES_ACTIVO_CONSULTOR === 'noviembre' ? 'Noviembre' : 'Octubre');
       }
 
-      const lista = (mes === 'noviembre' && CONSULTOR_ACTUAL.segmentos_noviembre) 
-        ? CONSULTOR_ACTUAL.segmentos_noviembre 
-        : (CONSULTOR_ACTUAL.segmentos_octubre || CONSULTOR_ACTUAL.segmentos || []);
+      let lista = null;
+      if (CONSULTOR_ACTUAL.segmentos_por_periodo && CONSULTOR_ACTUAL.segmentos_por_periodo[pKey]) {
+        lista = CONSULTOR_ACTUAL.segmentos_por_periodo[pKey];
+      } else {
+        lista = (MES_ACTIVO_CONSULTOR === 'noviembre' && CONSULTOR_ACTUAL.segmentos_noviembre) 
+          ? CONSULTOR_ACTUAL.segmentos_noviembre 
+          : (CONSULTOR_ACTUAL.segmentos_octubre || CONSULTOR_ACTUAL.segmentos || []);
+      }
 
       lista.forEach(s => {
         const badgeClass = s.debe_unidades === 0 ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30' : 'bg-rose-500/20 text-rose-300 border-rose-500/30';
@@ -909,6 +922,7 @@
         });
       }
       actualizarVistaPeriodo();
+      renderizarTablaSegmentosConsultor(periodo);
     }
 
     function actualizarVistaPeriodo() {
@@ -1120,7 +1134,14 @@
       if (window.lucide) lucide.createIcons();
     }
 
-    function actualizarDetalleTiendaSeleccionada() {
+    let PERIODO_TIENDA_SUP = null;
+
+    function seleccionarPeriodoTiendaSup(periodoKey) {
+      PERIODO_TIENDA_SUP = periodoKey;
+      actualizarDetalleTiendaSeleccionada(true);
+    }
+
+    function actualizarDetalleTiendaSeleccionada(mantenerPeriodo = false) {
       const tiendaNom = document.getElementById('selectTiendaSupervisor').value;
       const t = SUPERVISOR_ACTUAL.tiendas_detalle.find(item => item.tienda === tiendaNom);
       if (!t) return;
@@ -1128,13 +1149,19 @@
       const mesElegido = document.getElementById('filtroMesSupervisor').value || 'octubre';
       const cfg = CONFIG_MESES_UI[mesElegido] || CONFIG_MESES_UI['octubre'];
 
+      if (!mantenerPeriodo || !PERIODO_TIENDA_SUP) {
+        PERIODO_TIENDA_SUP = cfg.consolidadoKey;
+      }
+
       const contCards = document.getElementById('cardsSemanalesTienda');
       contCards.innerHTML = '';
 
-      // Consolidado del mes elegido
+      // Consolidado del mes elegido (clickeable)
       const dCons = (t.semanal && t.semanal[cfg.consolidadoKey]) ? t.semanal[cfg.consolidadoKey] : { venta_sam: 0, target: 0, cumplimiento: 0 };
+      const esActivoCons = PERIODO_TIENDA_SUP === cfg.consolidadoKey;
       const cardCons = document.createElement('div');
-      cardCons.className = "bg-slate-950 p-3.5 rounded-2xl border border-blue-500/40 flex flex-col justify-between";
+      cardCons.onclick = () => seleccionarPeriodoTiendaSup(cfg.consolidadoKey);
+      cardCons.className = `bg-slate-950 p-3.5 rounded-2xl border cursor-pointer transition flex flex-col justify-between ${esActivoCons ? 'border-blue-500 ring-1 ring-blue-500 shadow-lg shadow-blue-500/20' : 'border-slate-800 hover:border-slate-600'}`;
       cardCons.innerHTML = `
         <div class="flex items-center justify-between mb-1">
           <span class="text-xs font-bold text-blue-300">${cfg.labelConsolidado}</span>
@@ -1147,14 +1174,16 @@
       `;
       contCards.appendChild(cardCons);
 
-      // Semanas del mes elegido
+      // Semanas del mes elegido (clickeables)
       cfg.semanas.forEach(sem => {
         const d = (t.semanal && t.semanal[sem]) ? t.semanal[sem] : { venta_sam: 0, target: 0, cumplimiento: 0 };
+        const esActivoSem = PERIODO_TIENDA_SUP === sem;
         const card = document.createElement('div');
-        card.className = "bg-slate-950 p-3.5 rounded-2xl border border-slate-800 flex flex-col justify-between";
+        card.onclick = () => seleccionarPeriodoTiendaSup(sem);
+        card.className = `bg-slate-950 p-3.5 rounded-2xl border cursor-pointer transition flex flex-col justify-between ${esActivoSem ? 'border-blue-500 ring-1 ring-blue-500 shadow-lg shadow-blue-500/20' : 'border-slate-800 hover:border-slate-600'}`;
         card.innerHTML = `
           <div class="flex items-center justify-between mb-1">
-            <span class="text-xs font-bold text-slate-400">Semana ${sem.replace('W', '')}</span>
+            <span class="text-xs font-bold ${esActivoSem ? 'text-blue-300' : 'text-slate-400'}">Semana ${sem.replace('W', '')} (${sem})</span>
             <span class="text-xs font-black ${d.cumplimiento >= 80 ? 'text-emerald-400' : 'text-rose-400'}">${d.cumplimiento}%</span>
           </div>
           <p class="text-xl font-black text-white">${d.venta_sam} <span class="text-xs text-slate-500 font-normal">/ ${d.target} uds</span></p>
@@ -1165,12 +1194,24 @@
         contCards.appendChild(card);
       });
 
-      // Segmentos vs competencia (Actualizado por Mes)
+      const badgePeriodoSup = document.getElementById('badgePeriodoTiendaSup');
+      if (badgePeriodoSup) {
+        badgePeriodoSup.innerText = PERIODO_TIENDA_SUP === cfg.consolidadoKey
+          ? cfg.labelConsolidado
+          : `Semana ${PERIODO_TIENDA_SUP.replace('W', '')} (${PERIODO_TIENDA_SUP})`;
+      }
+
+      // Segmentos vs competencia (Actualizado por Periodo / Semana)
       const tbody = document.getElementById('sTablaSegmentosCompetencia');
       tbody.innerHTML = '';
-      const segmentosData = (mesElegido === 'noviembre' && t.segmentos_comp_noviembre)
-        ? t.segmentos_comp_noviembre
-        : (t.segmentos_comp_octubre || t.segmentos_comp || []);
+      let segmentosData = null;
+      if (t.segmentos_comp_por_periodo && t.segmentos_comp_por_periodo[PERIODO_TIENDA_SUP]) {
+        segmentosData = t.segmentos_comp_por_periodo[PERIODO_TIENDA_SUP];
+      } else {
+        segmentosData = (mesElegido === 'noviembre' && t.segmentos_comp_noviembre)
+          ? t.segmentos_comp_noviembre
+          : (t.segmentos_comp_octubre || t.segmentos_comp || []);
+      }
 
       segmentosData.forEach(seg => {
         const tr = document.createElement('tr');
